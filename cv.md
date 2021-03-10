@@ -2,7 +2,7 @@
 
 **Junior Front-End developer**
 
-:envelope_with_arrow: marie.serykh@gmail.com / :octocat: [github account](https://github.com/mserykh)
+📩 marie.serykh@gmail.com / :octocat: [github account](https://github.com/mserykh)
 
 Junior Front-End developer with a passion for good user experience and accessibility.
 
@@ -17,11 +17,11 @@ Junior Front-End developer with a passion for good user experience and accessibi
 
 ### Projects
 
-[Add a unicorn - JS](https://codepen.io/trifle-on-a-stick/pen/PoGxxOJ)
+🦄 [Add a unicorn - JS](https://codepen.io/trifle-on-a-stick/pen/PoGxxOJ)
 
-[CodePen Home May the 4 be with you - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/zYvPwmo)
+🦄 [CodePen Home May the 4 be with you - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/zYvPwmo)
 
-[Planet and a Balloon - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/bGVeGrV)
+🦄 [Planet and a Balloon - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/bGVeGrV)
 
 ### Experience
 
