@@ -19,7 +19,7 @@ Junior Front-End developer with a passion for good user experience and accessibi
 
 🦄 [Add a unicorn - JS](https://codepen.io/trifle-on-a-stick/pen/PoGxxOJ)
 
-🦄 [CodePen Home May the 4 be with you - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/zYvPwmo)
+🦄 [May the 4 be with you - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/zYvPwmo)
 
 🦄 [Planet and a Balloon - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/bGVeGrV)
 
