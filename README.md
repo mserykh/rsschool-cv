@@ -1,3 +1,3 @@
-# rsschool-cv
+# [rsschool-cv](https://mserykh.github.io/rsschool-cv/cv)
 
-https://mserykh.github.io/rsschool-cv/cv
+
