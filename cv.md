@@ -2,7 +2,7 @@
 
 **Junior Front-End developer**
 
-📩 marie.serykh@gmail.com / :octocat: [github account](https://github.com/mserykh)
+📩 <marie.serykh@gmail.com> / :octocat: [github account](https://github.com/mserykh)
 
 Junior Front-End developer with a passion for good user experience and accessibility.
 
