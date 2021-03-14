@@ -10,7 +10,7 @@ Junior Front-End developer with a passion for good user experience and accessibi
 
 - [x] Git
 - [x] Jira, Confluence
-- [x] Figma, Photoshop, Illustarator
+- [x] Figma, Photoshop, Illustrator
 - [x] HTML, CSS
 - [x] SASS
 - [x] JavaScript
