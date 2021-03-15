@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Maria Serykh - Junior Front-End Developer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap" rel="stylesheet">
 </head>
-<body style="background-color:rgb(244, 236, 230)">
+<body>
     <header class="page-header">
         <div class="page-header__inner">
             <nav class="main-header-nav">
@@ -34,8 +38,8 @@
                 <div class="section-wrapper">
                     <div class="section section--main">
                         <div class="section__col section__col--left section__col--photo" style="background-color:rgb(230, 218, 206)">
-                            <div class="about-me__photo">
-                                <img src="images/photo.jpg" alt="Maria Serykh" width="250px">
+                            <div class="about-me__img-container">
+                                <img class="about-me__img" src="images/photo.jpg" alt="" width="250px">
                             </div>
                             <h2 class="section__name">Maria Serykh</h2>
                             <h3 class="section__job">Front-End Developer</h3>
@@ -48,7 +52,7 @@
                         <div class="section__col section__col--right" style="background-color:rgb(255, 255, 255)">
                              <p class="section__greeting">Hello!</p>
                             <p>🌱 I am Junior Front-End developer with a passion for good user experience and accessibility.</p>
-                            <p>👯 I’m looking for collaboration in non-profit/commercial projects in Education and Science</p>
+                            <p>👯 I’m looking for collaboration in non-profit/commercial projects in Education and Science.</p>
                             <p>👩 Pronouns: she / her</p>
                         </div>
                         </div>
@@ -82,7 +86,7 @@
                     </div>
                     <div class="section__col section__col--right">
                         <div class="section__img-container">
-                            <img src="images/project1.jpg" alt="" aria-labelledby="img_1">
+                            <img src="images/project1.jpg" alt="" width="250px" aria-labelledby="img_1">
                         </div>
                     </div>
                 </div>
@@ -93,7 +97,7 @@
                     </div>
                     <div class="section__col section__col--right">
                         <div class="section__img-container">
-                            <img src="images/project2.jpg" alt="" aria-labelledby="img_2"></div>
+                            <img src="images/project2.jpg" alt="" width="250px" aria-labelledby="img_2"></div>
                     </div>
                 </div>
                 <div class="section" style="background-color:rgb(255, 255, 255)">
@@ -103,7 +107,7 @@
                     </div>
                     <div class="section__col section__col--right">
                         <div class="section__img-container">
-                            <img src="images/project3.jpg" alt="" aria-labelledby="img_3">
+                            <img src="images/project3.jpg" alt="" width="250px" aria-labelledby="img_3">
                         </div>
                     </div>
                 </div>
@@ -161,7 +165,7 @@
 
                         </div>
                         <div class="section__col section--left">
-                            <p>Here goes a description of achievements, results and so on</p>
+                            <p>Here goes a description of achievements, results and so on.</p>
                         </div>
                     </div>
                     <div class="section" style="background-color:rgb(255, 255, 255)">
@@ -178,7 +182,7 @@
 
                         </div>
                         <div class="section__col section--left">
-                            <p>Here goes a description of achievements, results and so on</p>
+                            <p>Here goes a description of achievements, results and so on.</p>
                         </div>
                     </div>
             </section>
@@ -222,15 +226,15 @@ console.log(`Next time we are going to ${destination}`);</pre>
                 <div class="section section__col">
                     <form action="" class="form">
                         <div class="form__group">
-                            <label for="name">Name</label><span class="required">*</span>
+                            <label for="name">Name</label><span class="required">*</span>:
                             <input type="text" name="name" placeholder="Name" required>
                         </div>
                         <div class="form__group">
-                            <label for="email">E-mail</label><span class="required">*</span>
+                            <label for="email">E-mail</label><span class="required">*</span>:
                             <input type="email" name="email" placeholder="E-mail" required>
                         </div>
                         <div class="form__group">
-                            <label for="description">Please right your message below</label>
+                            <label for="description">Please right your message below:</label>
                             <textarea rows = "5" cols = "30" name = "description">
                              </textarea>
                         </div>
