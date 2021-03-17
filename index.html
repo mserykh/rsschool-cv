@@ -6,116 +6,110 @@
     <link rel="stylesheet" href="style.css">
     <title>Maria Serykh - Junior Front-End Developer</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="fontawesome/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="page-header">
         <div class="page-header__inner">
-            <nav class="main-header-nav">
+            <nav class="page-header-nav">
                 <div class="logo">
                     <a class="logo-link" href="#">
                         <div class="logo__icon"></div>
-                        <div class="logo__text">Maria Serykh <span>/ FRONT-END DEVELOPER</span></div>
+                        <div class="logo__desc"><span  class="logo__name">Maria Serykh</span><span class="logo__text"> / FRONT-END DEVELOPER</span></div>
                     </a>
                 </div>
                 <ul class="site-navigation">
-                    <li class="site-navigation__item"><a href="#">My technical skills</a></li>
-                    <li class="site-navigation__item"><a href="#">My recent projects</a></li>
-                    <li class="site-navigation__item"><a href="#">Experince</a></li>
-                    <li class="site-navigation__item"><a href="#">Education</a></li>
-                    <li class="site-navigation__item"><a href="#">Code examples</a></li>
-                    <li class="site-navigation__item"><a href="#">Languages</a></li>
-                    <li class="site-navigation__item"><a href="#">Contact</a></li>
+                    <li class="site-navigation__item"><a class="site-navigation__link" href="#skills">MY TECHNICAL SKILLS</a></li>
+                    <li class="site-navigation__item"><a class="site-navigation__link" href="#projects">MY RECENT PROJECT</a></li>
+                    <li class="site-navigation__item"><a class="site-navigation__link" href="#experience">EXPERIENCE</a></li>
+                    <li class="site-navigation__item"><a class="site-navigation__link" href="#education">EDUCATION</a></li>
+                    <li class="site-navigation__item"><a class="site-navigation__link" href="#code">CODE EXAMPLES</a></li>
+                    <li class="site-navigation__item"><a class="site-navigation__link" href="#lang">LANGUAGES</a></li>
+                    <li class="site-navigation__item"><a class="site-navigation__link" href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <h1 class="visually-hidden">Maria Serykh - Junior Front-End Developer Resume</h1>
-        <div class="wrapper">
+        <div class="main-wrapper">
             <section class="about-me">
-                <div class="section-wrapper">
-                    <div class="section section--main">
-                        <div class="section__col section__col--left section__col--photo" style="background-color:rgb(230, 218, 206)">
-                            <div class="about-me__img-container">
-                                <img class="about-me__img" src="images/photo.jpg" alt="" width="250px">
-                            </div>
-                            <h2 class="section__name">Maria Serykh</h2>
-                            <h3 class="section__job">Front-End Developer</h3>
-                            <ul class="contact-links">
-                                <li><a href="#" class="contact-links__link">Github</a></li>
-                                <li><a href="#" class="contact-links__link">Linkedin</a></li>
-                                <li><a href="#" class="contact-links__link">Email</a></li>
-                            </ul>
+                    <div class="section--main">
+                        <div class="section__col section__col--photo">
+                                <div class="about-me__img-container">
+                                    <img class="about-me__img" src="images/photo.jpg" alt="">
+                                </div>
+                                <p class="section__name">Maria Serykh</h2>
+                                <div class="section__divider"></div>
+                                <p class="section__job">FRONT-END DEVELOPER</h3>
+                                <ul class="contact-links">
+                                    <li class="contact-links__item"><a href="#" class="contact-links__link"><i class="fab fa-github"></i></a></li>
+                                    <li class="contact-links__item"><a href="#" class="contact-links__link"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li class="contact-links__item"><a href="#" class="contact-links__link"><i class="fas fa-envelope"></i></a></li>
+                              </ul>
                         </div>
-                        <div class="section__col section__col--right" style="background-color:rgb(255, 255, 255)">
+                        <div class="section__col section__col--right">
                              <p class="section__greeting">Hello!</p>
                             <p>🌱 I am Junior Front-End developer with a passion for good user experience and accessibility.</p>
                             <p>👯 I’m looking for collaboration in non-profit/commercial projects in Education and Science.</p>
                             <p>👩 Pronouns: she / her</p>
                         </div>
-                        </div>
                     </div>
-                </div>
             </section>
             <section class="skills">
-                <h2>
+                <h2 id="skills">
                     My technical skills
                 </h2>
-                <div class="section " style="background-color:rgb(255, 255, 255)">
-                    <div class="section__col">
-                        <ul>
-                            <li>Git</li>
-                            <li>Jira, Confluence</li>
-                            <li>Figma, Photoshop, Illustrator</li>
-                            <li>HTML, CSS</li>
-                            <li>JavaScript</li>
+                <div class="section">
+                        <ul class="list__items">
+                            <li class="list__item">Git</li>
+                            <li class="list__item">Jira, Confluence</li>
+                            <li class="list__item">Figma, Photoshop, Illustrator</li>
+                            <li class="list__item">HTML, CSS</li>
+                            <li class="list__item">JavaScript</li>
                         </ul>
-                    </div>
                 </div>
             </section>
             <section class="projects">
-                <h2>
+                <h2 id="projects">
                     My recent projects
                 </h2>
-                <div class="section" style="background-color:rgb(255, 255, 255)">
-                    <div class="section__col section__col--left">
+                <div class="section section--clear">
+                    <div class="column--left">
                         <h3 class="section__title"><a href="https://codepen.io/trifle-on-a-stick/pen/PoGxxOJ">Add a unicorn - JS</a></h3>
                         <p>Here goes a small description of the project</p>
                     </div>
-                    <div class="section__col section__col--right">
-                        <div class="section__img-container">
-                            <img src="images/project1.jpg" alt="" width="250px" aria-labelledby="img_1">
+                    <div class="column--right">
+                        <div class="section__img-container unicorn">
                         </div>
                     </div>
                 </div>
-                <div class="section" style="background-color:rgb(255, 255, 255)">
-                    <div class="section__col section__col--left">
+                <div class="section section--clear link-wrapper">
+                    <div class="column--left">
                         <h3 class="section__title"><a href="https://codepen.io/trifle-on-a-stick/pen/zYvPwmo">May the 4 be with you - Pure CSS - Pure CSS</a></h3>
                         <p>Here goes a small description of the project</p>
                     </div>
-                    <div class="section__col section__col--right">
-                        <div class="section__img-container">
-                            <img src="images/project2.jpg" alt="" width="250px" aria-labelledby="img_2"></div>
+                    <div class="column--right">
+                        <div class="section__img-container yoda">
+                    </div>
                     </div>
                 </div>
-                <div class="section" style="background-color:rgb(255, 255, 255)">
-                    <div class="section__col section__col--left">
-                        <h3 class="section__title"><a href="https://codepen.io/trifle-on-a-stick/pen/bGVeGrV"></a>Planet and a Balloon - Pure CSS</h3>
+                <div class="section section--clear link-wrapper">
+                    <div class="column--left">
+                        <h3 class="section__title"><a href="https://codepen.io/trifle-on-a-stick/pen/bGVeGrV">Planet and a Balloon - Pure CSS</a></h3>
                         <p>Here goes a small description of the project</p>
                     </div>
-                    <div class="section__col section__col--right">
-                        <div class="section__img-container">
-                            <img src="images/project3.jpg" alt="" width="250px" aria-labelledby="img_3">
+                    <div class="column--right">
+                        <div class="section__img-container ballon">
                         </div>
                     </div>
                 </div>
             </section>
             <section class="experience">
-                <h2>Experience</h3>
-                    <div class="section" style="background-color:rgb(255, 255, 255)">
-                        <div class="section__col section--left">
+                <h2 id="experience">Experience</h3>
+                    <div class="section section--clear">
+                        <div class="column--thin">
                             <p class="section__year">
                                 2018 – 2019
                             </p>
@@ -125,14 +119,13 @@
                             <p class="section__company">
                                 Amazon – Gdansk, Poland
                             </p>
-
                         </div>
-                        <div class="section__col section--left">
+                        <div class="column--wide">
                             <p>Here goes a description of responsibilities, achievements, results and so on</p>
                         </div>
                     </div>
-                    <div class="section" style="background-color:rgb(255, 255, 255)">
-                        <div class="section__col section--left">
+                    <div class="section section--clear">
+                        <div class="column--thin">
                             <p class="section__year">
                                 2014 – 2016
                             </p>
@@ -142,17 +135,16 @@
                             <p class="section__company">
                                 KAMIS Museum Systems St. Petersburg, Russia
                             </p>
-
                         </div>
-                        <div class="section__col section--left">
+                        <div class="column--wide">
                             <p>Here goes a description of responsibilities, achievements, results and so on</p>
                         </div>
                     </div>
             </section>
             <section class="education">
-                <h2>Education</h3>
-                    <div class="section" style="background-color:rgb(255, 255, 255)">
-                        <div class="section__col section--left">
+                <h2 id="education">Education</h3>
+                    <div class="section section--clear">
+                        <div class="column--thin">
                             <p class="section__year">
                                 2021
                             </p>
@@ -164,12 +156,12 @@
                             </p>
 
                         </div>
-                        <div class="section__col section--left">
+                        <div class="column--wide">
                             <p>Here goes a description of achievements, results and so on.</p>
                         </div>
                     </div>
-                    <div class="section" style="background-color:rgb(255, 255, 255)">
-                        <div class="section__col section--left">
+                    <div class="section section--clear">
+                        <div class="column--thin">
                             <p class="section__year">
                                 2004 - 2010
                             </p>
@@ -181,15 +173,15 @@
                             </p>
 
                         </div>
-                        <div class="section__col section--left">
+                        <div class="column--wide">
                             <p>Here goes a description of achievements, results and so on.</p>
                         </div>
                     </div>
             </section>
             <section class="code-examples">
-                <h2>Code examples</h3>
-                    <div class="section">
-                        <div class="section__col">
+                <h2 id="code">Code examples</h3>
+                    <div class="section  section--code">
+                        <div class="section__col--right" >
                             <pre>
 let dieValue = Math.floor((Math.random() * 6) + 1);
 let destination;
@@ -207,39 +199,41 @@ console.log(`Next time we are going to ${destination}`);</pre>
                     </div>
             </section>
             <section class="languages">
-                <h2>Languages</h3>
-                    <div class="section " style="background-color:rgb(255, 255, 255)">
-                        <div class="section__col">
-                            <ul>
-                                <li>English (fluent)</li>
-                                <li>Russian (native)</li>
-                                <li>French (B1)</li>
-                                <li>Polish (B1)</li>
+                <h2 id="lang">Languages</h3>
+                    <div class="section">
+                            <ul class="list__items">
+                                <li class="list__item">English (fluent)</li>
+                                <li class="list__item">Russian (native)</li>
+                                <li class="list__item">French (B1)</li>
+                                <li class="list__item">Polish (B1)</li>
+                                <li class="list__item">JavaScript (basic)</li>
                             </ul>
-                        </div>
                     </div>
             </section>
             <section class="contact-me">
-                <h2>Let's talk</h2>
-                <p>Do you have a project you want to collaborate on? Do you need help to tackle a technical task? Or you want to discuss anything about technologies, education or science?</p>
-                <p>Will be happy to hear from you!</p>
-                <div class="section section__col">
-                    <form action="" class="form">
-                        <div class="form__group">
-                            <label for="name">Name</label><span class="required">*</span>:
-                            <input type="text" name="name" placeholder="Name" required>
-                        </div>
-                        <div class="form__group">
-                            <label for="email">E-mail</label><span class="required">*</span>:
-                            <input type="email" name="email" placeholder="E-mail" required>
-                        </div>
-                        <div class="form__group">
-                            <label for="description">Please right your message below:</label>
-                            <textarea rows = "5" cols = "30" name = "description">
-                             </textarea>
-                        </div>
-                        <button type="submit">Send</button>
-                    </form>
+                <h2 class="contact-me__title" id="contact">Let's talk</h2>
+                <p class="contact-me__text">
+                    Do you have a project you want to collaborate on? Do you need help to tackle a technical task? Or you want to discuss anything about technologies, education or science? Will be happy to hear from you!
+                </p>
+                <div class="section">
+                    <div class="form">
+                        <form action="">
+                            <div class="form__group">
+                                <label for="name">Name</label><span class="required"> *</span>
+                                <input type="text" name="name" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="email">E-mail</label><span class="required"> *</span>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="description">Please write your message below</label>
+                                <textarea rows = "5" cols = "30" name = "description">
+                                </textarea>
+                            </div>
+                            <button class="btn" type="submit">Send</button>
+                        </form>
+                    </div>
                 </div>
             </section>
         </div>
@@ -247,13 +241,13 @@ console.log(`Next time we are going to ${destination}`);</pre>
     <footer class="page-footer">
         <div class="page-footer__inner">
             <div class="page-footer__copyright">
-                © 2021 by Maria Serykh
+                <p>© 2021 by Maria Serykh</p>
             </div>
             <div class="page-footer__contact-links">
                 <ul class="contact-links">
-                    <li><a href="#" class="contact-links__link">Github</a></li>
-                    <li><a href="#" class="contact-links__link">Linkedin</a></li>
-                    <li><a href="#" class="contact-links__link">Email</a></li>
+                    <li class="contact-links__item"><a href="#" class="contact-links__link"><i class="fab fa-github"></i></a></li>
+                    <li class="contact-links__item"><a href="#" class="contact-links__link"><i class="fab fa-linkedin-in"></i></a></li>
+                   <li class="contact-links__item"><a href="#" class="contact-links__link"><i class="fas fa-envelope"></i></a></li>
                 </ul>
             </div>
         </div>
