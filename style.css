@@ -4,15 +4,432 @@
     box-sizing: border-box;
 }
 
-html {
-    font-family: "Red Hat Display", sans-serif;
-    margin: 0 auto;
+body {
+   background-color: #f4ece6;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Red Hat Display", sans-serif;
 }
 
-body {
-   background-color:rgb(244, 236, 230);
+li {
+    list-style: none;
+}
+
+p {
+    line-height: 1.8;
+}
+
+img {
+    display: block;
+}
+
+.page-header {
+    background-color: #ffffff;
+    margin-bottom: 5rem;  
+}
+
+.page-header__inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 0 30px; 
+}
+
+.page-header-nav {
+    min-height: 40px;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+}
+
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo__icon {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.5rem;
+    background-color: #0050ff;
+}
+
+.logo__desc {
+    display: inline-block;
+}
+
+.logo__name {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.logo__text {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.site-navigation {
+    display: inline-block;   
+    text-align: left; 
+}
+
+.site-navigation__item {
+    display: inline;
+}
+
+.site-navigation__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+}
+
+.site-navigation__link:hover {
+    border-radius: 3rem;
+    background-color: #0050ff;
+    color: #ffffff;
+}
+.site-navigation__link:active {
+    background-color: transparent;
+    border: 2px solid#0050ff;
+    color: #000000;
+}
+
+.main-wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+  section {
+      margin-bottom: 3rem;
+  }
+
+.section {
+    margin: 0 auto;
+    width: 700px;
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.section:hover {
+    box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.section--main {
+    width: 800px;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+h2:before {
+    position: absolute;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background-color: #0050ff;
+    margin-left: -1.5rem;
+    top: 0.5rem;
+}
+
+.section__col {
+    vertical-align: middle;
+}
+
+.section__col--photo {
+    background-color: #e6dace;
+    width: 350px;
+    box-shadow: -8px 4px 15px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: inline-block;
+}
+
+.section__col--right {
+    display: inline-block;    
+    max-width: 440px;    
+    padding: 2rem;
 }
 
 .about-me__img {
+    display: inline-block;
+    width: 200px;
     border-radius: 50%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section__name {
+    width: 150px;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1.9rem;
+}
+
+.section__divider {
+    margin: 0 auto;
+    width: 60px;
+    height: 2px;
+    background-color: #0050ff;
+    margin-bottom: 1.5rem;
+}
+
+.section__job {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.section__greeting {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.contact-links {
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+.contact-links__item {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.contact-links__link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.fab, .fas {
+    font-size: 1.25rem;
+    color: #000000;
+}
+
+.fab:hover, .fas:hover {
+    color: #0050ff;
+}
+
+.list__items {
+    padding: 2rem;
+}
+
+.list__item {
+    position: relative;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.list__item:before {
+    position: absolute;
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #0050ff;
+    top: 0.25rem;
+    left: -1.5rem;
+}
+
+.section__title {
+    color: #0050FF;
+}
+
+.section__img-container {
+    height: 220px;
+    width: 250px;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.section--clear {
+    overflow: auto;
+}
+
+.column--thin {
+    width: 40%;
+    float: left;
+    padding: 2rem;
+}
+
+.column--wide {
+    width: 60%;
+    float: right;
+    padding: 2rem;
+}
+
+.column--left {
+    padding: 2rem;
+    float: left;
+    max-width: 60%;
+}
+
+.column--right {
+    float: right;
+}
+
+.section__title a {
+    text-decoration: none;
+    color: #0050ff;
+    font-weight: 900;
+    font-size: 1.25rem;
+
+}
+
+.section__title a:hover {
+    text-decoration: underline;
+}
+
+.section__title {
+    position: relative;
+}
+
+.section__title:before {
+    position: absolute;
+    content: '';
+    width: 0.75rem;
+    height: 3.5rem;
+    background-color: #0050ff;
+    left: -2rem;
+} 
+
+
+.unicorn {
+    background-image: url('../images/project1.jpg');
+}
+
+.yoda {
+    background-image: url('../images/project2.jpg');
+}
+
+.ballon {
+    background-image: url('../images/project3.jpg');
+}
+
+.section__year {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #0050ff;
+}
+
+.section__position, .section__degree {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.section__company {
+    font-style: italic;
+}
+
+.section--code {
+    background-color: #e6dace;
+    color: #555555;
+}
+
+.contact-me__title {
+    margin-bottom: 1rem;
+}
+
+.contact-me__text {
+    margin-bottom: 2rem;
+}
+
+.form {
+    padding: 2rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.required {
+    color: #0050ff;
+}
+
+.form__group {
+    margin-bottom: 1.5rem;
+    width: 300px;
+}
+
+input, textarea {
+    display: block;
+    height: 2.75rem;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000000;
+}
+
+textarea {
+    height: 5rem;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000000;
+}
+
+input:hover, textarea:hover {
+    border-bottom: 2px solid #0050ff;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 2px solid #0050ff;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-family: "Red Hat Display", sans-serif;;
+    font-weight: 900;
+    font-size: 0.8rem;
+    background-color: #0050ff;
+    border: 2px solid #0050ff;
+    color: #ffffff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn:hover, .btn:active {
+    background-color: #ffffff;
+    border: 2px solid #0050ff;
+    color: #000000;
+    font-weight: 900;
+}
+
+.page-footer {
+    background-color: #ffffff;
+}
+
+.page-footer__inner {
+    overflow: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 0; 
+}
+
+.page-footer__copyright {
+    float: left;
+    font-size: 0.85rem;
+    padding: 1rem;
+}
+
+.page-footer__contact-links {
+    float: right;
+    height: 3.5rem;
 }
