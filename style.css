@@ -312,15 +312,15 @@ h2:before {
 
 
 .unicorn {
-    background-image: url('../images/project1.jpg');
+    background-image: url('images/project1.jpg');
 }
 
 .yoda {
-    background-image: url('../images/project2.jpg');
+    background-image: url('images/project2.jpg');
 }
 
 .ballon {
-    background-image: url('../images/project3.jpg');
+    background-image: url('images/project3.jpg');
 }
 
 .section__year {
