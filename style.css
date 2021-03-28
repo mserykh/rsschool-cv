@@ -9,6 +9,27 @@ body {
    color: #000000;
    font-size: 16px;
    font-family: "Red Hat Display", sans-serif;
+   transition: all .5s ease;
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+h2:before {
+    position: absolute;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background-color: #0050ff;
+    margin-left: -1.5rem;
+    top: 0.5rem;
 }
 
 li {
@@ -25,13 +46,12 @@ img {
 
 .page-header {
     background-color: #ffffff;
-    margin-bottom: 5rem;  
 }
 
 .page-header__inner {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 40px 0 30px; 
+    padding: 40px 2rem 30px; 
 }
 
 .page-header-nav {
@@ -54,7 +74,7 @@ img {
     display: inline-block;
     width: 1rem;
     height: 1rem;
-    margin: 0 0.5rem;
+    margin-right: 0.5rem;
     background-color: #0050ff;
 }
 
@@ -102,7 +122,8 @@ img {
 
 .main-wrapper {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 900px;
+    padding: 0 2rem;
 }
 
 .visually-hidden {
@@ -113,58 +134,53 @@ img {
     margin: -1px;
   }
 
-  section {
-      margin-bottom: 3rem;
-  }
+section {
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
 
 .section {
     margin: 0 auto;
-    width: 700px;
+    max-width: 700px;
     background-color: #ffffff;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section:last-child {
+    margin-bottom: 0;
 }
 
 .section:hover {
     box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
+.about-me {
+    margin-top: 5vw;
+}
+
 .section--main {
-    width: 800px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
     margin-bottom: 5rem;
-}
-
-h2 {
-    margin-bottom: 2rem;
-    margin-left: 1.5rem;
-    position: relative;
-}
-
-h2:before {
-    position: absolute;
-    content: '';
-    width: 1rem;
-    height: 1rem;
-    background-color: #0050ff;
-    margin-left: -1.5rem;
-    top: 0.5rem;
-}
-
-.section__col {
-    vertical-align: middle;
 }
 
 .section__col--photo {
     background-color: #e6dace;
-    width: 350px;
+    flex: 0 0 320px;
     box-shadow: -8px 4px 15px 2px rgba(0, 0, 0, 0.2);
     text-align: center;
-    display: inline-block;
 }
 
 .section__col--right {
     display: inline-block;    
-    max-width: 440px;    
-    padding: 2rem;
+    flex: 1 1 440px;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
 }
 
 .about-me__img {
@@ -200,11 +216,13 @@ h2:before {
 }
 
 .section__greeting {
-    font-size: 5rem;
+    font-size: 6vmax;
     font-weight: 900;
 }
 
 .contact-links {
+    display: flex;
+    justify-content: center;
     background-color: #ffffff;
     padding: 1rem;
 }
@@ -238,6 +256,10 @@ h2:before {
     margin-bottom: 1rem;
 }
 
+.list__item:last-child {
+    margin-bottom: 0rem;
+}
+
 .list__item:before {
     position: absolute;
     content: '';
@@ -264,25 +286,19 @@ h2:before {
 }
 
 .column--thin {
-    width: 40%;
-    float: left;
+    width: 50%;
     padding: 2rem;
 }
 
 .column--wide {
-    width: 60%;
-    float: right;
     padding: 2rem;
 }
 
 .column--left {
     padding: 2rem;
-    float: left;
-    max-width: 60%;
 }
 
 .column--right {
-    float: right;
 }
 
 .section__title a {
@@ -290,7 +306,6 @@ h2:before {
     color: #0050ff;
     font-weight: 900;
     font-size: 1.25rem;
-
 }
 
 .section__title a:hover {
@@ -310,6 +325,18 @@ h2:before {
     left: -2rem;
 } 
 
+.projects__section {
+    position: relative;
+}
+
+.link-wrapper::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 .unicorn {
     background-image: url('images/project1.jpg');
@@ -340,11 +367,6 @@ h2:before {
     font-style: italic;
 }
 
-.section--code {
-    background-color: #e6dace;
-    color: #555555;
-}
-
 .contact-me__title {
     margin-bottom: 1rem;
 }
@@ -354,9 +376,14 @@ h2:before {
 }
 
 .form {
-    padding: 2rem;
+    padding: 4rem 2rem;
     margin: 0 auto;
     width: 100%;
+}
+
+.form-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .required {
@@ -365,13 +392,13 @@ h2:before {
 
 .form__group {
     margin-bottom: 1.5rem;
-    width: 300px;
 }
 
 input, textarea {
     display: block;
-    height: 2.75rem;
     width: 100%;
+    max-width: 100%;;
+    height: 2.75rem;
     border: none;
     border-bottom: 2px solid #000000;
 }
@@ -379,6 +406,7 @@ input, textarea {
 textarea {
     height: 5rem;
     width: 100%;
+    max-width: 100%;;
     border: none;
     border-bottom: 2px solid #000000;
 }
@@ -392,6 +420,7 @@ input:focus, textarea:focus {
 }
 
 .btn {
+    display: block;
     text-transform: uppercase;
     font-family: "Red Hat Display", sans-serif;;
     font-weight: 900;
@@ -417,19 +446,93 @@ input:focus, textarea:focus {
 }
 
 .page-footer__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     overflow: auto;
     max-width: 800px;
     margin: 0 auto;
     padding: 1rem 0; 
+    text-align: center;
 }
 
 .page-footer__copyright {
-    float: left;
     font-size: 0.85rem;
     padding: 1rem;
 }
 
-.page-footer__contact-links {
-    float: right;
-    height: 3.5rem;
+.btn--to-top {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 99; 
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.2s;
+}
+
+@media (max-width: 700px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .projects__section {
+        width: 250px;
+    }
+
+    .column--thin {
+        width: 100%;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-wrapper {
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 0 1rem;
+    }
+
+    .list__items {
+        padding: 2rem 1rem;
+    }
+
+    .column--left {
+        padding: 2rem 1rem;
+    }
+
+    .column--thin {
+        padding: 2rem 1rem;
+        padding-bottom: 0;
+    }
+
+    .column--wide {
+        padding: 2rem 1rem;
+    }
+
+    .form {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .main-wrapper {
+        padding: 0;
+    }
+
+    section {
+        padding: 0;
+    }
+}
+
+@media (hover: none) {
+    .btn--to-top {
+        display: none;
+    }
 }
