@@ -1,5 +1,5 @@
 const scrollToTopButton = document.getElementById("scrollToTop");
-
+  
 const scrollFunction = () => {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         scrollToTopButton.style.display = "block";

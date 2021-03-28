@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Maria Serykh - Junior Front-End Developer</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="fontawesome/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap" rel="stylesheet">
 </head>
@@ -24,7 +23,6 @@
                     <li class="site-navigation__item"><a class="site-navigation__link" href="#projects">MY RECENT PROJECT</a></li>
                     <li class="site-navigation__item"><a class="site-navigation__link" href="#experience">EXPERIENCE</a></li>
                     <li class="site-navigation__item"><a class="site-navigation__link" href="#education">EDUCATION</a></li>
-                    <li class="site-navigation__item"><a class="site-navigation__link" href="#code">CODE EXAMPLES</a></li>
                     <li class="site-navigation__item"><a class="site-navigation__link" href="#lang">LANGUAGES</a></li>
                     <li class="site-navigation__item"><a class="site-navigation__link" href="#contact">CONTACT</a></li>
                 </ul>
@@ -52,7 +50,7 @@
                         <div class="section__col section__col--right">
                              <p class="section__greeting">Hello!</p>
                             <p>🌱 I am Junior Front-End developer with a passion for good user experience and accessibility.</p>
-                            <p>👯 I’m looking for collaboration in non-profit/commercial projects in Education and Science.</p>
+                            <p>👯 I’m looking for collaboration in non-profit / commercial projects in Education and Science.</p>
                             <p>👩 Pronouns: she / her</p>
                         </div>
                     </div>
@@ -75,36 +73,42 @@
                 <h2 id="projects">
                     My recent projects
                 </h2>
-                <div class="section section--clear">
+                <article class="projects__section section section--clear">
                     <div class="column--left">
-                        <h3 class="section__title"><a href="https://codepen.io/trifle-on-a-stick/pen/PoGxxOJ">Add a unicorn - JS</a></h3>
+                        <h3 class="section__title">
+                            <a href="https://codepen.io/trifle-on-a-stick/pen/PoGxxOJ" class="link-wrapper" target="_blank">Add a unicorn - JS</a>
+                        </h3>
                         <p>Here goes a small description of the project</p>
                     </div>
                     <div class="column--right">
                         <div class="section__img-container unicorn">
                         </div>
                     </div>
-                </div>
-                <div class="section section--clear link-wrapper">
+                </article>
+                <article class="projects__section section section--clear">
                     <div class="column--left">
-                        <h3 class="section__title"><a href="https://codepen.io/trifle-on-a-stick/pen/zYvPwmo">May the 4 be with you - Pure CSS - Pure CSS</a></h3>
+                        <h3 class="section__title">
+                            <a href="https://codepen.io/trifle-on-a-stick/pen/zYvPwmo" class="link-wrapper" target="_blank">May the 4 be with you - Pure CSS - Pure CSS</a>
+                        </h3>
                         <p>Here goes a small description of the project</p>
                     </div>
                     <div class="column--right">
                         <div class="section__img-container yoda">
                     </div>
                     </div>
-                </div>
-                <div class="section section--clear link-wrapper">
+                </article>
+                <article class="projects__section section section--clear">
                     <div class="column--left">
-                        <h3 class="section__title"><a href="https://codepen.io/trifle-on-a-stick/pen/bGVeGrV">Planet and a Balloon - Pure CSS</a></h3>
+                        <h3 class="section__title">
+                            <a href="https://codepen.io/trifle-on-a-stick/pen/bGVeGrV" class="link-wrapper" target="_blank">Planet and a Balloon - Pure CSS</a>
+                        </h3>
                         <p>Here goes a small description of the project</p>
                     </div>
                     <div class="column--right">
                         <div class="section__img-container ballon">
                         </div>
                     </div>
-                </div>
+                </article>
             </section>
             <section class="experience">
                 <h2 id="experience">Experience</h3>
@@ -178,26 +182,6 @@
                         </div>
                     </div>
             </section>
-            <section class="code-examples">
-                <h2 id="code">Code examples</h3>
-                    <div class="section  section--code">
-                        <div class="section__col--right" >
-                            <pre>
-let dieValue = Math.floor((Math.random() * 6) + 1);
-let destination;
-                                
-if (dieValue >= 5) {
-    destination = 'New York';
-    } else if (dieValue === 4) {
-        destination = 'Venice';
-    } else {
-        destination = 'London';
-    }
-                                
-console.log(`Next time we are going to ${destination}`);</pre>
-                        </div>
-                    </div>
-            </section>
             <section class="languages">
                 <h2 id="lang">Languages</h3>
                     <div class="section">
@@ -218,20 +202,22 @@ console.log(`Next time we are going to ${destination}`);</pre>
                 <div class="section">
                     <div class="form">
                         <form action="">
-                            <div class="form__group">
-                                <label for="name">Name</label><span class="required"> *</span>
-                                <input type="text" name="name" required>
+                            <div class="form-wrapper">
+                                <div class="form__group">
+                                    <label for="name">Name</label><span class="required"> *</span>
+                                    <input type="text" name="name" required>
+                                </div>
+                                <div class="form__group">
+                                    <label for="email">E-mail</label><span class="required"> *</span>
+                                    <input type="email" name="email" required>
+                                </div>
+                                <div class="form__group">
+                                    <label for="description">Please write your message below</label>
+                                    <textarea rows = "5" cols = "30" name = "description">
+                                    </textarea>
+                                </div>
+                                <button class="btn" type="submit">Send</button>
                             </div>
-                            <div class="form__group">
-                                <label for="email">E-mail</label><span class="required"> *</span>
-                                <input type="email" name="email" required>
-                            </div>
-                            <div class="form__group">
-                                <label for="description">Please write your message below</label>
-                                <textarea rows = "5" cols = "30" name = "description">
-                                </textarea>
-                            </div>
-                            <button class="btn" type="submit">Send</button>
                         </form>
                     </div>
                 </div>
