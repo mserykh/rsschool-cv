@@ -228,11 +228,6 @@ section {
     gap: 1rem;
 }
 
-.contact-links__item {
-    display: inline-block;
-    margin-right: 1rem;
-}
-
 .contact-links__link {
     text-decoration: none;
     color: #000000;
