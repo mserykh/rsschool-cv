@@ -277,10 +277,6 @@ section {
     background-size: cover;
 }
 
-.section--clear {
-    overflow: auto;
-}
-
 .column--thin {
     width: 50%;
     padding: 2rem;
@@ -294,25 +290,19 @@ section {
     padding: 2rem;
 }
 
-.column--right {
-}
-
-.section__title a {
-    text-decoration: none;
+.section__title {
+    position: relative;
     color: #0050ff;
     font-weight: 900;
     font-size: 1.25rem;
+    margin-bottom: 1rem;
 }
 
-.section__title a:hover {
+.projects__section:hover .section__title {
     text-decoration: underline;
 }
 
-.section__title {
-    position: relative;
-}
-
-.section__title:before {
+.section__title::before {
     position: absolute;
     content: '';
     width: 0.75rem;
@@ -332,6 +322,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index:3;
   }
 
 .unicorn {
@@ -514,6 +505,11 @@ input:focus, textarea:focus {
 
     .form {
         padding: 2rem 1rem;
+    }
+
+    .section__title::before {
+        width: 0.5rem;
+        left: -1rem;
     }
 }
 
