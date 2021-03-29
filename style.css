@@ -224,7 +224,7 @@ section {
     display: flex;
     justify-content: center;
     background-color: #ffffff;
-    padding: 1rem;
+    gap: 1rem;
 }
 
 .contact-links__item {
