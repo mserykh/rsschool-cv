@@ -224,6 +224,7 @@ section {
     display: flex;
     justify-content: center;
     background-color: #ffffff;
+    padding: 1rem 0;
     gap: 1rem;
 }
 
