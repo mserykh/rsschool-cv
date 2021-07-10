@@ -17,7 +17,7 @@ Junior Front-End developer with a passion for good user experience and accessibi
 
 ### Projects
 
-🦄 [Add a unicorn - JS](https://codepen.io/trifle-on-a-stick/pen/PoGxxOJ)
+🦄 [Restaurant landing page - HTML, CSS](https://mserykh.github.io/layout-restaurant/)
 
 🦄 [May the 4 be with you - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/zYvPwmo)
 
@@ -46,18 +46,17 @@ Master of Mechanics and Mathematics
 ### Code examples
 
 ```javascript
-let dieValue = Math.floor((Math.random() * 6) + 1);
-let destination;
+function createFunctions(n) {
+  var callbacks = [];
 
-if (dieValue >= 5) {
-  destination = 'New York';
-} else if (dieValue === 4) {
-  destination = 'Venice';
-} else {
-  destination = 'London';
+  for (let i = 0; i < n; i++) {
+    callbacks.push(function() {
+      return i;
+    });
+  }
+  
+  return callbacks;
 }
-
-console.log(`Next time we are going to ${destination}`);
 ```
 
 ### Languages
