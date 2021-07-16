@@ -16,13 +16,13 @@ body {
    justify-content: space-between;
 }
 
-h2 {
+.title {
     margin-bottom: 2rem;
     margin-left: 1.5rem;
     position: relative;
 }
 
-h2:before {
+.title:before {
     position: absolute;
     content: '';
     width: 1rem;
