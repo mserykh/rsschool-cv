@@ -224,9 +224,15 @@ section {
 .contact-links {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     padding: 1rem 0;
     gap: 1rem;
+}
+
+.contact-links__link {
+    text-decoration: none;
+    color: #000000;
 }
 
 .contact-links__link {
@@ -447,17 +453,32 @@ input:focus, textarea:focus {
 .page-footer__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
     flex-wrap: wrap;
-    overflow: auto;
     max-width: 800px;
     margin: 0 auto;
-    padding: 1rem 0; 
-    text-align: center;
+    padding: 1rem; 
+}
+
+.contact-links__item--rss {
+    position: relative;
+}
+
+.contact-links__item--rss:hover .rsslogo-hover {
+    display: inline;
+}
+
+.rsslogo-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
 }
 
 .page-footer__copyright {
     font-size: 0.85rem;
-    padding: 1rem;
 }
 
 .btn--to-top {
