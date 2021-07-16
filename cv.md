@@ -22,9 +22,9 @@ Junior Front-End developer with a passion for good user experience and accessibi
 
 ### Projects
 
-- [Restaurant landing page - HTML, CSS](https://mserykh.github.io/layout-restaurant/)\
+- [Restaurant landing page - HTML, CSS](https://mserykh.github.io/layout-restaurant/)
 
-- [May the 4 be with you - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/zYvPwmo)\
+- [May the 4 be with you - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/zYvPwmo)
 
 - [Planet and a Balloon - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/bGVeGrV)
 
