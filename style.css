@@ -338,15 +338,15 @@ section {
   }
 
 .unicorn {
-    background-image: url('../images/content/project1.jpg');
+    background-image: url('images/content/project1.jpg');
 }
 
 .yoda {
-    background-image: url('..images/content/project2.jpg');
+    background-image: url('images/content/project2.jpg');
 }
 
 .ballon {
-    background-image: url('..images/content/project3.jpg');
+    background-image: url('images/content/project3.jpg');
 }
 
 .section__year {
