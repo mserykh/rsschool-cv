@@ -3,8 +3,8 @@ Junior Front-End developer with a passion for good user experience and accessibi
 
 ### Contact me
 
-[MAIL](marie.serykh@gmail.com)
-[GITHUB](https://github.com/mserykh)
+[EMAIL](marie.serykh@gmail.com)\
+[GITHUB](https://github.com/mserykh)\
 [LINKEDIN](https://www.linkedin.com/in/mariaserykh/)
 
 ### Position
