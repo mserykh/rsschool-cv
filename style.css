@@ -152,7 +152,7 @@ section {
     margin-bottom: 0;
 }
 
-.section:hover {
+.projects__section:hover {
     box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -246,6 +246,10 @@ section {
     padding: 2rem;
 }
 
+.list__items--small {
+    padding: 0;
+}
+
 .list__item {
     position: relative;
     margin-left: 2rem;
@@ -266,6 +270,13 @@ section {
     left: -1.5rem;
 }
 
+.list__item--small:before {
+    width: 0.5rem;
+    height: 0.5rem;
+    top: 0.5rem;
+    left: -1rem;
+}
+
 .section__title {
     color: #0050FF;
 }
@@ -278,7 +289,7 @@ section {
 }
 
 .column--thin {
-    width: 50%;
+    max-width: 40%;
     padding: 2rem;
 }
 
@@ -472,7 +483,7 @@ input:focus, textarea:focus {
     }
 
     .column--thin {
-        width: 100%;
+        max-width: 100%;
         padding-bottom: 0;
     }
 }
