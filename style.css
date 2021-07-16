@@ -16,22 +16,6 @@ body {
    justify-content: space-between;
 }
 
-.title {
-    margin-bottom: 2rem;
-    margin-left: 1.5rem;
-    position: relative;
-}
-
-.title:before {
-    position: absolute;
-    content: '';
-    width: 1rem;
-    height: 1rem;
-    background-color: #0050ff;
-    margin-left: -1.5rem;
-    top: 0.5rem;
-}
-
 li {
     list-style: none;
 }
@@ -114,6 +98,7 @@ img {
     background-color: #0050ff;
     color: #ffffff;
 }
+
 .site-navigation__link:active {
     background-color: transparent;
     border: 2px solid#0050ff;
@@ -158,6 +143,22 @@ section {
 
 .about-me {
     margin-top: 5vw;
+}
+
+.title {
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.title:before {
+    position: absolute;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background-color: #0050ff;
+    margin-left: -1.5rem;
+    top: 0.5rem;
 }
 
 .section--main {
@@ -337,15 +338,15 @@ section {
   }
 
 .unicorn {
-    background-image: url('images/project1.jpg');
+    background-image: url('../images/content/project1.jpg');
 }
 
 .yoda {
-    background-image: url('images/project2.jpg');
+    background-image: url('..images/content/project2.jpg');
 }
 
 .ballon {
-    background-image: url('images/project3.jpg');
+    background-image: url('..images/content/project3.jpg');
 }
 
 .section__year {
