@@ -1,13 +1,14 @@
 # Maria Serykh
+Junior Front-End developer with a passion for good user experience and accessibility
 
-**Junior Front-End developer**
 
 ### Contact me
-[:email:]<marie.serykh@gmail.com>
-[:octocat:](https://github.com/mserykh)
-[in](https://www.linkedin.com/in/mariaserykh/)
+marie.serykh@gmail.com\
+[GITHUB](https://github.com/mserykh)\
+[LINKEDIN](https://www.linkedin.com/in/mariaserykh/)\
 
-Junior Front-End developer with a passion for good user experience and accessibility.
+### Position
+**Junior Front-End developer**
 
 ### Skills
 
@@ -20,11 +21,11 @@ Junior Front-End developer with a passion for good user experience and accessibi
 
 ### Projects
 
-🦄 [Restaurant landing page - HTML, CSS](https://mserykh.github.io/layout-restaurant/)
+ :unicorn:  [Restaurant landing page - HTML, CSS](https://mserykh.github.io/layout-restaurant/)\
 
-🦄 [May the 4 be with you - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/zYvPwmo)
+ :unicorn:  [May the 4 be with you - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/zYvPwmo)\
 
-🦄 [Planet and a Balloon - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/bGVeGrV)
+ :unicorn:  [Planet and a Balloon - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/bGVeGrV)
 
 ### Experience
 
