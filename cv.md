@@ -30,6 +30,10 @@ Junior Front-End developer with a passion for good user experience and accessibi
 
 ### Experience
 
+**2019 - 2020 Boeing - AerData** * Amsterdam, Netherlands*
+
+Contract Data Analyst
+
 **2018 – 2019 Amazon** *Gdansk, Poland*
 
 Senior Compliance Associate
@@ -68,5 +72,6 @@ function createFunctions(n) {
 
 - [x] English (Fluent)
 - [x] Russian (Native)
-- [x] French 
-- [x] Polish
+- [x] French (B1)
+- [x] Polish (B1)
+- [x] JavaScript (basic)
