@@ -38,9 +38,9 @@
                                 <div class="about-me__img-container">
                                     <img class="about-me__img" src="images/photo.jpg" alt="">
                                 </div>
-                                <p class="section__name">Maria Serykh</h2>
+                                <h2 class="section__name">Maria Serykh</h2>
                                 <div class="section__divider"></div>
-                                <p class="section__job">FRONT-END DEVELOPER</h3>
+                                <p class="section__job">FRONT-END DEVELOPER</p>
                                 <ul class="contact-links">
                                     <li class="contact-links__item"><a href="https://github.com/mserykh" class="contact-links__link" target="_blank"><i class="fab fa-github"></i></a></li>
                                     <li class="contact-links__item"><a href="https://www.linkedin.com/in/mariaserykh/" class="contact-links__link" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
@@ -56,7 +56,7 @@
                     </div>
             </section>
             <section class="skills">
-                <h2 id="skills">
+                <h2 class="title" id="skills">
                     My technical skills
                 </h2>
                 <div class="section">
@@ -70,7 +70,7 @@
                 </div>
             </section>
             <section class="projects">
-                <h2 id="projects">
+                <h2 class="title" id="projects">
                     My recent projects
                 </h2>
                 <article class="projects__section section">
@@ -79,7 +79,7 @@
                             Restaurant landing page – HTML, CSS
                         </h3>
                         <p>A landing page for a restaurant. Made with BEM and CSS Flexbox layout, responsive.</p>
-                        <p>A task from a <a href="https://rs.school/" targer="_blank">RS School</a> course.</p>
+                        <p>A task from a <a href="https://rs.school/" target="_blank">RS School</a> course.</p>
                         <a href="https://mserykh.github.io/layout-restaurant/" class="link-wrapper" target="_blank"></a>
                     </div>
                     <div class="column--right">
@@ -107,7 +107,7 @@
                             Planet and a Balloon – Pure CSS
                         </h3>
                         <p>First small CSS animation.</p>
-                        <p>Illustration is by <a href="https://dribbble.com/shots/2875657-Planet" target="_blank">MBE.</p>
+                        <p>Illustration is by <a href="https://dribbble.com/shots/2875657-Planet" target="_blank">MBE</a>.</p>
                         <a href="https://codepen.io/trifle-on-a-stick/pen/bGVeGrV" class="link-wrapper" target="_blank"></a>
                     </div>
                     <div class="column--right">
@@ -117,7 +117,7 @@
                 </article>
             </section>
             <section class="experience">
-                <h2 id="experience">Experience</h3>
+                <h2 class="title" id="experience">Experience</h2>
                     <div class="section">
                         <div class="column--thin">
                             <p class="section__year">
@@ -164,7 +164,7 @@
                     </div>
             </section>
             <section class="education">
-                <h2 id="education">Education</h3>
+                <h2 class="title" id="education">Education</h2>
                     <div class="section">
                         <div class="column--thin">
                             <p class="section__year">
@@ -201,7 +201,7 @@
                     </div>
             </section>
             <section class="languages">
-                <h2 id="lang">Languages</h3>
+                <h2 class="title" id="lang">Languages</h2>
                     <div class="section">
                             <ul class="list__items">
                                 <li class="list__item">English (fluent)</li>
@@ -213,13 +213,13 @@
                     </div>
             </section>
             <section class="contact-me">
-                <h2 class="contact-me__title" id="contact">Let's talk</h2>
+                <h2 class="contact-me__title title" id="contact">Let's talk</h2>
                 <p class="contact-me__text">
                     Do you have a project you want to collaborate on? Do you need help to tackle a technical task? Or you want to discuss anything about technologies, education or science? Will be happy to hear from you!
                 </p>
                 <div class="section">
                     <div class="form">
-                        <form action="">
+                        <form action="#">
                             <div class="form-wrapper">
                                 <div class="form__group">
                                     <label for="name">Name</label><span class="required"> *</span>
@@ -227,11 +227,11 @@
                                 </div>
                                 <div class="form__group">
                                     <label for="email">E-mail</label><span class="required"> *</span>
-                                    <input type="email" name="email" required>
+                                    <input type="email" name="email" id="email" required>
                                 </div>
                                 <div class="form__group">
                                     <label for="description">Please write your message below</label>
-                                    <textarea rows = "5" cols = "30" name = "description">
+                                    <textarea rows = "5" cols = "30" name = "description" id="description">
                                     </textarea>
                                 </div>
                                 <button class="btn" type="submit">Send</button>
