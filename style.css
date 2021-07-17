@@ -10,10 +10,10 @@ body {
    font-size: 16px;
    font-family: "Red Hat Display", sans-serif;
    transition: all .5s ease;
-   display: flex;
-   min-height: 100vh;
-   flex-direction: column;
-   justify-content: space-between;
+}
+
+ul {
+    margin: 0;
 }
 
 li {
@@ -28,30 +28,40 @@ img {
     display: block;
 }
 
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .page-header {
     background-color: #ffffff;
 }
 
 .page-header__inner {
-    max-width: 1440px;
+
     margin: 0 auto;
-    padding: 40px 2rem 30px; 
+    max-width: 1400px;
 }
 
 .page-header-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
     min-height: 40px;
-}
-
-.logo {
-    display: inline-block;
-    margin-right: 3rem;
-    margin-bottom: 1rem;
+    padding: 40px 2rem 30px; 
 }
 
 .logo-link {
     display: inline-block;
     text-decoration: none;
     color: #000000;
+    margin-bottom: 1rem;
 }
 
 .logo__icon {
@@ -74,11 +84,6 @@ img {
 .logo__text {
     font-weight: 400;
     font-size: 1.1rem;
-}
-
-.site-navigation {
-    display: inline-block;   
-    text-align: left; 
 }
 
 .site-navigation__item {
@@ -296,13 +301,12 @@ section {
 }
 
 .column--thin {
-    width: 250px;
-    max-width: 100%;
+    max-width: 250px;
     padding: 2rem;
 }
 
 .column--wide {
-    width: 450px;
+    max-width: 450px;
     max-width: 100%;
     padding: 2rem;
 }
@@ -451,6 +455,7 @@ input:focus, textarea:focus {
 
 .page-footer {
     background-color: #ffffff;
+    width: 100%;
 }
 
 .page-footer__inner {
@@ -508,7 +513,6 @@ input:focus, textarea:focus {
     }
 
     .column--thin {
-        max-width: 100%;
         padding-bottom: 0;
     }
 }
@@ -537,6 +541,7 @@ input:focus, textarea:focus {
 
     .column--wide {
         padding: 2rem 1rem;
+        max-width: 100%;
     }
 
     .form {
