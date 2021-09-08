@@ -366,6 +366,20 @@ section {
     background-image: url('images/content/project3.jpg');
 }
 
+pre {
+  width: 100%;
+  padding-left: 0;
+  white-space: normal;
+}
+
+pre code {
+  white-space: pre-wrap;
+}
+
+pre code.hljs {
+  padding: 2em;
+}
+
 .section__year {
     font-size: 1.25rem;
     font-weight: 900;
