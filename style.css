@@ -380,6 +380,10 @@ pre code {
   white-space: pre-wrap;
 }
 
+pre code.hljs {
+    padding: 2em;
+}
+
 .section__year {
     font-size: 1.25rem;
     font-weight: 900;

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Maria Serykh - Junior Front-End Developer</title>
     <link rel="stylesheet" href="fontawesome/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 </head>
@@ -25,7 +25,8 @@
                     <ul class="site-navigation">
                         <li class="site-navigation__item"><a class="site-navigation__link" href="#skills">MY TECHNICAL SKILLS</a></li>
                         <li class="site-navigation__item"><a class="site-navigation__link" href="#projects">MY RECENT PROJECTS</a></li>
-                        <li class="site-navigation__item"><a class="site-navigation__link" href="#experience">EXPERIENCE</a></li>
+                        <li class="site-navigation__item"><a class="site-navigation__link" href="#code">CODE EXAMPLES</a></li>
+                        <li class="site-navigation__item"><a class="site-navigation__link" href="#code">EXPERIENCE</a></li>
                         <li class="site-navigation__item"><a class="site-navigation__link" href="#education">EDUCATION</a></li>
                         <li class="site-navigation__item"><a class="site-navigation__link" href="#lang">LANGUAGES</a></li>
                         <li class="site-navigation__item"><a class="site-navigation__link" href="#contact">CONTACT</a></li>
@@ -137,7 +138,7 @@
                     </article>
                 </section>
                 <section class="code-examples">
-                    <h2 class="title">Code examples</h2>
+                    <h2 id="code" class="title">Code examples</h2>
                     <div class="section">
                         <pre>
                             <code class="language-javascript">
@@ -145,7 +146,7 @@ function convertHashToArray(hash) {
     const result = [];
 
     for (const [key, value] of Object.entries(hash)) {
-    result.push([key, value]);
+        result.push([key, value]);
     }
 
     return result.sort();
