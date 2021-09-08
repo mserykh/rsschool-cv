@@ -350,6 +350,10 @@ section {
     z-index:3;
   }
 
+.player {
+    background-image: url('images/content/custom-video-player.jpg');
+}
+
 .unicorn {
     background-image: url('images/content/project1.jpg');
 }
