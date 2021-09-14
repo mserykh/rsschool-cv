@@ -56,6 +56,7 @@ img {
 }
 
 .title {
+  font-size: 32px;
   margin-bottom: 48px;
 }
 
@@ -102,6 +103,7 @@ img {
 
 .main-wrapper {
   margin: 0 auto;
+  max-width: var(--content-width);
 }
 
 .visually-hidden {
@@ -457,6 +459,107 @@ img {
 
 .section__company {
   font-style: italic;
+}
+
+.experience {
+  margin-bottom: 68px;
+}
+
+.experience__list {
+  display: flex;
+  flex-direction: column;
+  gap: 136px;
+}
+
+.experience__job {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto 1fr;
+  column-gap: 68px;
+  position: relative;
+}
+
+.experience__year {
+  grid-column:  1 / 2;
+  grid-row: 1 / 2;
+}
+
+.experience__company {
+  grid-column:  1 / 2;
+  grid-row: 2 / 3;
+}
+
+.experience__location {
+  grid-column:  1 / 2;
+  grid-row: 3 / 4;
+}
+
+.experience__title {
+  grid-column: 2 / 3;
+  grid: 1 / 2;
+}
+
+.experience__responsibilities {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
+
+.experience__job:not(:last-child)::before {
+  position: absolute;
+  content: "";
+  background-color: var(--white);
+  width: 100%;
+  height: 1px;
+  bottom: -68px;
+}
+
+.experience__year {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.experience__year::before {
+  position: absolute;
+  content: "";
+  width: 34px;
+  height: 10px;
+  background-color: var(--pink);
+  bottom: 18px;
+}
+
+.experience__company {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.experience__location {
+  font-family: "Poppins", sans-serif;
+}
+
+.experience__title {
+  margin-bottom: 34px;
+}
+
+.experience__responsibility {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 25px;
+}
+
+.experience__responsibility::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../svg/list-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 17px;
+  top: 0;
+  left: 0;
+  transform: translateY(50%);
 }
 
 pre {
