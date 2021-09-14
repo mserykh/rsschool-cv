@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria Serykh - Junior Front-End Developer</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✌️</text></svg>">
-    <link rel="stylesheet" href="fontawesome/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
@@ -18,13 +17,6 @@
         <header class="page-header">
             <div class="page-header__inner">
                 <nav class="page-header-nav">
-                    <div class="theme-toggle">
-                        <div class="theme-toggle__icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM22 12C22 17.5228 17.5228 22 12 22V2C17.5228 2 22 6.47715 22 12Z" fill="#F8F0E4"/>
-                            </svg>
-                        </div>
-                    </div>
                     <ul class="site-navigation">
                         <li class="site-navigation__item"><a class="site-navigation__link" href="#skills">Skills</a></li>
                         <li class="site-navigation__item"><a class="site-navigation__link" href="#projects">Projects</a></li>
@@ -46,29 +38,34 @@
                         <img class="about-me__img" src="./assets/photo.jpg" alt="Personal photo">
                     </div>
                     <h2 class="about-me__name typewriter" data-type = '["Hi, I&#39;m Maria 👋", "I live in Amsterdam", "I ❤️ semantics", "I care about accessibility"]'>
-                        Hi, I&#39;m Maria 👋
+                        Hi, I&#39;m <span class="text-highlighted">Maria</span> 👋
                     </h2>
-                    <h4 class="about-me__job">Front-End Developer</h4>
+                    <h2 class="title about-me__job">Front-End Developer</h2>
                     <div class="about-me__buttons-wrapper">
                         <a class="btn" href="mailto:marie.serykh@gmail.com">Email me</a>
-                        <a class="btn btn--download" href="#pdf" title="" download>Download CV</a>
+                        <a class="btn btn--download" href="#pdf" title="" download>
+                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.625 11.5256C0.79076 11.5256 0.949732 11.5938 1.06694 11.7152C1.18415 11.8366 1.25 12.0013 1.25 12.173V15.4102C1.25 15.7537 1.3817 16.083 1.61612 16.3259C1.85054 16.5687 2.16848 16.7051 2.5 16.7051H17.5C17.8315 16.7051 18.1495 16.5687 18.3839 16.3259C18.6183 16.083 18.75 15.7537 18.75 15.4102V12.173C18.75 12.0013 18.8158 11.8366 18.9331 11.7152C19.0503 11.5938 19.2092 11.5256 19.375 11.5256C19.5408 11.5256 19.6997 11.5938 19.8169 11.7152C19.9342 11.8366 20 12.0013 20 12.173V15.4102C20 16.0971 19.7366 16.7558 19.2678 17.2415C18.7989 17.7271 18.163 18 17.5 18H2.5C1.83696 18 1.20107 17.7271 0.732233 17.2415C0.263392 16.7558 0 16.0971 0 15.4102V12.173C0 12.0013 0.065848 11.8366 0.183058 11.7152C0.300269 11.5938 0.45924 11.5256 0.625 11.5256Z" fill="#F8F0E4"/>
+                                <path d="M9.5575 14.0546C9.61556 14.1149 9.68453 14.1628 9.76046 14.1954C9.83639 14.228 9.91779 14.2448 10 14.2448C10.0822 14.2448 10.1636 14.228 10.2395 14.1954C10.3155 14.1628 10.3844 14.1149 10.4425 14.0546L14.1925 10.17C14.3099 10.0484 14.3758 9.88353 14.3758 9.71161C14.3758 9.53968 14.3099 9.37479 14.1925 9.25322C14.0751 9.13165 13.916 9.06335 13.75 9.06335C13.584 9.06335 13.4249 9.13165 13.3075 9.25322L10.625 12.0333V0.64744C10.625 0.475728 10.5592 0.31105 10.4419 0.189632C10.3247 0.0682129 10.1658 0 10 0C9.83424 0 9.67527 0.0682129 9.55806 0.189632C9.44085 0.31105 9.375 0.475728 9.375 0.64744V12.0333L6.6925 9.25322C6.63439 9.19302 6.5654 9.14527 6.48948 9.11269C6.41356 9.08012 6.33218 9.06335 6.25 9.06335C6.16782 9.06335 6.08644 9.08012 6.01052 9.11269C5.9346 9.14527 5.86561 9.19302 5.8075 9.25322C5.74939 9.31341 5.70329 9.38488 5.67185 9.46353C5.6404 9.54218 5.62421 9.62647 5.62421 9.71161C5.62421 9.79674 5.6404 9.88103 5.67185 9.95968C5.70329 10.0383 5.74939 10.1098 5.8075 10.17L9.5575 14.0546Z" fill="#F8F0E4"/>
+                            </svg>
+                            Download CV</a>
                     </div>
                     <ul class="contact-links">
-                        <li class="contact-links__item">
+                        <li class="contact-links__item github">
                             <a href="https://github.com/mserykh" class="contact-links__link" target="_blank">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.0008 0.000768932C5.37109 0.000768932 0 5.51177 0 12.3038C0 17.7426 3.43822 22.3524 8.20326 23.9787C8.80555 24.0948 9.02306 23.7142 9.02306 23.385C9.02306 23.0929 9.01631 22.3201 9.01181 21.2943C5.67185 22.0356 4.96831 19.6403 4.96831 19.6403C4.42153 18.2224 3.63248 17.8417 3.63248 17.8417C2.54641 17.0813 3.71873 17.0974 3.71873 17.0974C4.92181 17.1812 5.55485 18.3623 5.55485 18.3623C6.62516 20.2447 8.36302 19.7003 9.05082 19.3835C9.15582 18.5907 9.46859 18.0455 9.80911 17.7418C7.14495 17.4334 4.34352 16.3761 4.34352 11.6618C4.34352 10.3154 4.80855 9.21884 5.57735 8.35762C5.44459 8.04928 5.03807 6.79591 5.68311 5.10116C5.68311 5.10116 6.68742 4.77282 8.98331 6.36299C9.9613 6.0903 10.97 5.95043 11.9835 5.94699C13.0036 5.95391 14.0229 6.09079 14.9837 6.36299C17.2661 4.77282 18.2696 5.10116 18.2696 5.10116C18.9139 6.79591 18.5074 8.04851 18.3904 8.35762C19.1517 9.21884 19.6167 10.3161 19.6167 11.6618C19.6167 16.3869 16.8116 17.4288 14.1444 17.7295C14.5614 18.0978 14.9522 18.8552 14.9522 20.0048C14.9522 21.6503 14.9372 22.976 14.9372 23.3766C14.9372 23.6965 15.1472 24.0809 15.7652 23.9571C20.5655 22.3477 24 17.7341 24 12.3031C24 5.511 18.6289 0 11.9993 0L12.0008 0.000768932Z" fill="#6E5494"/>
                             </svg>
                             </a>
                         </li>
-                        <li class="contact-links__item">
+                        <li class="contact-links__item linkedin">
                             <a href="https://www.linkedin.com/in/mariaserykh/" class="contact-links__link" target="_blank">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.33605 7.93377C4.99912 7.93384 4.66548 7.86747 4.35423 7.73845C4.04286 7.60938 3.76002 7.42016 3.52189 7.18161C3.28377 6.94306 3.09505 6.65988 2.96654 6.34828C2.83808 6.03679 2.77231 5.70302 2.773 5.36608M5.33605 7.93377C5.84321 7.9341 6.33909 7.78408 6.761 7.50264C7.18295 7.22118 7.51197 6.82093 7.70646 6.35249C7.90095 5.88404 7.95217 5.36845 7.85365 4.8709C7.75512 4.37335 7.51127 3.91619 7.15294 3.55722C6.79461 3.19824 6.33788 2.95358 5.8405 2.85415C5.34313 2.75473 4.82744 2.80501 4.35863 2.99864C3.88983 3.19227 3.48897 3.52055 3.20673 3.94199C2.92453 4.36336 2.77359 4.85894 2.773 5.36608M5.33605 7.93377C5.33599 7.93377 5.33594 7.93377 5.33589 7.93377L5.33625 7.43377L5.33643 7.93377C5.3363 7.93377 5.33618 7.93377 5.33605 7.93377ZM2.773 5.36608C2.773 5.36615 2.773 5.36622 2.773 5.36629L3.273 5.36683L2.773 5.36574C2.773 5.36586 2.773 5.36597 2.773 5.36608ZM20.445 20.9526H20.4945L20.543 20.9429L20.5468 20.9422L20.9487 20.8618V20.4519V14.1633C20.9487 12.6109 20.786 11.1211 20.0874 10.014C19.3555 8.85425 18.1034 8.21023 16.1798 8.21023C14.9488 8.21023 13.9629 8.64325 13.2657 9.23214V8.99897V8.49897H12.7657H9.35175H8.85175V8.99897V20.4519V20.9519H9.35175H12.906H13.406V20.4519V14.7843C13.406 14.045 13.4804 13.4236 13.7162 12.9963C13.8275 12.7945 13.9725 12.6408 14.1667 12.5335C14.3637 12.4246 14.641 12.3474 15.039 12.3474C15.4165 12.3474 15.6556 12.4344 15.8148 12.5452C15.975 12.6567 16.097 12.8221 16.1881 13.0515C16.3819 13.5392 16.3953 14.1967 16.3953 14.8825V20.4526V20.9526H16.8953H20.445ZM7.11675 20.9526H7.61675V20.4526V8.99972V8.49972H7.11675H3.555H3.055V8.99972V20.4526V20.9526H3.555H7.11675ZM1.77 0.5H22.2233C22.9367 0.5 23.5 1.06306 23.5 1.7302V22.2698C23.5 22.9369 22.9367 23.5 22.2233 23.5H1.77C1.05779 23.5 0.5 22.9397 0.5 22.2698V1.7302C0.5 1.06034 1.05779 0.5 1.77 0.5Z" fill="#2867B2" stroke="#2867B2"/>
                             </svg>
                             </a>
                         </li>
-                        <li class="contact-links__item">
+                        <li class="contact-links__item codepen">
                             <a href="https://codepen.io/mserykh" class="contact-links__link" target="_blank">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="path-1-inside-1" fill="white">
@@ -107,7 +104,7 @@
                         <p class="description__item">Currently based in Amsterdam, in the rural Netherlands. I love cycling and listening to jazz and house music.</p>
                     </div>
                 </section>
-                <section class="skills">
+                <section class="skills block-bg">
                     <p class="subtitle">Why hire me</p>
                     <h2 id="skills" class="title">
                         Hard skills
@@ -227,7 +224,7 @@
                             </ul>
                         </div>
                 </section>
-                <section class="facts">
+                <section class="facts block-bg">
                     <p class="subtitle">Some things about me</p>
                     <h2 id="lang" class="title">Random numbers</h2>
                     <dl class="facts">
@@ -306,10 +303,9 @@
                             </p>
                         </div>
                 </section>
-                <section class="code-examples">
+                <section class="code-examples block-bg">
                     <p class="subtitle">My code style</p>
                     <h2 id="code" class="title">Code examples</h2>
-                    <div class="section">
                         <pre>
                             <code class="language-javascript">
 function convertHashToArray(hash) {
@@ -323,7 +319,6 @@ function convertHashToArray(hash) {
 }
                             </code>
                         </pre>
-                    </div>
                 </section>
                 <section class="video">
                     <p class="subtitle">My presentation</p>
@@ -331,7 +326,7 @@ function convertHashToArray(hash) {
                     <iframe width="840" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
                     </iframe>
                 </section>
-                <section class="contact-me">
+                <section class="contact-me block-bg block-bg--thin">
                     <h2 id="contact" class="title">Let's talk</h2>
                     <p class="contact-me__text">
                         Do you have a project you want to collaborate on? Do you need help to tackle a technical task? Or you want to discuss anything about technologies, education or science? Will be happy to hear from you!
