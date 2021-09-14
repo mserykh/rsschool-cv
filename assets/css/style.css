@@ -60,7 +60,7 @@ img {
 }
 
 .btn {
-    display: block;
+    display: inline-block;
     font-family: "Ubuntu", sans-serif;;
     font-weight: 500;
     font-size: 20px;
@@ -98,6 +98,18 @@ img {
     width: 100%;
     max-width: var(--max-width);
     padding: 0 2rem;
+}
+
+.main-wrapper {
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 .page-header {
@@ -166,22 +178,6 @@ img {
     left: 0;
     background-color: var(--pink);
     transition: width ease-in-out 0.25s;
-}
-
-.main-wrapper {
-    margin: 0 auto;
-}
-
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-}
-
-.projects__section:hover {
-    box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .about-me {
@@ -330,10 +326,15 @@ img {
     content: "/>";
 }
 
+.skills {
+    margin-bottom: 68px;
+}
+
 .skills__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    align-items: center;
 }
 
 .skills__item {
@@ -365,93 +366,6 @@ img {
     transform: translateX(100%);
 }
 
-.list__items {
-    padding: 2rem;
-}
-
-.list__items--small {
-    padding: 0;
-}
-
-.list__item {
-    position: relative;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-}
-
-.list__item:last-child {
-    margin-bottom: 0rem;
-}
-
-.list__item:before {
-    position: absolute;
-    content: '';
-    width: 0.75rem;
-    height: 0.75rem;
-    background-color: #0050ff;
-    top: 0.25rem;
-    left: -1.5rem;
-}
-
-.list__item--small:before {
-    width: 0.5rem;
-    height: 0.5rem;
-    top: 0.5rem;
-    left: -1rem;
-}
-
-.section__title {
-    color: #0050FF;
-}
-
-.section__img-container {
-    height: 220px;
-    width: 250px;
-    background-position: 50%;
-    background-size: cover;
-}
-
-.column--thin {
-    max-width: 250px;
-    padding: 2rem;
-}
-
-.column--wide {
-    max-width: 450px;
-    max-width: 100%;
-    padding: 2rem;
-}
-
-.column--left {
-    padding: 2rem;
-}
-
-.section__title {
-    position: relative;
-    color: #0050ff;
-    font-weight: 900;
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-}
-
-.projects__section:hover .section__title {
-    text-decoration: underline;
-}
-
-.section__title::before {
-    position: absolute;
-    content: '';
-    width: 0.75rem;
-    height: 3.5rem;
-    background-color: #0050ff;
-    left: -2rem;
-} 
-
-.projects__section {
-    position: relative;
-}
-
 /*.link-wrapper::before {
     content: " ";
     position: absolute;
@@ -462,20 +376,77 @@ img {
     z-index:3;
   }*/
 
-.player {
-    background-image: url('images/content/custom-video-player.jpg');
+.projects__item {
+    width: 936px;
+    background-color: var(--blue);
+    margin: 0 auto;
+    margin-bottom: 136px;
+    max-width: 100%;
+    border-radius: 10px;
 }
 
-.resto {
-    background-image: url('images/content/project1.jpg');
+.projects__item:last-child {
+  margin-bottom: 0;
 }
 
-.yoda {
-    background-image: url('images/content/project2.jpg');
+.projects__item:nth-child(odd) {
+  transform: translateX(25px);
 }
 
-.ballon {
-    background-image: url('images/content/project3.jpg');
+.projects__item:nth-child(even) {
+  transform: translateX(-25px);
+}
+
+
+.projects__link {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  width: 100%;
+  height: 480px;
+}
+
+.projects__img {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.projects__link::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue);
+  opacity: 0.45;
+  z-index: 1;
+}
+
+.projects__content {
+  position: absolute;
+  max-width: 65%;
+  bottom: 68px;
+  left: 68px;
+  z-index: 2;
+}
+
+.projects__title {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.projects__desc {
+  color: var(--white);
+  line-height: 1.5;
+  margin-bottom: 2rem;
 }
 
 pre {
