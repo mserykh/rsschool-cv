@@ -442,22 +442,6 @@ img {
   margin-bottom: 2rem;
 }
 
-pre {
-  width: 100%;
-  padding-left: 0;
-  white-space: normal;
-  display: flex;
-  justify-content: center;
-}
-
-pre code {
-  white-space: pre-wrap;
-}
-
-pre code.hljs {
-  background-color: var(--bg);
-}
-
 .section__year {
   font-size: 1.25rem;
   font-weight: 900;
@@ -474,6 +458,23 @@ pre code.hljs {
 .section__company {
   font-style: italic;
 }
+
+pre {
+  width: 100%;
+  padding-left: 0;
+  white-space: normal;
+  display: flex;
+  justify-content: center;
+}
+
+pre code {
+  white-space: pre-wrap;
+}
+
+pre code.hljs {
+  background-color: var(--bg);
+}
+
 
 .contact-me__title {
   margin-bottom: 1rem;
