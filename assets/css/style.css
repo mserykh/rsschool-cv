@@ -231,21 +231,14 @@ img {
     border-radius: 50%;
 }
 
-.section__name {
-    margin: 0 auto 1.5rem;
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 900;
-    line-height: 1.9rem;
-}
-
 .text-highlighted {
     color: var(--pink);
 }
 
 .about-me__job {
-    margin: 0 auto;
-    margin-bottom: 2rem;
+    margin: 2rem auto;
+    text-align: center;
+    margin-bottom: 4vmax;
     font-weight: 700;
     font-size: 72px;
 }
@@ -253,9 +246,7 @@ img {
 .about-me__buttons-wrapper {
     display: flex;
     margin-bottom: auto;
-}
-
-.contact-links {
+    gap: 2rem;
 }
 
 .contact-links__item {
@@ -313,6 +304,10 @@ img {
 
 .contact-links__link:hover {
     border-width: 40px;
+}
+
+.about-me__description {
+    max-width: 940px;
 }
 
 .description__item {
@@ -610,10 +605,10 @@ input:focus, textarea:focus {
 
 @keyframes float {
     0% {
-        transform: translateY(-10px);
+        transform: translateY(-8px);
     }
     100% {
-        transform: translateY(10px);
+        transform: translateY(8px);
     }
     
 }
