@@ -366,6 +366,10 @@ img {
   transform: translateX(100%);
 }
 
+.projects {
+  margin-bottom: 68px;
+}
+
 .projects__item {
   width: 936px;
   background-color: var(--blue);
