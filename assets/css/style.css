@@ -81,8 +81,10 @@ img {
 
 .block-bg {
   padding: 80px 98px;
+  max-width: var(--max-width);
   background-image: var(--gradient);
   border-radius: 10px;
+  margin-bottom: 68px;
 }
 
 .block-bg--thin {
@@ -103,7 +105,12 @@ img {
 
 .main-wrapper {
   margin: 0 auto;
+}
+
+.container {
   max-width: var(--content-width);
+  margin: 0 auto;
+  margin-bottom: 68px;
 }
 
 .visually-hidden {
