@@ -180,32 +180,23 @@ img {
     margin: -1px;
 }
 
-.section {
-    margin: 0 auto;
-    max-width: 700px;
-    background-color: #ffffff;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: space-between;
-}
-
 .projects__section:hover {
     box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .about-me {
-    margin-top: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 68px;
     position: relative;
+    min-height: calc(100vh - 61px);
+    margin-bottom: 68px;
 }
 
 .about-me__img-container {
     position: relative;
-    margin-top: 2rem;
+    margin-top: auto;
     margin-bottom: 2rem;
 }
 
@@ -261,50 +252,67 @@ img {
 
 .about-me__buttons-wrapper {
     display: flex;
+    margin-bottom: auto;
 }
 
 .contact-links {
 }
 
 .contact-links__item {
-    width: 60px;
-    height: 60px;
+    display: block;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     position: absolute;
     animation: float 2s ease-in-out infinite alternate;
 }
 
 .contact-links__item.github {
-    top: 0rem;
-    right: calc(50% - 20rem);
-    background-color: rgba(110, 84, 148, 0.15);
+    top: calc(50% - 20rem);
+    right: 20rem;
     animation-delay: 0.5s;
-
 }
 
 .contact-links__item.linkedin {
     top: calc(50% - 8rem);
-    left: 4rem;
-    background-color: rgba(40, 103, 178, 0.15);
+    left: 14rem;
 }
 
 .contact-links__item.codepen {
     top: calc(50% - 4rem);
     right: 10rem;
-    background-color: rgba(255, 255, 255, 0.15);
     animation-direction: alternate-reverse;
 }
 
 .contact-links__link {
     display: block;
-    width: 60px;
-    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 20px solid;
+    border-radius: 50%;
+}
+
+.github .contact-links__link {
+    border-radius: 50%;
+    border-color: rgba(110, 84, 148, 0.35);
+    transform: translateX(50%) translateY(-50%);
+}
+
+.linkedin .contact-links__link {
+    border-radius: 50%;
+    border-color: rgba(40, 103, 178, 0.35);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.codepen .contact-links__link {
+    border-radius: 50%;
+    border-color: rgba(255, 255, 255, 0.35);
+    transform: translateX(50%) translateY(-50%);
+}
+
+.contact-links__link:hover {
+    border-width: 40px;
 }
 
 .description__item {
