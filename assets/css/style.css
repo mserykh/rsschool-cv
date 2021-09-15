@@ -622,7 +622,8 @@ img {
   grid-row: 1 / 2;
   position: relative;
   font-family: "Poppins", sans-serif;
-  font-size: 36px;
+  font-size: 24px;
+  line-height: 2.5;
   font-weight: 600;
   padding-top: 20px;
 }
