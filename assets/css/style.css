@@ -254,7 +254,7 @@ img {
   gap: 2rem;
 }
 
-.contact-links__item {
+.about-me .contact-links__item {
   display: block;
   display: flex;
   align-items: center;
@@ -263,24 +263,24 @@ img {
   animation: float 2s ease-in-out infinite alternate;
 }
 
-.contact-links__item.github {
+.about-me .contact-links__item.github {
   top: calc(50% - 20rem);
   right: 20rem;
   animation-delay: 0.5s;
 }
 
-.contact-links__item.linkedin {
+.about-me .contact-links__item.linkedin {
   top: calc(50% - 8rem);
   left: 14rem;
 }
 
-.contact-links__item.codepen {
+.about-me .contact-links__item.codepen {
   top: calc(50% - 4rem);
   right: 10rem;
   animation-direction: alternate-reverse;
 }
 
-.contact-links__link {
+.about-me .contact-links__link {
   display: block;
   display: flex;
   justify-content: center;
@@ -289,29 +289,29 @@ img {
   border-radius: 50%;
 }
 
-.github .contact-links__link {
+.about-me .github .contact-links__link {
   border-radius: 50%;
   border-color: rgba(110, 84, 148, 0.35);
   transform: translateX(50%) translateY(-50%);
 }
 
-.linkedin .contact-links__link {
+.about-me .linkedin .contact-links__link {
   border-radius: 50%;
   border-color: rgba(40, 103, 178, 0.35);
   transform: translateX(-50%) translateY(-50%);
 }
 
-.codepen .contact-links__link {
+.about-me .codepen .contact-links__link {
   border-radius: 50%;
   border-color: rgba(255, 255, 255, 0.35);
   transform: translateX(50%) translateY(-50%);
 }
 
-.contact-links__link:hover {
+.about-me .contact-links__link:hover {
   border-width: 40px;
 }
 
-.about-me__description {
+.about-me .about-me__description {
   max-width: 940px;
 }
 
@@ -785,28 +785,34 @@ input:focus, textarea:focus {
 }
 
 .page-footer {
-  background-color: var(--blue);
-   width: 100%;
-   min-height: 172px;
+  width: 90%;
+  min-height: 138px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .page-footer__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
   flex-wrap: wrap;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem; 
-}
-
-.contact-links__item--rss {
-  position: relative;
 }
 
 .page-footer__copyright {
-  font-size: 0.85rem;
+  margin-right: auto;
+}
+
+.page-footer__contact-links {
+  display: flex;
+  align-items: center;
+  gap: 68px;
+}
+
+.page-footer .contact-links__link {
+  color: var(--white);
+  font-weight: 700;
 }
 
 .btn--to-top {
