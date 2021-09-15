@@ -536,7 +536,7 @@ img {
 .experience__year {
   position: relative;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .experience__year::before {
@@ -550,7 +550,7 @@ img {
 
 .experience__company {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .experience__location {
