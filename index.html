@@ -341,15 +341,30 @@
           <h2 id="code" class="title">Code examples</h2>
             <pre>
               <code class="language-javascript">
-function convertHashToArray(hash) {
-  const result = [];
+const scrollToTopButton = document.getElementById("scrollToTop");
 
-  for (const [key, value] of Object.entries(hash)) {
-    result.push([key, value]);
+const handleScroll = () => {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    scrollToTopButton.style.display = "block";
+  } 
+  else {
+    scrollToTopButton.style.display = "none";
   }
+};
 
-  return result.sort();
-}
+const scrollToTop = () => {
+  const distanceFromTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+  if (distanceFromTop > 0) {
+    window.scrollTo(0, 0);
+  }
+};
+
+document.addEventListener("scroll", handleScroll);
+scrollToTopButton.addEventListener("click", function(e) {
+  e.preventDefault();
+  scrollToTop();
+});
               </code>
             </pre>
         </section>
