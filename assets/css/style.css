@@ -636,6 +636,72 @@ img {
   top: 0;
 }
 
+.education__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 68px;
+}
+
+.education__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 2fr;
+  column-gap: 28px;
+  position: relative;
+}
+
+.education__item:not(:last-child)::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--white);
+  bottom: -34px;
+}
+
+.education a {
+  display: inline-block;
+  color: var(--white);
+  text-decoration: none;
+  border-bottom: 1px solid var(--white);
+  position: relative;
+  line-height: 1.2;
+}
+
+.education a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease-in-out;
+}
+
+.education a:hover span {
+  transform: translateX(0);
+}
+
+.education a span::before {
+  display: inline-block;
+  content: attr(data-linktitle);
+  color: var(--pink);
+  transform: translateX(100%);
+  border-bottom: 1px solid var(--pink);
+  transition: transform 0.25s ease-in-out;
+}
+
+.education a:hover span::before {
+  transform: translateX(0);
+}
+
+.education__year {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.education__title {
+  font-size: 24px;
+}
+
 pre {
   width: 100%;
   padding-left: 0;
