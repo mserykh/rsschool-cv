@@ -582,6 +582,31 @@ img {
   transform: translateY(50%);
 }
 
+.facts__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 28px;
+  grid-template-rows: repeat(2, auto);
+}
+
+.facts__quantity {
+  grid-row: 1 / 2;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.facts__quantity::before {
+  position: absolute;
+  content: "";
+  width: 34px;
+  height: 10px;
+  background-color: var(--pink);
+  top: 0;
+}
+
 pre {
   width: 100%;
   padding-left: 0;
