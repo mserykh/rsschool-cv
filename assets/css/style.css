@@ -341,9 +341,22 @@ img {
 
 .skills__list {
   display: inline-grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   gap: 28px;
   align-items: center;
+  width: 100%;
+}
+
+.skills__item:nth-child(3n - 2) {
+    grid-row: 1 / 2;
+}
+
+.skills__item:nth-child(3n - 1) {
+  grid-row: 2 / 3;
+}
+
+.skills__item:nth-child(3n) {
+  grid-row: 3 / 4;
 }
 
 .skills__item {
