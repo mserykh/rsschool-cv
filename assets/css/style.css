@@ -717,6 +717,7 @@ pre code {
 
 pre code.hljs {
   background-color: var(--bg);
+  padding: 0;
 }
 
 
