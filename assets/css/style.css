@@ -28,6 +28,13 @@ body {
    font-size: var(--text-sz);
    font-family: "Ubuntu", sans-serif;
    font-weight: 400;
+   transition: background 0.6s ease-in-out;
+}
+
+.light {
+  background-color: white;
+  color: var(--blue);
+  transition: background 0.6s ease-in-out;
 }
 
 h1, h2, h3, h4 {
@@ -48,6 +55,11 @@ p {
 
 img {
   display: block;
+}
+
+button {
+  background: transparent;
+  border: none;
 }
 
 .subtitle {
@@ -138,18 +150,103 @@ img {
   padding: 1rem 0;
   margin-right: 100px;
   cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
 }
 
-#toggle {
-  transform: translateX(-100%);
-  transition: transform 0.25s ease-in-out;
+/*
+MODE TOGGLE
+*/
+
+#moon {
+  transform: rotate(-45deg);
+  transform-origin: center center;
 }
 
-.theme-toggle:hover #toggle {
-  width: 24px;
-  height: 24px;
-  transform: translateX(0);
-  transition: transform 0.25s ease-in-out;
+#toggle g circle {
+  transform-origin: center center;
+  transform: scale(0);
+}
+
+@keyframes hideMoon {
+  0% {
+    transform: rotate(0);
+  }
+
+ 50% {
+    transform: rotate(135deg) scale(0.4);
+  }
+
+  60% {
+    transform: rotate(200deg) scale(0.2);
+  }
+
+  100% {
+    transform: rotate(200deg) scale(0);
+  }
+}
+
+@keyframes revealSun {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(0.8);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes revealBeams {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes hideSun {
+  0% {
+  transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes revealMoon {
+  0% {
+  transform: scale(0);
+  }
+  10% {
+    transform: scale(0.7) rotate(100deg);
+    }
+  40% {
+  transform: scale(1) rotate(-15deg);
+  }
+  50% {
+  transform: scale(1) rotate(-60deg);
+  }
+  74.755% {
+    transform: scale(1) rotate(-35deg);
+  }
+  85% {
+  transform: scale(1) rotate(-50deg);
+  }
+  100% {
+    transform: scale(1) rotate(-45deg);
+  }
 }
 
 .page-header-nav {
@@ -179,14 +276,14 @@ img {
   height: 3px;
   bottom: 5px;
   background-color: var(--pink);
-  transition: width ease-in-out 0.25s;
+  transition: width ease-in-out 1s;
 }
 
 .site-navigation__link:hover::before {
   width: 100%;
   left: 0;
   background-color: var(--pink);
-  transition: width ease-in-out 0.25s;
+  transition: width ease-in-out 1s;
 }
 
 .about-me {
