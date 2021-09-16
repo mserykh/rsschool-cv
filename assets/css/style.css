@@ -110,6 +110,10 @@ button {
   color: var(--text);
 }
 
+.btn--download path {
+  fill: var(--text);
+}
+
 .block-bg {
   padding: 80px 98px;
   max-width: var(--max-width);
