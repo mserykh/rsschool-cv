@@ -1,15 +1,33 @@
 :root {
   --bg: #1D262D;
+  --primary: #311996;
   --white: #F8F0E4;
-  --blue: #311996;
-  --pink: #E12179;
-  --gradient: linear-gradient(0deg, #BC1964 0%, #311996 100%);;
+  --text: #F8F0E4;
+  --accent: #E12179;
+  --accent2: linear-gradient(0deg, #BC1964 0%, #311996 100%);
   --linkedin: #2867B2;
+  --linkedin-bg: rgba(40, 103, 178, 0.35);
   --github: #6E5494;
-  --codepen: #FFFFFF;
+  --github-bg: rgba(110, 84, 148, 0.35);
+  --codepen: rgba(255, 255, 255, 0.65);
+  --codepen-bg: rgba(255, 255, 255, 0.15);
   --text-sz: 20px;
   --max-width: 1440px;
   --content-width: 1238px;
+}
+
+.light {
+  --bg: #F8F0E4;
+  --primary: #311996;
+  --white: #F8F0E4;
+  --text: #311996;
+  --accent: #E12179;
+  --accent2: #311996;
+  --linkedin: #2867B2;
+  --github: #c9510c;
+  --github-bg: rgba(201, 81, 12, 0.35);
+  --codepen: #12100B;
+  --codepen-bg: rgba(18, 16, 11, 0.35);
 }
 
 * {
@@ -24,7 +42,7 @@ html {
 
 body {
    background-color: var(--bg);
-   color: var(--white);
+   color: var(--text);
    font-size: var(--text-sz);
    font-family: "Ubuntu", sans-serif;
    font-weight: 400;
@@ -33,7 +51,7 @@ body {
 
 .light {
   background-color: white;
-  color: var(--blue);
+  color: var(--text);
   transition: background 0.6s ease-in-out;
 }
 
@@ -64,7 +82,7 @@ button {
 
 .subtitle {
   font-weight: 400;
-  color: var(--pink);
+  color: var(--accent);
 }
 
 .title {
@@ -77,8 +95,8 @@ button {
   font-family: "Ubuntu", sans-serif;;
   font-weight: 500;
   font-size: 20px;
-  background-color: var(--pink);
-  border: 1px solid var(--pink);
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
   color: var(--white);
   padding: 1rem 1.5rem;
   border-radius: 5px;
@@ -88,15 +106,18 @@ button {
 
 .btn--download {
   background-color: transparent;
-  border-color: var(--white);
+  border-color: var(--text);
+  color: var(--text);
 }
 
 .block-bg {
   padding: 80px 98px;
   max-width: var(--max-width);
-  background-image: var(--gradient);
+  background-color: var(--accent2);
+  background-image: var(--accent2);
   border-radius: 10px;
   margin-bottom: 68px;
+  color: var(--white);
 }
 
 .block-bg--thin {
@@ -267,7 +288,8 @@ MODE TOGGLE
 .site-navigation__link {
   display: inline-block;
   text-decoration: none;
-  color: var(--white);
+  color: var(--text);
+  font-weight: 700;
   padding: 1rem 0;
   position: relative;
 }
@@ -280,14 +302,14 @@ MODE TOGGLE
   right: 0;
   height: 3px;
   bottom: 5px;
-  background-color: var(--pink);
+  background-color: var(--accent);
   transition: width ease-in-out 1s;
 }
 
 .site-navigation__link:hover::before {
   width: 100%;
   left: 0;
-  background-color: var(--pink);
+  background-color: var(--accent);
   transition: width ease-in-out 1s;
 }
 
@@ -321,14 +343,14 @@ MODE TOGGLE
   top: 0;
   left: 0;
   transform: translate(6px, 10px);
-  background-color: var(--blue);
+  background-color: var(--primary);
 }
 
 .about-me__img-container::after {
   top: 0;
   left: 0;
   transform: translate(-6px, -10px);
-  background-color: var(--pink);
+  background-color: var(--accent);
 }
 
 .about-me__img {
@@ -339,7 +361,7 @@ MODE TOGGLE
 }
 
 .text-highlighted {
-  color: var(--pink);
+  color: var(--accent);
 }
 
 .about-me__job {
@@ -371,6 +393,18 @@ MODE TOGGLE
   animation-delay: 0.5s;
 }
 
+.github path {
+  fill: var(--github);
+}
+
+.linkedin path {
+  fill: var(--linkedin);
+}
+
+.codepen path {
+  fill: var(--codepen);
+}
+
 .about-me .contact-links__item.linkedin {
   top: calc(50% - 8rem);
   left: 14rem;
@@ -393,19 +427,19 @@ MODE TOGGLE
 
 .about-me .github .contact-links__link {
   border-radius: 50%;
-  border-color: rgba(110, 84, 148, 0.35);
+  border-color: var(--github-bg);
   transform: translateX(50%) translateY(-50%);
 }
 
 .about-me .linkedin .contact-links__link {
   border-radius: 50%;
-  border-color: rgba(40, 103, 178, 0.35);
+  border-color: var(--linkedin-bg);
   transform: translateX(-50%) translateY(-50%);
 }
 
 .about-me .codepen .contact-links__link {
   border-radius: 50%;
-  border-color: rgba(255, 255, 255, 0.35);
+  border-color: var(--codepen-bg);
   transform: translateX(50%) translateY(-50%);
 }
 
@@ -425,7 +459,7 @@ MODE TOGGLE
 .description__item::before,
 .description__item::after {
   position: absolute;
-  color: var(--pink);
+  color: var(--accent);
 }
 
 .description__item::before {
@@ -477,7 +511,7 @@ MODE TOGGLE
   top: 0;
   left: 0;
   font-family: "Ubuntu", sans-serif;
-  color: var(--pink);
+  color: var(--accent);
   transform: translateX(-100%);
 }
 
@@ -486,7 +520,7 @@ MODE TOGGLE
   top: 0;
   right: 0;
   font-family: "Ubuntu", sans-serif;
-  color: var(--pink);
+  color: var(--accent);
   transform: translateX(100%);
 }
 
@@ -496,7 +530,7 @@ MODE TOGGLE
 
 .projects__item {
   width: 936px;
-  background-color: var(--blue);
+  background-color: var(--primary);
   margin: 0 auto;
   margin-bottom: 136px;
   max-width: 100%;
@@ -542,7 +576,7 @@ MODE TOGGLE
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--blue);
+  background-color: var(--primary);
   opacity: 0.45;
   z-index: 1;
 }
@@ -629,7 +663,7 @@ MODE TOGGLE
 .experience__job:not(:last-child)::before {
   position: absolute;
   content: "";
-  background-color: var(--white);
+  background-color: var(--text);
   width: 100%;
   height: 1px;
   bottom: -68px;
@@ -646,7 +680,7 @@ MODE TOGGLE
   content: "";
   width: 34px;
   height: 10px;
-  background-color: var(--pink);
+  background-color: var(--accent);
   bottom: 18px;
 }
 
@@ -705,7 +739,7 @@ MODE TOGGLE
   content: "";
   width: 34px;
   height: 10px;
-  background-color: var(--pink);
+  background-color: var(--accent);
   top: 0;
 }
 
@@ -735,7 +769,7 @@ MODE TOGGLE
   content: "";
   width: 34px;
   height: 10px;
-  background-color: var(--pink);
+  background-color: var(--accent);
   top: 0;
 }
 
@@ -757,15 +791,15 @@ MODE TOGGLE
   content: "";
   width: 100%;
   height: 1px;
-  background-color: var(--white);
+  background-color: var(--text);
   bottom: -34px;
 }
 
 .education a {
   display: inline-block;
-  color: var(--white);
+  color: var(--text);
   text-decoration: none;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid var(--text);
   position: relative;
   line-height: 1.2;
 }
@@ -786,9 +820,9 @@ MODE TOGGLE
 .education a span::before {
   display: inline-block;
   content: attr(data-linktitle);
-  color: var(--pink);
+  color: var(--accent);
   transform: translateX(100%);
-  border-bottom: 1px solid var(--pink);
+  border-bottom: 1px solid var(--accent);
   transition: transform 0.25s ease-in-out;
 }
 
@@ -913,8 +947,16 @@ input:focus, textarea:focus {
 }
 
 .page-footer .contact-links__link {
-  color: var(--white);
+  color: var(--text);
   font-weight: 700;
+}
+
+.rsschool path{
+  fill: var(--text);
+}
+
+.rsschool:hover path {
+  fill: var(--accent);
 }
 
 .btn--to-top {
@@ -938,7 +980,7 @@ input:focus, textarea:focus {
   100% {
     transform: translateY(8px);
   }
-  
+
 }
 
 @media (max-width: 700px) {
