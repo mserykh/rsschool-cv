@@ -41,6 +41,7 @@ function changeMoonToSun() {
 function revealSun() {
   if(!isMoon) {
     toggle.title = 'Activate dark mode';
+    toggle.ariaLabel = 'Activate dark mode';
     moon.style.transform = 'scale(0)';
     sunBody.style.transform = 'scale(1)';
     beam1.style.transform = 'scale(1)';
@@ -74,6 +75,7 @@ function changeSunToMoon() {
 function revealMoon() {
   if (isMoon) {
     toggle.title = 'Activate light mode';
+    toggle.ariaLabel = 'Activate light mode';
     moon.style.transform = 'scale(1) rotate(-45deg)';
     sunBody.style.transform = 'scale(0)';
     beam1.style.transform = 'scale(0)';
