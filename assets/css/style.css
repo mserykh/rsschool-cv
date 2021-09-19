@@ -1052,6 +1052,10 @@ input:focus, textarea:focus {
     transition-delay: 0.275s;
   }
 
+  .site-navigation__link {
+    margin-left: 0;
+  }
+
   .theme-toggle {
     z-index: 2;
   }
