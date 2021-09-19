@@ -165,6 +165,7 @@ button {
   position: relative;
   width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .page-header__inner {
@@ -988,6 +989,10 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 1000px) {
+
+  body.lock {
+    overflow: hidden;
+  }
   
   .page-header-nav {
     position: fixed;
@@ -1000,6 +1005,7 @@ input:focus, textarea:focus {
     padding-top: 60px;
     transform: translateX(100%);
     transition: transform 0.5s 0.5s ease-in-out;
+    overflow: auto;
   }
 
   .site-navigation {
