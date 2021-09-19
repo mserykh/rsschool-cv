@@ -162,6 +162,7 @@ button {
 
 .page-header {
   max-width: var(--content-width);
+  position: relative;
   width: 100%;
   margin: 0 auto;
 }
@@ -171,11 +172,11 @@ button {
   min-height: 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .theme-toggle {
   padding: 1rem 0;
-  margin-right: 100px;
   cursor: pointer;
   position: relative;
   transition: all 0.2s ease;
@@ -186,9 +187,7 @@ button {
   opacity: 1;
 }
 
-/*
-MODE TOGGLE
-*/
+/* MODE TOGGLE */
 
 #moon {
   transform: rotate(-45deg);
@@ -281,14 +280,18 @@ MODE TOGGLE
   }
 }
 
-.page-header-nav {
-  width: 100%;
+/* Burger icon*/
+
+.page-header__burger {
+  display: none;
 }
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+}
+
+.site-navigation__link {
+  margin-left: 32px;
 }
 
 .site-navigation__link {
@@ -925,7 +928,6 @@ input:focus, textarea:focus {
   100% {
     transform: translateY(8px);
   }
-
 }
 
 @media (min-width: 1000px) {
@@ -986,6 +988,167 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 1000px) {
+  
+  .page-header-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg);
+    z-index: 1;
+    padding-top: 60px;
+    transform: translateX(100%);
+    transition: transform 0.5s 0.5s ease-in-out;
+  }
+
+  .site-navigation {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .site-navigation__item {
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .page-header-nav .site-navigation__item:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+
+  .page-header-nav .site-navigation__item:nth-child(2) {
+    transition-delay: 0.125s;
+  }
+
+  .page-header-nav .site-navigation__item:nth-child(3) {
+    transition-delay: 0.15s;
+  }
+
+  .page-header-nav .site-navigation__item:nth-child(4) {
+    transition-delay: 0.175s;
+  }
+
+  .page-header-nav .site-navigation__item:nth-child(5) {
+    transition-delay: 0.2s;
+  }
+
+  .page-header-nav .site-navigation__item:nth-child(6) {
+    transition-delay: 0.225s;
+  }
+
+  .page-header-nav .site-navigation__item:nth-child(7) {
+    transition-delay: 0.25s;
+  }
+
+  .page-header-nav .site-navigation__item:nth-child(8) {
+    transition-delay: 0.275s;
+  }
+
+  .theme-toggle {
+    z-index: 2;
+  }
+  .page-header__burger {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 22px;
+    z-index: 2;
+  }
+
+  .page-header__burger span {
+    position: absolute;
+    top: 50%;
+    transform: translate(6px, -50%);
+    width: 12px;
+    height: 3px;
+    background-color: var(--text);
+  }
+
+  .page-header__burger::after,
+  .page-header__burger::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: var(--text);
+    transition: top 0.1s 0.2s ease, 
+                bottom 0.1s 0.2s ease,
+                transform 0.1s ease;
+  }
+
+  .page-header__burger::before {
+    top: 0;
+    left: 0;
+  }
+
+  .page-header__burger::after {
+    bottom: 0;
+    left: 0;
+  }
+
+  .page-header-nav.active{
+    transform: translate(0, 0);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  
+  .page-header-nav.active .site-navigation__item {
+    transform: translateX(0);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .page-header-nav.active .site-navigation__item:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+
+  .page-header-nav.active .site-navigation__item:nth-child(2) {
+    transition-delay: 0.125s;
+  }
+
+  .page-header-nav.active .site-navigation__item:nth-child(3) {
+    transition-delay: 0.15s;
+  }
+
+  .page-header-nav.active .site-navigation__item:nth-child(4) {
+    transition-delay: 0.175s;
+  }
+
+  .page-header-nav.active .site-navigation__item:nth-child(5) {
+    transition-delay: 0.2s;
+  }
+
+  .page-header-nav.active .site-navigation__item:nth-child(6) {
+    transition-delay: 0.225s;
+  }
+
+  .page-header-nav.active .site-navigation__item:nth-child(7) {
+    transition-delay: 0.25s;
+  }
+
+  .page-header-nav.active .site-navigation__item:nth-child(8) {
+    transition-delay: 0.275s;
+  }
+
+  .page-header__burger.active::before {
+    top: 10px;
+    transform: rotate(45deg);
+
+    transition: top 0.3s ease,
+                transform 0.3s 0.3s ease;
+  }
+  .page-header__burger.active::after {
+    bottom: 10px;
+    transform: rotate(-45deg);
+    transition: bottom 0.3s ease,
+                transform 0.3s 0.3s ease;
+  }
+
+  .page-header__burger.active span {
+    display: none;
+  }
+
   .projects__item:nth-child(odd) {
     transform: translateX(0);
   }

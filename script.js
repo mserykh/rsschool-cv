@@ -1,4 +1,6 @@
 const scrollToTopButton = document.getElementById("scrollToTop");
+const burgerButton = document.querySelector(".page-header__burger");
+const menu = document.querySelector(".page-header-nav");
 
 const handleScroll = () => {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -17,8 +19,15 @@ const scrollToTop = () => {
   }
 };
 
+function toggleMobileMenu() {
+  burgerButton.classList.toggle("active");
+  menu.classList.toggle("active");
+}
+
 document.addEventListener("scroll", handleScroll);
 scrollToTopButton.addEventListener("click", function(e) {
   e.preventDefault();
   scrollToTop();
 });
+
+burgerButton.addEventListener("click", toggleMobileMenu);
