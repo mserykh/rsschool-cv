@@ -1,6 +1,7 @@
 const scrollToTopButton = document.getElementById("scrollToTop");
 const burgerButton = document.querySelector(".page-header__burger");
 const menu = document.querySelector(".page-header-nav");
+const siteNav = document.querySelector(".site-navigation");
 
 const handleScroll = () => {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -19,9 +20,16 @@ const scrollToTop = () => {
   }
 };
 
-function toggleMobileMenu() {
+function toggleMobileNav() {
   burgerButton.classList.toggle("active");
   menu.classList.toggle("active");
+  body.classList.toggle("lock");
+}
+
+function closeNav() {
+  body.classList.remove("lock");
+  burgerButton.classList.remove("active");
+  menu.classList.remove("active");
 }
 
 document.addEventListener("scroll", handleScroll);
@@ -30,4 +38,5 @@ scrollToTopButton.addEventListener("click", function(e) {
   scrollToTop();
 });
 
-burgerButton.addEventListener("click", toggleMobileMenu);
+burgerButton.addEventListener("click", toggleMobileNav);
+siteNav.addEventListener("click", closeNav);
