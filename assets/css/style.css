@@ -1380,6 +1380,15 @@ input:focus, textarea:focus {
     margin-bottom: 24px;
   }
 
+  .skills__list {
+    display: block;
+    columns: 2;
+  }
+
+  .skills__item {
+    margin-bottom: 12px;
+  }
+
   .projects__link {
     display: flex;
     flex-direction: column;
