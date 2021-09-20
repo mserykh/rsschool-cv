@@ -117,7 +117,7 @@ button {
   bottom: 0px;
   border-radius: 5px;
   background: var(--hover);
-  transition: width ease-in-out 1s;
+  transition: width ease-in-out 0.5s;
   z-index: 1;
 }
 
@@ -126,7 +126,7 @@ button {
   width: 100%;
   left: 0;
   background: var(--hover);
-  transition: width ease-in-out 1s;
+  transition: width ease-in-out 0.5s;
 }
 
 .btn--download {
