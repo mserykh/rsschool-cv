@@ -1388,6 +1388,10 @@ input:focus, textarea:focus {
     width: 100%;
   }
 
+  .about-me__buttons-wrapper {
+    gap: 16px;
+  }
+
   .title {
     margin-bottom: 24px;
   }
@@ -1450,6 +1454,13 @@ input:focus, textarea:focus {
   .page-footer__contact-links  {
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-me__buttons-wrapper {
+    text-align: center;
+    flex-direction: column;
   }
 }
 
