@@ -203,6 +203,7 @@ button {
   margin: 0 auto;
   padding: 0 20px;
   margin-bottom: 32px;
+  z-index: 4;
 }
 
 .page-header__inner {
@@ -930,7 +931,6 @@ input:focus, textarea:focus {
 .rsschool:hover path {
   fill: var(--accent);
   transition: fill 0.3s ease-in-out;
-
 }
 
 .btn--to-top {
