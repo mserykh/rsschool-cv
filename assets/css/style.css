@@ -110,6 +110,19 @@ button {
   fill: var(--text);
 }
 
+.animate-download {
+  animation: downloadMe 1s;
+}
+
+@keyframes downloadMe {
+  from {
+    transform: translateY(-4px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
 .block-bg {
   padding: 64px 32px;
   max-width: var(--max-width);
