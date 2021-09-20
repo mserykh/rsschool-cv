@@ -22,6 +22,8 @@ Junior Front-End developer with a passion for good user experience and accessibi
 
 ### Projects
 
+- [Custom video player - HTML, CSS, JSS](https://rolling-scopes-school.github.io/mserykh-JSFEPRESCHOOL/custom-video-player/)
+
 - [Restaurant landing page - HTML, CSS](https://mserykh.github.io/layout-restaurant/)
 
 - [May the 4 be with you - Pure CSS](https://codepen.io/trifle-on-a-stick/pen/zYvPwmo)
@@ -42,11 +44,15 @@ Senior Compliance Associate
 
 IT Product Manager
 
-### Education
+### Education an courses
 
 **2021 – now Rolling Scopes School** *Online*
 
 Javascript/Front-end Mentoring Program
+
+**2021 - Udemy** 
+
+The Complete JavaScript Course 2021 by Jonas Schmedtmann
 
 **2004 – 2010 Samara State Aerospace University** *Samara, Russia*
 
@@ -55,16 +61,14 @@ Master of Mechanics and Mathematics
 ### Code examples
 
 ```javascript
-function createFunctions(n) {
-  var callbacks = [];
+function convertHashToArray(hash) {
+  const result = [];
 
-  for (let i = 0; i < n; i++) {
-    callbacks.push(function() {
-      return i;
-    });
+  for (const [key, value] of Object.entries(hash)) {
+    result.push([key, value]);
   }
-  
-  return callbacks;
+
+  return result.sort();
 }
 ```
 
@@ -72,6 +76,4 @@ function createFunctions(n) {
 
 - [x] English (Fluent)
 - [x] Russian (Native)
-- [x] French (B1)
-- [x] Polish (B1)
-- [x] JavaScript (basic)
+- [x] JavaScript (Basic)
