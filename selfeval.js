@@ -27,7 +27,7 @@ Self-evaluation by Maria Serykh
 ✅ There is a video summary - 10 points
 ✅ Design is quite good - 10 points
 
-Total: 160 points
+Total score: 160 points
 
 developed by mserykh - 2021
 `);
