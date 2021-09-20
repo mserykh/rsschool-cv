@@ -5,6 +5,7 @@
   --text: #F8F0E4;
   --accent: #E12179;
   --accent2: linear-gradient(0deg, #BC1964 0%, #311996 100%);
+  --hover: linear-gradient(0deg, #BC1964 0%, #311996 100%);
   --linkedin: #2867B2;
   --linkedin-bg: rgba(40, 103, 178, 0.35);
   --github: #6E5494;
@@ -97,6 +98,35 @@ button {
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
+}
+
+.btn span {
+  z-index: 3;
+  position: relative;
+}
+
+.btn--base::after,
+.btn--download::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0;
+  right: 0;
+  height: 100%;
+  bottom: 0px;
+  border-radius: 5px;
+  background: var(--hover);
+  transition: width ease-in-out 1s;
+  z-index: 1;
+}
+
+.btn--base:hover::after,
+.btn--download:hover::after  {
+  width: 100%;
+  left: 0;
+  background: var(--hover);
+  transition: width ease-in-out 1s;
 }
 
 .btn--download {
@@ -306,7 +336,6 @@ button {
   display: inline-block;
   text-decoration: none;
   color: var(--text);
-  font-weight: 700;
   padding: 1rem 0;
   position: relative;
 }
@@ -729,6 +758,17 @@ button {
   row-gap: 68px;
 }
 
+.education__list a {
+  transition: color 0.3s ease-in-out;
+}
+
+.education__list a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transition: color 0.3s ease-in-out,
+              border-color 0.3s ease-in-ouT;
+}
+
 .education__item {
   display: grid;
   grid-template-columns: 1fr 1fr 3fr 2fr;
@@ -873,14 +913,24 @@ input:focus, textarea:focus {
 .page-footer .contact-links__link {
   color: var(--text);
   font-weight: 700;
+  transition: color 0.3s ease-in-out;
 }
+
+.page-footer .contact-links__link:hover {
+  color: var(--accent);
+  transition: color 0.3s ease-in-out;
+}
+
 
 .rsschool path{
   fill: var(--text);
+  transition: fill 0.3s ease-in-out;
 }
 
 .rsschool:hover path {
   fill: var(--accent);
+  transition: fill 0.3s ease-in-out;
+
 }
 
 .btn--to-top {
@@ -938,6 +988,7 @@ input:focus, textarea:focus {
 
   .about-me .contact-links__link {
     border-width: 20px;
+    transition: border 0.3s ease-in-out;
   }
 
   .about-me .github .contact-links__link {
@@ -960,6 +1011,7 @@ input:focus, textarea:focus {
 
   .about-me .contact-links__link:hover {
     border-width: 40px;
+    transition: border 0.3s ease-in-out;
   }
 
   .projects__item {
