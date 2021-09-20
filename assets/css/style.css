@@ -81,6 +81,7 @@ button {
 
 .title {
   font-size: 32px;
+  font-weight: 600;
   margin-bottom: 48px;
 }
 
@@ -144,7 +145,7 @@ button {
   margin: 0 auto;
   width: 100%;
   max-width: var(--max-width);
-  padding: 0 var(--s);
+  padding: 0 20px;
 }
 
 .main-wrapper {
@@ -383,7 +384,7 @@ button {
   margin: 32px auto;
   text-align: center;
   font-weight: 700;
-  font-size: min(72px, 8vw);
+  font-size: 72px;
 }
 
 .about-me__buttons-wrapper {
@@ -421,8 +422,14 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 20px solid;
+  border: 10px solid;
   border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-me .contact-links__link:hover {
+  transform: scale(1.25);
+  transition: transform 0.3s ease-in-out;
 }
 
 .about-me .github .contact-links__link {
@@ -440,12 +447,8 @@ button {
   border-color: var(--codepen-bg);
 }
 
-.about-me .contact-links__link:hover {
-
-}
-
 .about-me .about-me__description {
-  max-width: 80%;
+  max-width: 90%;
 }
 
 .description__item {
@@ -461,11 +464,13 @@ button {
 
 .description__item::before {
   content: "<";
+  font-size: 20px;
   margin-left: -12px;
 }
 
 .description__item::after {
   content: "/>";
+  font-size: 20px;
 }
 
 .skills {
@@ -505,8 +510,6 @@ button {
 
 .skills__item::before {
   content: '<';
-  top: 0;
-  left: 0;
   font-family: "Ubuntu", sans-serif;
   color: var(--accent);
   transform: translateX(-100%);
@@ -514,11 +517,8 @@ button {
 
 .skills__item::after {
   content: '>';
-  top: 0;
-  right: 0;
   font-family: "Ubuntu", sans-serif;
   color: var(--accent);
-  transform: translateX(100%);
 }
 
 .projects {
@@ -526,15 +526,10 @@ button {
 }
 
 .projects__item {
-
   margin: 0 auto;
   margin-bottom: 68px;
   max-width: 100%;
   border-radius: 10px;
-}
-
-.projects__item:last-child {
-  margin-bottom: 0;
 }
 
 .projects__item:nth-child(odd) {
@@ -556,7 +551,7 @@ button {
   display: block;
   background-color: var(--primary);
   width: 100%;
-  height: 480px;
+  height: 240px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 16px;
@@ -655,9 +650,12 @@ button {
 
 .experience__responsibility {
   line-height: 1.8;
-  margin-bottom: 1rem;
   position: relative;
   padding-left: 25px;
+}
+
+.experience__responsibility:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .experience__responsibility::before {
@@ -685,6 +683,7 @@ button {
   grid-row: 1 / 2;
   position: relative;
   font-family: "Poppins", sans-serif;
+  line-height: 1;
   font-size: 64px;
   font-weight: 600;
   padding-top: 20px;
@@ -697,10 +696,6 @@ button {
   height: 10px;
   background-color: var(--accent);
   top: 0;
-}
-
-.languages {
-  padding-bottom: 68px;
 }
 
 .languages__list {
@@ -758,32 +753,6 @@ button {
   border-bottom: 1px solid var(--text);
   position: relative;
   line-height: 1.2;
-}
-
-.education a span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  transform: translateX(-100%);
-  transition: transform 0.25s ease-in-out;
-}
-
-.education a:hover span {
-  transform: translateX(0);
-}
-
-.education a span::before {
-  display: inline-block;
-  content: attr(data-linktitle);
-  color: var(--accent);
-  transform: translateX(100%);
-  border-bottom: 1px solid var(--accent);
-  transition: transform 0.25s ease-in-out;
-}
-
-.education a:hover span::before {
-  transform: translateX(0);
 }
 
 .education__year {
@@ -892,7 +861,7 @@ input:focus, textarea:focus {
 }
 
 .page-footer__copyright {
-  margin-right: 32px;
+  width: 100%;
 }
 
 .page-footer__contact-links {
@@ -966,6 +935,10 @@ input:focus, textarea:focus {
     top: calc(50% - 4rem);
     right: 10rem;
     animation-direction: alternate-reverse;
+  }
+
+  .about-me .contact-links__link {
+    border-width: 20px;
   }
 
   .about-me .github .contact-links__link {
@@ -1110,7 +1083,7 @@ input:focus, textarea:focus {
     transition: transform 0.5s ease-in-out;
   }
 
-.page-header-nav.active .site-navigation__item {
+  .page-header-nav.active .site-navigation__item {
     transform: translateX(0);
     transition: transform 0.4s ease-in-out;
   }
@@ -1175,16 +1148,68 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+
+  .page-header__inner {
+    height: 50px;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+
   .title {
-    font-size: 24px;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .about-me__job {
+    font-size: 60px;
   }
 
   .projects__title {
     font-size: 24px;
   }
 
+  .experience__list {
+    gap: 64px;
+  }
+
+  .experience__job:not(:last-child)::before {
+    bottom: -32px;
+  }
+
   .experience__title {
+    font-size: 24px;
     margin-bottom: 16px;
+  }
+
+  .experience__year::before {
+    bottom: 5px;
+  }
+
+  .experience__company,
+  .experience__location,
+  .experience__responsibilities {
+    font-size: 16px;
+  }
+
+  .facts__quantity {
+    font-size: 56px;
+  }
+
+  .languages__list {
+    column-gap: 20px;
+  }
+
+  .languages__title {
+    font-size: 22px;
   }
 
   .education__item {
@@ -1206,6 +1231,10 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 700px) {
+  .about-me__job {
+    font-size: 50px;
+  }
+
   .experience__job {
     column-gap: 34px;
   }
@@ -1218,8 +1247,63 @@ input:focus, textarea:focus {
     font-size: 48px;
   }
 
+  .facts__desc,
+  .languages__level {
+    font-size: 16px;
+  }
+
   .languages__list{
     column-gap: 0;
+  }
+
+  pre code {
+    font-size: 16px;
+  }
+
+  .video__player {
+    height: 45vmax;
+  }
+}
+
+@media (max-width: 600px) {
+.about-me__job {
+    font-size: 42px;
+  }
+
+  .about-me__name {
+    font-size: 24px;
+  }
+
+  .languages__list,
+  .facts__list {
+    display: block;
+    columns: 2;
+  }
+
+  .facts__desc {
+    margin-bottom: 24px;
+  }
+
+  .facts__desc:nth-of-type(even),
+  .languages__level:nth-of-type(even) {
+    margin-bottom: 0;
+  }
+
+
+  .languages__title {
+    line-height: 2;
+    padding-top: 10px;
+  }
+
+  .languages__level:not(:last-child) {
+    padding-bottom: 24px;
+  }
+
+  .page-footer__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
   }
 }
 
@@ -1241,6 +1325,10 @@ input:focus, textarea:focus {
     width: 100%;
   }
 
+  .title {
+    margin-bottom: 24px;
+  }
+
   .projects__link {
     display: flex;
     flex-direction: column;
@@ -1255,44 +1343,16 @@ input:focus, textarea:focus {
   }
 
   .experience__job:not(:last-child)::before {
-    bottom: -16px;
+    bottom: -24px;
   }
 
   .experience__year::before {
     top: -16px;
   }
 
-  .skills__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .facts__list {
-    display: flex;
-    flex-direction: column;
-  }
-
   .facts__quantity {
-  font-size: 48px;
-  line-height: 1;
-  }
-
-  .facts__desc:not(:last-child) {
-    padding-bottom: 24px;
-  }
-
-  .languages__list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .languages__title {
-    line-height: 2;
-    padding-top: 10px;
-  }
-
-  .languages__level:not(:last-child) {
-    padding-bottom: 24px;
+    font-size: 48px;
+    line-height: 1;
   }
 
   .code-examples {
@@ -1362,6 +1422,12 @@ input:focus, textarea:focus {
     z-index: 2;
   }
 
+  .projects__item:nth-of-type(even) .projects__content {
+    right: 68px;
+    left: auto;
+    text-align: right;
+  }
+
   .projects__link::before {
     display: block;
     position: absolute;
@@ -1372,7 +1438,7 @@ input:focus, textarea:focus {
     border-radius: 10px;
     height: 100%;
     background-color: var(--primary);
-    opacity: 0.45;
+    opacity: 0.75;
     z-index: 1;
   }
 
