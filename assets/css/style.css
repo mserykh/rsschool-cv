@@ -833,7 +833,7 @@ pre code.hljs {
 .video__player {
   border: none;
   max-width: 100%;
-  height: 30vmax;
+  height: 350px;
   border-radius: 10px;
 }
 
@@ -1324,7 +1324,7 @@ input:focus, textarea:focus {
   }
 
   .video__player {
-    height: 45vmax;
+    height: 300px;
   }
 }
 
@@ -1432,7 +1432,7 @@ input:focus, textarea:focus {
   }
 
   .video__player {
-    height: 50vmax;
+    height: 250px;
   }
 
   .form {
