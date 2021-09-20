@@ -11,8 +11,6 @@
   --github-bg: rgba(110, 84, 148, 0.35);
   --codepen: rgba(255, 255, 255, 0.65);
   --codepen-bg: rgba(255, 255, 255, 0.15);
-  --xs: min(20px, 6vw);
-  --s: min(3vw, 32px);
   --max-width: 1440px;
   --content-width: 1238px;
 }
@@ -44,7 +42,7 @@ html {
 body {
    background-color: var(--bg);
    color: var(--text);
-   font-size: var(--xs);
+   font-size: 20px;
    font-family: "Ubuntu", sans-serif;
    font-weight: 400;
    transition: background 0.6s ease-in-out;
@@ -998,7 +996,6 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 1000px) {
-
   body.lock {
     overflow: hidden;
   }
@@ -1068,6 +1065,7 @@ input:focus, textarea:focus {
   .theme-toggle {
     z-index: 2;
   }
+
   .page-header__burger {
     display: block;
     position: relative;
@@ -1112,8 +1110,7 @@ input:focus, textarea:focus {
     transition: transform 0.5s ease-in-out;
   }
 
-  
-  .page-header-nav.active .site-navigation__item {
+.page-header-nav.active .site-navigation__item {
     transform: translateX(0);
     transition: transform 0.4s ease-in-out;
   }
@@ -1209,7 +1206,6 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 700px) {
-
   .experience__job {
     column-gap: 34px;
   }
@@ -1225,7 +1221,6 @@ input:focus, textarea:focus {
   .languages__list{
     column-gap: 0;
   }
-
 }
 
 @media (max-width: 500px) {
