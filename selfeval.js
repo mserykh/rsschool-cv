@@ -1,33 +1,27 @@
 console.log(`
 Rolling Scopes School - Stage 1 task
-Self-evaluation by Maria Serykh
-✅ The markup is valid - 10 points 
-✅ The layout is semantic - 20 points:
-    [+] article
-    [+] footer
-    [+] header
-    [+] main
-    [+] nav
-    [+] section
-    [+] h1
-    [+] h2
-    [+] h3
-    [+] h4
-✅ Css styles are used - 10 points
-✅ The content is centered, main background stretches - 10 points
-✅ The layout is adaptive - 10 points
-✅ There is a burger menu - 10 points
-✅ There is an image, proportions are not distorted - 10 points
-✅ Contacts and skills are made as list <ul> - 10 points
-✅ CV contains contacts, information about education, level of English - 10 points
-✅ There is an example of my code with highlighting - 10 points
-✅ There is a list of project (image, description, link) - 10 points
-✅ CV is in English - 10 points
-✅ Pull request is complied with requirements - 10 points
-✅ There is a video summary - 10 points
-✅ Design is quite good - 10 points
-
-Total score: 160 points
+Self-evaluation by Maria Serykh 130 /120
+✅ студент засабмитил в rs app ссылку на своё CV, задеплоенное на gh-pages +10
+✅ вёрстка валидная +10
+✅ вёрстка семантическая +20
+    [+] header, main, footer +5
+    [+] nav +5
+    [+] h1 +5
+    [+] h2 +5
+✅ вёрстка семантическая +20
+✅ в footer есть ссылка на гитхаб автора работы, год создания приложения, логотип курса со ссылкой на курс +10
+✅ для оформления СV используются css-стили +10
+✅ при уменьшении масштаба страницы браузера вёрстка размещается по центру по горизонтали, а не сдвигается в сторону +10
+✅ на странице СV есть фото или аватарка автора, пропорции изображения не искажены, у изображения есть атрибут alt +10
+✅ навигация, контакты для связи и перечень навыков оформлены в виде списка ul > li или ul > li > a +10
+✅ Содержание CV +30
+    [+] краткую информацию о себе +5
+    [+] контакты для связи +5
+    [+] перечень навыков +5
+    [+] пример кода. Код добавляется при помощи символов и тегов, а не картинкой +5
+    [+] перечень выполненных учебных проектов со ссылками на исходный код или страницу приложения +5
+    [+] информацию об образовании и уровне английского +5
+✅ CV выполнено на английском языке +10
 
 developed by mserykh - 2021
 `);
