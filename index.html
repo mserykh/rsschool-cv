@@ -1,365 +1,631 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maria Serykh - Junior Front-End Developer</title>
-  <link rel="icon" href="#">
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css">
-  <link rel="stylesheet" href="./assets/css/fonts.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-  <script>hljs.highlightAll();</script>
-</head>
-<body id="body">
-  <div class="wrapper">
-    <header class="page-header">
-      <div class="page-header__inner">
-        <button class="theme-toggle" id="toggle" aria-label="Activate light mode" title="Activate light mode"  type="button">
-          <svg id="svg1" xmlns="http://www.w3.org/2000/svg" width="25" height="25"  viewBox="0 0 25 25">
-            <mask id="moonClip">
-              <rect x="0" y="0" width="25" height="25" fill="white" />
-              <circle cx="23" cy="12.5" r="13.5" fill="black" />
-            </mask>
-            <circle id="moon" cx="12.5" cy="12.5" r="12.5" fill="#F8F0E4" mask="url(#moonClip)" />
-            <g fill-rule="evenodd">
-              <circle id="sun" cx="12.5" cy="12.5" r="7" fill="#E12179" />
-              <circle id="beam1" cx="12.5" cy="23" r="2" fill="#E12179" />
-              <circle id="beam2" cx="3.5" cy="18" r="2" fill="#E12179" />
-              <circle id="beam3" cx="3.5" cy="7" r="2" fill="#E12179" />
-              <circle id="beam4" cx="12.5" cy="2" r="2" fill="#E12179" />
-              <circle id="beam5" cx="22.5" cy="7" r="2" fill="#E12179" />
-              <circle id="beam6" cx="21.5" cy="18" r="2" fill="#E12179" />
-            </g>
-          </svg>
-        </button>
-        <div class="page-header__burger" title="Open menu">
-          <span></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maria Serykh - Junior Front-End Developer</title>
+    <link rel="icon" href="#" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+  <body id="body">
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="page-header__inner">
+          <button
+            class="theme-toggle"
+            id="toggle"
+            aria-label="Activate light mode"
+            title="Activate light mode"
+            type="button"
+          >
+            <svg
+              id="svg1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+            >
+              <mask id="moonClip">
+                <rect x="0" y="0" width="25" height="25" fill="white" />
+                <circle cx="23" cy="12.5" r="13.5" fill="black" />
+              </mask>
+              <circle
+                id="moon"
+                cx="12.5"
+                cy="12.5"
+                r="12.5"
+                fill="#F8F0E4"
+                mask="url(#moonClip)"
+              />
+              <g fill-rule="evenodd">
+                <circle id="sun" cx="12.5" cy="12.5" r="7" fill="#E12179" />
+                <circle id="beam1" cx="12.5" cy="23" r="2" fill="#E12179" />
+                <circle id="beam2" cx="3.5" cy="18" r="2" fill="#E12179" />
+                <circle id="beam3" cx="3.5" cy="7" r="2" fill="#E12179" />
+                <circle id="beam4" cx="12.5" cy="2" r="2" fill="#E12179" />
+                <circle id="beam5" cx="22.5" cy="7" r="2" fill="#E12179" />
+                <circle id="beam6" cx="21.5" cy="18" r="2" fill="#E12179" />
+              </g>
+            </svg>
+          </button>
+          <div class="page-header__burger" title="Open menu">
+            <span></span>
+          </div>
+          <nav class="page-header-nav">
+            <ul class="site-navigation">
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#skills">Skills</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#projects">Projects</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#experience"
+                  >Experience</a
+                >
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#lang">Languages</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#education">Education</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#code">Code Style</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="page-header-nav">
-          <ul class="site-navigation">
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#skills">Skills</a></li>
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#projects">Projects</a></li>
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#experience">Experience</a></li>
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#lang">Languages</a></li>
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#education">Education</a></li>
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#code">Code Style</a></li>
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <h1 class="visually-hidden">Maria Serykh - Junior Front-End Developer Resume</h1>
-      <div class="main-wrapper">
-        <section class="about-me container">
-          <div class="about-me__img-container">
-            <img class="about-me__img" src="./assets/photo.jpg" alt="Personal photo">
-          </div>
-          <h2 class="about-me__name typewriter" data-type = '["Hi, I&#39;m Maria 👋", "I live in Amsterdam", "I ❤️ semantics", "I care about accessibility"]'>
-            Hi, I&#39;m <span class="text-highlighted">Maria</span> :)
-          </h2>
-          <h2 class="title about-me__job">Front-End Developer</h2>
-          <div class="about-me__buttons-wrapper">
-            <a class="btn btn--base" href="mailto:marie.serykh@gmail.com">
-              <span>Email me</span>
-            </a>
-            <a class="btn btn--download" href="./assets/content/pdf/CV_Maria_Serykh_Front-end_Developer.pdf" title="" download>
-              <span>
-                Download CV
-                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="download-base" d="M0.625 11.5256C0.79076 11.5256 0.949732 11.5938 1.06694 11.7152C1.18415 11.8366 1.25 12.0013 1.25 12.173V15.4102C1.25 15.7537 1.3817 16.083 1.61612 16.3259C1.85054 16.5687 2.16848 16.7051 2.5 16.7051H17.5C17.8315 16.7051 18.1495 16.5687 18.3839 16.3259C18.6183 16.083 18.75 15.7537 18.75 15.4102V12.173C18.75 12.0013 18.8158 11.8366 18.9331 11.7152C19.0503 11.5938 19.2092 11.5256 19.375 11.5256C19.5408 11.5256 19.6997 11.5938 19.8169 11.7152C19.9342 11.8366 20 12.0013 20 12.173V15.4102C20 16.0971 19.7366 16.7558 19.2678 17.2415C18.7989 17.7271 18.163 18 17.5 18H2.5C1.83696 18 1.20107 17.7271 0.732233 17.2415C0.263392 16.7558 0 16.0971 0 15.4102V12.173C0 12.0013 0.065848 11.8366 0.183058 11.7152C0.300269 11.5938 0.45924 11.5256 0.625 11.5256Z" fill="#F8F0E4"/>
-                  <path class="download-arrow" d="M9.5575 14.0546C9.61556 14.1149 9.68453 14.1628 9.76046 14.1954C9.83639 14.228 9.91779 14.2448 10 14.2448C10.0822 14.2448 10.1636 14.228 10.2395 14.1954C10.3155 14.1628 10.3844 14.1149 10.4425 14.0546L14.1925 10.17C14.3099 10.0484 14.3758 9.88353 14.3758 9.71161C14.3758 9.53968 14.3099 9.37479 14.1925 9.25322C14.0751 9.13165 13.916 9.06335 13.75 9.06335C13.584 9.06335 13.4249 9.13165 13.3075 9.25322L10.625 12.0333V0.64744C10.625 0.475728 10.5592 0.31105 10.4419 0.189632C10.3247 0.0682129 10.1658 0 10 0C9.83424 0 9.67527 0.0682129 9.55806 0.189632C9.44085 0.31105 9.375 0.475728 9.375 0.64744V12.0333L6.6925 9.25322C6.63439 9.19302 6.5654 9.14527 6.48948 9.11269C6.41356 9.08012 6.33218 9.06335 6.25 9.06335C6.16782 9.06335 6.08644 9.08012 6.01052 9.11269C5.9346 9.14527 5.86561 9.19302 5.8075 9.25322C5.74939 9.31341 5.70329 9.38488 5.67185 9.46353C5.6404 9.54218 5.62421 9.62647 5.62421 9.71161C5.62421 9.79674 5.6404 9.88103 5.67185 9.95968C5.70329 10.0383 5.74939 10.1098 5.8075 10.17L9.5575 14.0546Z" fill="#F8F0E4"/>
-                </svg>
-              </span>
-            </a>
-          </div>
-          <ul class="contact-links">
-            <li class="contact-links__item github">
-              <a href="https://github.com/mserykh" class="contact-links__link" target="_blank">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.0008 0.000768932C5.37109 0.000768932 0 5.51177 0 12.3038C0 17.7426 3.43822 22.3524 8.20326 23.9787C8.80555 24.0948 9.02306 23.7142 9.02306 23.385C9.02306 23.0929 9.01631 22.3201 9.01181 21.2943C5.67185 22.0356 4.96831 19.6403 4.96831 19.6403C4.42153 18.2224 3.63248 17.8417 3.63248 17.8417C2.54641 17.0813 3.71873 17.0974 3.71873 17.0974C4.92181 17.1812 5.55485 18.3623 5.55485 18.3623C6.62516 20.2447 8.36302 19.7003 9.05082 19.3835C9.15582 18.5907 9.46859 18.0455 9.80911 17.7418C7.14495 17.4334 4.34352 16.3761 4.34352 11.6618C4.34352 10.3154 4.80855 9.21884 5.57735 8.35762C5.44459 8.04928 5.03807 6.79591 5.68311 5.10116C5.68311 5.10116 6.68742 4.77282 8.98331 6.36299C9.9613 6.0903 10.97 5.95043 11.9835 5.94699C13.0036 5.95391 14.0229 6.09079 14.9837 6.36299C17.2661 4.77282 18.2696 5.10116 18.2696 5.10116C18.9139 6.79591 18.5074 8.04851 18.3904 8.35762C19.1517 9.21884 19.6167 10.3161 19.6167 11.6618C19.6167 16.3869 16.8116 17.4288 14.1444 17.7295C14.5614 18.0978 14.9522 18.8552 14.9522 20.0048C14.9522 21.6503 14.9372 22.976 14.9372 23.3766C14.9372 23.6965 15.1472 24.0809 15.7652 23.9571C20.5655 22.3477 24 17.7341 24 12.3031C24 5.511 18.6289 0 11.9993 0L12.0008 0.000768932Z" fill="#6E5494"/>
-              </svg>
+      </header>
+      <main>
+        <h1 class="visually-hidden">
+          Maria Serykh - Junior Front-End Developer Resume
+        </h1>
+        <div class="main-wrapper">
+          <section class="about-me container">
+            <div class="about-me__img-container">
+              <img
+                class="about-me__img"
+                src="./assets/photo.jpg"
+                alt="Personal photo"
+              />
+            </div>
+            <h2
+              class="about-me__name typewriter"
+              data-type='["Hi, I&#39;m Maria 👋", "I live in Amsterdam", "I ❤️ semantics", "I care about accessibility"]'
+            >
+              Hi, I&#39;m <span class="text-highlighted">Maria</span> :)
+            </h2>
+            <h2 class="title about-me__job">Front-End Developer</h2>
+            <div class="about-me__buttons-wrapper">
+              <a class="btn btn--base" href="mailto:marie.serykh@gmail.com">
+                <span>Email me</span>
               </a>
-            </li>
-            <li class="contact-links__item linkedin">
-              <a href="https://www.linkedin.com/in/mariaserykh/" class="contact-links__link" target="_blank">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.33605 7.93377C4.99912 7.93384 4.66548 7.86747 4.35423 7.73845C4.04286 7.60938 3.76002 7.42016 3.52189 7.18161C3.28377 6.94306 3.09505 6.65988 2.96654 6.34828C2.83808 6.03679 2.77231 5.70302 2.773 5.36608M5.33605 7.93377C5.84321 7.9341 6.33909 7.78408 6.761 7.50264C7.18295 7.22118 7.51197 6.82093 7.70646 6.35249C7.90095 5.88404 7.95217 5.36845 7.85365 4.8709C7.75512 4.37335 7.51127 3.91619 7.15294 3.55722C6.79461 3.19824 6.33788 2.95358 5.8405 2.85415C5.34313 2.75473 4.82744 2.80501 4.35863 2.99864C3.88983 3.19227 3.48897 3.52055 3.20673 3.94199C2.92453 4.36336 2.77359 4.85894 2.773 5.36608M5.33605 7.93377C5.33599 7.93377 5.33594 7.93377 5.33589 7.93377L5.33625 7.43377L5.33643 7.93377C5.3363 7.93377 5.33618 7.93377 5.33605 7.93377ZM2.773 5.36608C2.773 5.36615 2.773 5.36622 2.773 5.36629L3.273 5.36683L2.773 5.36574C2.773 5.36586 2.773 5.36597 2.773 5.36608ZM20.445 20.9526H20.4945L20.543 20.9429L20.5468 20.9422L20.9487 20.8618V20.4519V14.1633C20.9487 12.6109 20.786 11.1211 20.0874 10.014C19.3555 8.85425 18.1034 8.21023 16.1798 8.21023C14.9488 8.21023 13.9629 8.64325 13.2657 9.23214V8.99897V8.49897H12.7657H9.35175H8.85175V8.99897V20.4519V20.9519H9.35175H12.906H13.406V20.4519V14.7843C13.406 14.045 13.4804 13.4236 13.7162 12.9963C13.8275 12.7945 13.9725 12.6408 14.1667 12.5335C14.3637 12.4246 14.641 12.3474 15.039 12.3474C15.4165 12.3474 15.6556 12.4344 15.8148 12.5452C15.975 12.6567 16.097 12.8221 16.1881 13.0515C16.3819 13.5392 16.3953 14.1967 16.3953 14.8825V20.4526V20.9526H16.8953H20.445ZM7.11675 20.9526H7.61675V20.4526V8.99972V8.49972H7.11675H3.555H3.055V8.99972V20.4526V20.9526H3.555H7.11675ZM1.77 0.5H22.2233C22.9367 0.5 23.5 1.06306 23.5 1.7302V22.2698C23.5 22.9369 22.9367 23.5 22.2233 23.5H1.77C1.05779 23.5 0.5 22.9397 0.5 22.2698V1.7302C0.5 1.06034 1.05779 0.5 1.77 0.5Z" fill="#2867B2" stroke="#2867B2"/>
-              </svg>
+              <a
+                class="btn btn--download"
+                href="./assets/content/pdf/CV_Maria_Serykh_Front-end_Developer.pdf"
+                title=""
+                download
+              >
+                <span>
+                  Download CV
+                  <svg
+                    width="20"
+                    height="18"
+                    viewBox="0 0 20 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="download-base"
+                      d="M0.625 11.5256C0.79076 11.5256 0.949732 11.5938 1.06694 11.7152C1.18415 11.8366 1.25 12.0013 1.25 12.173V15.4102C1.25 15.7537 1.3817 16.083 1.61612 16.3259C1.85054 16.5687 2.16848 16.7051 2.5 16.7051H17.5C17.8315 16.7051 18.1495 16.5687 18.3839 16.3259C18.6183 16.083 18.75 15.7537 18.75 15.4102V12.173C18.75 12.0013 18.8158 11.8366 18.9331 11.7152C19.0503 11.5938 19.2092 11.5256 19.375 11.5256C19.5408 11.5256 19.6997 11.5938 19.8169 11.7152C19.9342 11.8366 20 12.0013 20 12.173V15.4102C20 16.0971 19.7366 16.7558 19.2678 17.2415C18.7989 17.7271 18.163 18 17.5 18H2.5C1.83696 18 1.20107 17.7271 0.732233 17.2415C0.263392 16.7558 0 16.0971 0 15.4102V12.173C0 12.0013 0.065848 11.8366 0.183058 11.7152C0.300269 11.5938 0.45924 11.5256 0.625 11.5256Z"
+                      fill="#F8F0E4"
+                    />
+                    <path
+                      class="download-arrow"
+                      d="M9.5575 14.0546C9.61556 14.1149 9.68453 14.1628 9.76046 14.1954C9.83639 14.228 9.91779 14.2448 10 14.2448C10.0822 14.2448 10.1636 14.228 10.2395 14.1954C10.3155 14.1628 10.3844 14.1149 10.4425 14.0546L14.1925 10.17C14.3099 10.0484 14.3758 9.88353 14.3758 9.71161C14.3758 9.53968 14.3099 9.37479 14.1925 9.25322C14.0751 9.13165 13.916 9.06335 13.75 9.06335C13.584 9.06335 13.4249 9.13165 13.3075 9.25322L10.625 12.0333V0.64744C10.625 0.475728 10.5592 0.31105 10.4419 0.189632C10.3247 0.0682129 10.1658 0 10 0C9.83424 0 9.67527 0.0682129 9.55806 0.189632C9.44085 0.31105 9.375 0.475728 9.375 0.64744V12.0333L6.6925 9.25322C6.63439 9.19302 6.5654 9.14527 6.48948 9.11269C6.41356 9.08012 6.33218 9.06335 6.25 9.06335C6.16782 9.06335 6.08644 9.08012 6.01052 9.11269C5.9346 9.14527 5.86561 9.19302 5.8075 9.25322C5.74939 9.31341 5.70329 9.38488 5.67185 9.46353C5.6404 9.54218 5.62421 9.62647 5.62421 9.71161C5.62421 9.79674 5.6404 9.88103 5.67185 9.95968C5.70329 10.0383 5.74939 10.1098 5.8075 10.17L9.5575 14.0546Z"
+                      fill="#F8F0E4"
+                    />
+                  </svg>
+                </span>
               </a>
-            </li>
-            <li class="contact-links__item codepen">
-              <a href="https://codepen.io/mserykh" class="contact-links__link" target="_blank">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <mask id="path-1-inside-1" fill="white">
-                <path d="M5.85571 10.9329V13.0671L7.45118 12.0002L5.85571 10.9329Z"/>
-                <path d="M11.3625 9.38408V6.40977L6.36609 9.74021L8.59772 11.2332L11.3625 9.38408Z"/>
-                <path d="M17.6344 9.74021L12.6379 6.40977V9.38408L15.4022 11.2332L17.6344 9.74021Z"/>
-                <path d="M6.36609 14.2603L11.3625 17.5907V14.6164L8.59772 12.7678L6.36609 14.2603Z"/>
-                <path d="M12.6379 14.6164V17.5907L17.6344 14.2603L15.4022 12.7678L12.6379 14.6164Z"/>
-                <path d="M12.0003 10.4916L9.74487 12.0003L12.0003 13.509L14.2558 12.0003L12.0003 10.4916Z"/>
-                <path d="M12.0003 0C5.37285 0 0 5.37234 0 12.0003C0 18.6282 5.37285 24 12.0003 24C18.6277 24 24 18.6277 24 12.0003C24 5.37285 18.6277 0 12.0003 0ZM19.4201 14.2608C19.4201 14.2888 19.418 14.3168 19.414 14.3445C19.414 14.3536 19.4104 14.3628 19.4089 14.3719C19.4062 14.3899 19.4025 14.4076 19.3977 14.4252C19.3952 14.4358 19.3912 14.446 19.3881 14.4561C19.3851 14.4663 19.378 14.4876 19.3719 14.5028C19.3658 14.518 19.3622 14.5236 19.3572 14.5337C19.3521 14.5439 19.3435 14.5621 19.3359 14.5763C19.3282 14.5905 19.3237 14.5956 19.3176 14.6058C19.3115 14.6159 19.3003 14.6316 19.2907 14.6443C19.2838 14.6539 19.2764 14.663 19.2684 14.6717C19.2587 14.6839 19.2482 14.6954 19.2369 14.7062C19.2288 14.7148 19.2202 14.7235 19.2116 14.7311C19.2029 14.7387 19.1877 14.7519 19.1755 14.7615C19.1634 14.7711 19.1568 14.7767 19.1466 14.7833L19.136 14.7914L12.3538 19.313C12.2488 19.3834 12.1252 19.421 11.9987 19.421C11.8723 19.421 11.7487 19.3834 11.6436 19.313L4.86402 14.7914L4.85388 14.7833C4.84382 14.7766 4.83416 14.7693 4.82496 14.7615C4.8124 14.752 4.80037 14.7419 4.78894 14.7311C4.78032 14.7235 4.77169 14.7148 4.76307 14.7062C4.75194 14.6953 4.74144 14.6838 4.73162 14.6717C4.72379 14.663 4.71651 14.6539 4.7098 14.6443C4.70016 14.6316 4.69103 14.619 4.68291 14.6058C4.6748 14.5926 4.67023 14.586 4.66465 14.5763C4.65907 14.5667 4.64994 14.5484 4.64284 14.5337C4.63574 14.519 4.6332 14.5134 4.62863 14.5028C4.62407 14.4921 4.61697 14.4718 4.6124 14.4561C4.60783 14.4404 4.6053 14.4358 4.60225 14.4252C4.59921 14.4145 4.59464 14.3897 4.59109 14.3719C4.59109 14.3628 4.58703 14.3536 4.58602 14.3445C4.58238 14.3167 4.58051 14.2888 4.58044 14.2608V9.74022C4.5805 9.71239 4.58236 9.6846 4.58602 9.65702C4.58602 9.64738 4.58957 9.63825 4.59109 9.62912C4.59464 9.61136 4.59769 9.5931 4.60225 9.57585C4.60682 9.5586 4.60885 9.55505 4.6124 9.54491C4.61595 9.53476 4.62255 9.51345 4.62863 9.49823C4.63472 9.48302 4.63776 9.47744 4.64284 9.46729C4.64791 9.45714 4.65653 9.43888 4.66465 9.42518C4.67277 9.41149 4.67632 9.40489 4.68291 9.39525C4.68951 9.38561 4.70016 9.36938 4.7098 9.3567C4.71944 9.34402 4.72401 9.33793 4.73162 9.3288C4.73922 9.31966 4.75191 9.30546 4.76307 9.29481L4.78894 9.26944C4.8001 9.2593 4.81228 9.24915 4.82496 9.239C4.83764 9.22886 4.84373 9.22429 4.85388 9.21719C4.86402 9.21009 4.86047 9.21212 4.86402 9.20958L11.6462 4.68748C11.7513 4.61725 11.8749 4.57976 12.0013 4.57976C12.1277 4.57976 12.2513 4.61725 12.3564 4.68748L19.1385 9.20907L19.1492 9.21668C19.1593 9.22378 19.1684 9.23139 19.1781 9.2385L19.2141 9.26893C19.2227 9.27705 19.2314 9.28568 19.2395 9.2943C19.2506 9.30501 19.2611 9.31636 19.2709 9.32829C19.279 9.33742 19.2861 9.34706 19.2932 9.35619C19.3003 9.36532 19.3115 9.38156 19.3201 9.39475C19.3288 9.40794 19.3328 9.41453 19.3384 9.42468C19.344 9.43482 19.3531 9.45207 19.3597 9.46678C19.3663 9.48149 19.3698 9.48758 19.3744 9.49773C19.379 9.50787 19.3856 9.52867 19.3906 9.5444C19.3957 9.56013 19.3977 9.56469 19.4003 9.57535C19.405 9.59287 19.4088 9.61066 19.4114 9.62861C19.4114 9.63774 19.4155 9.64688 19.4165 9.65651C19.4206 9.68406 19.4226 9.71187 19.4226 9.73971L19.4201 14.2608Z"/>
-                <path d="M18.1447 13.0671V10.9329L16.5492 12.0002L18.1447 13.0671Z"/>
-                </mask>
-                <path d="M5.85571 10.9329V13.0671L7.45118 12.0002L5.85571 10.9329Z" fill="#FFFFFF"/>
-                <path d="M11.3625 9.38408V6.40977L6.36609 9.74021L8.59772 11.2332L11.3625 9.38408Z" fill="#FFFFFF"/>
-                <path d="M17.6344 9.74021L12.6379 6.40977V9.38408L15.4022 11.2332L17.6344 9.74021Z" fill="#FFFFFF"/>
-                <path d="M6.36609 14.2603L11.3625 17.5907V14.6164L8.59772 12.7678L6.36609 14.2603Z" fill="#FFFFFF"/>
-                <path d="M12.6379 14.6164V17.5907L17.6344 14.2603L15.4022 12.7678L12.6379 14.6164Z" fill="#FFFFFF"/>
-                <path d="M12.0003 10.4916L9.74487 12.0003L12.0003 13.509L14.2558 12.0003L12.0003 10.4916Z" fill="#FFFFFF"/>
-                <path d="M12.0003 0C5.37285 0 0 5.37234 0 12.0003C0 18.6282 5.37285 24 12.0003 24C18.6277 24 24 18.6277 24 12.0003C24 5.37285 18.6277 0 12.0003 0ZM19.4201 14.2608C19.4201 14.2888 19.418 14.3168 19.414 14.3445C19.414 14.3536 19.4104 14.3628 19.4089 14.3719C19.4062 14.3899 19.4025 14.4076 19.3977 14.4252C19.3952 14.4358 19.3912 14.446 19.3881 14.4561C19.3851 14.4663 19.378 14.4876 19.3719 14.5028C19.3658 14.518 19.3622 14.5236 19.3572 14.5337C19.3521 14.5439 19.3435 14.5621 19.3359 14.5763C19.3282 14.5905 19.3237 14.5956 19.3176 14.6058C19.3115 14.6159 19.3003 14.6316 19.2907 14.6443C19.2838 14.6539 19.2764 14.663 19.2684 14.6717C19.2587 14.6839 19.2482 14.6954 19.2369 14.7062C19.2288 14.7148 19.2202 14.7235 19.2116 14.7311C19.2029 14.7387 19.1877 14.7519 19.1755 14.7615C19.1634 14.7711 19.1568 14.7767 19.1466 14.7833L19.136 14.7914L12.3538 19.313C12.2488 19.3834 12.1252 19.421 11.9987 19.421C11.8723 19.421 11.7487 19.3834 11.6436 19.313L4.86402 14.7914L4.85388 14.7833C4.84382 14.7766 4.83416 14.7693 4.82496 14.7615C4.8124 14.752 4.80037 14.7419 4.78894 14.7311C4.78032 14.7235 4.77169 14.7148 4.76307 14.7062C4.75194 14.6953 4.74144 14.6838 4.73162 14.6717C4.72379 14.663 4.71651 14.6539 4.7098 14.6443C4.70016 14.6316 4.69103 14.619 4.68291 14.6058C4.6748 14.5926 4.67023 14.586 4.66465 14.5763C4.65907 14.5667 4.64994 14.5484 4.64284 14.5337C4.63574 14.519 4.6332 14.5134 4.62863 14.5028C4.62407 14.4921 4.61697 14.4718 4.6124 14.4561C4.60783 14.4404 4.6053 14.4358 4.60225 14.4252C4.59921 14.4145 4.59464 14.3897 4.59109 14.3719C4.59109 14.3628 4.58703 14.3536 4.58602 14.3445C4.58238 14.3167 4.58051 14.2888 4.58044 14.2608V9.74022C4.5805 9.71239 4.58236 9.6846 4.58602 9.65702C4.58602 9.64738 4.58957 9.63825 4.59109 9.62912C4.59464 9.61136 4.59769 9.5931 4.60225 9.57585C4.60682 9.5586 4.60885 9.55505 4.6124 9.54491C4.61595 9.53476 4.62255 9.51345 4.62863 9.49823C4.63472 9.48302 4.63776 9.47744 4.64284 9.46729C4.64791 9.45714 4.65653 9.43888 4.66465 9.42518C4.67277 9.41149 4.67632 9.40489 4.68291 9.39525C4.68951 9.38561 4.70016 9.36938 4.7098 9.3567C4.71944 9.34402 4.72401 9.33793 4.73162 9.3288C4.73922 9.31966 4.75191 9.30546 4.76307 9.29481L4.78894 9.26944C4.8001 9.2593 4.81228 9.24915 4.82496 9.239C4.83764 9.22886 4.84373 9.22429 4.85388 9.21719C4.86402 9.21009 4.86047 9.21212 4.86402 9.20958L11.6462 4.68748C11.7513 4.61725 11.8749 4.57976 12.0013 4.57976C12.1277 4.57976 12.2513 4.61725 12.3564 4.68748L19.1385 9.20907L19.1492 9.21668C19.1593 9.22378 19.1684 9.23139 19.1781 9.2385L19.2141 9.26893C19.2227 9.27705 19.2314 9.28568 19.2395 9.2943C19.2506 9.30501 19.2611 9.31636 19.2709 9.32829C19.279 9.33742 19.2861 9.34706 19.2932 9.35619C19.3003 9.36532 19.3115 9.38156 19.3201 9.39475C19.3288 9.40794 19.3328 9.41453 19.3384 9.42468C19.344 9.43482 19.3531 9.45207 19.3597 9.46678C19.3663 9.48149 19.3698 9.48758 19.3744 9.49773C19.379 9.50787 19.3856 9.52867 19.3906 9.5444C19.3957 9.56013 19.3977 9.56469 19.4003 9.57535C19.405 9.59287 19.4088 9.61066 19.4114 9.62861C19.4114 9.63774 19.4155 9.64688 19.4165 9.65651C19.4206 9.68406 19.4226 9.71187 19.4226 9.73971L19.4201 14.2608Z" fill="#FFFFFF"/>
-                <path d="M18.1447 13.0671V10.9329L16.5492 12.0002L18.1447 13.0671Z" fill="#FFFFFF"/>
-                <path d="M5.85571 10.9329V13.0671L7.45118 12.0002L5.85571 10.9329Z" stroke="#FFFFFF" stroke-width="2" mask="url(#path-1-inside-1)"/>
-                <path d="M11.3625 9.38408V6.40977L6.36609 9.74021L8.59772 11.2332L11.3625 9.38408Z" stroke="#FFFFFF" stroke-width="2" mask="url(#path-1-inside-1)"/>
-                <path d="M17.6344 9.74021L12.6379 6.40977V9.38408L15.4022 11.2332L17.6344 9.74021Z" stroke="#FFFFFF" stroke-width="2" mask="url(#path-1-inside-1)"/>
-                <path d="M6.36609 14.2603L11.3625 17.5907V14.6164L8.59772 12.7678L6.36609 14.2603Z" stroke="#FFFFFF" stroke-width="2" mask="url(#path-1-inside-1)"/>
-                <path d="M12.6379 14.6164V17.5907L17.6344 14.2603L15.4022 12.7678L12.6379 14.6164Z" stroke="#FFFFFF" stroke-width="2" mask="url(#path-1-inside-1)"/>
-                <path d="M12.0003 10.4916L9.74487 12.0003L12.0003 13.509L14.2558 12.0003L12.0003 10.4916Z" stroke="#FFFFFF" stroke-width="2" mask="url(#path-1-inside-1)"/>
-                <path d="M12.0003 0C5.37285 0 0 5.37234 0 12.0003C0 18.6282 5.37285 24 12.0003 24C18.6277 24 24 18.6277 24 12.0003C24 5.37285 18.6277 0 12.0003 0ZM19.4201 14.2608C19.4201 14.2888 19.418 14.3168 19.414 14.3445C19.414 14.3536 19.4104 14.3628 19.4089 14.3719C19.4062 14.3899 19.4025 14.4076 19.3977 14.4252C19.3952 14.4358 19.3912 14.446 19.3881 14.4561C19.3851 14.4663 19.378 14.4876 19.3719 14.5028C19.3658 14.518 19.3622 14.5236 19.3572 14.5337C19.3521 14.5439 19.3435 14.5621 19.3359 14.5763C19.3282 14.5905 19.3237 14.5956 19.3176 14.6058C19.3115 14.6159 19.3003 14.6316 19.2907 14.6443C19.2838 14.6539 19.2764 14.663 19.2684 14.6717C19.2587 14.6839 19.2482 14.6954 19.2369 14.7062C19.2288 14.7148 19.2202 14.7235 19.2116 14.7311C19.2029 14.7387 19.1877 14.7519 19.1755 14.7615C19.1634 14.7711 19.1568 14.7767 19.1466 14.7833L19.136 14.7914L12.3538 19.313C12.2488 19.3834 12.1252 19.421 11.9987 19.421C11.8723 19.421 11.7487 19.3834 11.6436 19.313L4.86402 14.7914L4.85388 14.7833C4.84382 14.7766 4.83416 14.7693 4.82496 14.7615C4.8124 14.752 4.80037 14.7419 4.78894 14.7311C4.78032 14.7235 4.77169 14.7148 4.76307 14.7062C4.75194 14.6953 4.74144 14.6838 4.73162 14.6717C4.72379 14.663 4.71651 14.6539 4.7098 14.6443C4.70016 14.6316 4.69103 14.619 4.68291 14.6058C4.6748 14.5926 4.67023 14.586 4.66465 14.5763C4.65907 14.5667 4.64994 14.5484 4.64284 14.5337C4.63574 14.519 4.6332 14.5134 4.62863 14.5028C4.62407 14.4921 4.61697 14.4718 4.6124 14.4561C4.60783 14.4404 4.6053 14.4358 4.60225 14.4252C4.59921 14.4145 4.59464 14.3897 4.59109 14.3719C4.59109 14.3628 4.58703 14.3536 4.58602 14.3445C4.58238 14.3167 4.58051 14.2888 4.58044 14.2608V9.74022C4.5805 9.71239 4.58236 9.6846 4.58602 9.65702C4.58602 9.64738 4.58957 9.63825 4.59109 9.62912C4.59464 9.61136 4.59769 9.5931 4.60225 9.57585C4.60682 9.5586 4.60885 9.55505 4.6124 9.54491C4.61595 9.53476 4.62255 9.51345 4.62863 9.49823C4.63472 9.48302 4.63776 9.47744 4.64284 9.46729C4.64791 9.45714 4.65653 9.43888 4.66465 9.42518C4.67277 9.41149 4.67632 9.40489 4.68291 9.39525C4.68951 9.38561 4.70016 9.36938 4.7098 9.3567C4.71944 9.34402 4.72401 9.33793 4.73162 9.3288C4.73922 9.31966 4.75191 9.30546 4.76307 9.29481L4.78894 9.26944C4.8001 9.2593 4.81228 9.24915 4.82496 9.239C4.83764 9.22886 4.84373 9.22429 4.85388 9.21719C4.86402 9.21009 4.86047 9.21212 4.86402 9.20958L11.6462 4.68748C11.7513 4.61725 11.8749 4.57976 12.0013 4.57976C12.1277 4.57976 12.2513 4.61725 12.3564 4.68748L19.1385 9.20907L19.1492 9.21668C19.1593 9.22378 19.1684 9.23139 19.1781 9.2385L19.2141 9.26893C19.2227 9.27705 19.2314 9.28568 19.2395 9.2943C19.2506 9.30501 19.2611 9.31636 19.2709 9.32829C19.279 9.33742 19.2861 9.34706 19.2932 9.35619C19.3003 9.36532 19.3115 9.38156 19.3201 9.39475C19.3288 9.40794 19.3328 9.41453 19.3384 9.42468C19.344 9.43482 19.3531 9.45207 19.3597 9.46678C19.3663 9.48149 19.3698 9.48758 19.3744 9.49773C19.379 9.50787 19.3856 9.52867 19.3906 9.5444C19.3957 9.56013 19.3977 9.56469 19.4003 9.57535C19.405 9.59287 19.4088 9.61066 19.4114 9.62861C19.4114 9.63774 19.4155 9.64688 19.4165 9.65651C19.4206 9.68406 19.4226 9.71187 19.4226 9.73971L19.4201 14.2608Z" stroke="#FFFFFF" stroke-width="2" mask="url(#path-1-inside-1)"/>
-                <path d="M18.1447 13.0671V10.9329L16.5492 12.0002L18.1447 13.0671Z" stroke="#FFFFFF" stroke-width="2" mask="url(#path-1-inside-1)"/>
-              </svg>
-              </a>
-            </li>
-          </ul>
-          <div class="about-me__description">
-            <p class="description__item">I am a Junior Front End Developer with IT project management experience. I am passionate about good user experience and accessibility.</p>
-            <p class="description__item">I’m looking for collaboration in non-profit / commercial projects in Education and Science.</p>
-            <p class="description__item">Currently based in Amsterdam, in the rural Netherlands. I love cycling and listening to jazz and house music.</p>
-          </div>
-        </section>
-        <section class="skills block-bg">
-          <p class="subtitle">Why hire me</p>
-          <h2 id="skills" class="title">
-            Hard skills
-          </h2>
-          <ul class="skills__list">
-            <li class="skills__item">HTML</li>
-            <li class="skills__item">CSS / BEM</li>
-            <li class="skills__item">JavaScript</li>
-            <li class="skills__item">SVG</li>
-            <li class="skills__item">Regular Expressions</li>
-            <li class="skills__item">Figma / Photoshop</li>
-            <li class="skills__item">Git</li>
-            <li class="skills__item">Accessibility</li>
-            <li class="skills__item">Jira / Confluence</li>
-          </ul>
-        </section>
-        <section class="projects container">
-          <p class="subtitle">What I do</p>
-          <h2 id="projects" class="title">
-            Recent projects
-          </h2>
-          <div class="projects__wrapper">
-            <article class="projects__item">
-              <a class="projects__link" href="https://rolling-scopes-school.github.io/mserykh-JSFE2021Q3/museum-dom/" target="_blank">
-                <img class="projects__img" src="./assets/content/images/museum-louvre.jpg" alt="Website for a museum">
-                <div class="projects__content">
-                  <p class="subtitle projects__subtitle">HTML, CSS, JS</p>
-                  <h3 class="title projects__title">
-                    Website for a museum
-                  </h3>
-                  <p class="projects__desc">A website for a museum with a custom video player, an image slider, a ticket calculator and an interactive map</p>
-                  <div class="btn btn--base btn--link">
-                    <span>See project</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="projects__item">
-              <a class="projects__link" href="https://mserykh.github.io/layout-restaurant/" target="_blank">
-                <img class="projects__img" src="./assets/content/images/restaurant.jpg" alt="Restaurant landing page">
-                <div class="projects__content">
-                  <p class="subtitle projects__subtitle">HTML, CSS</p>
-                  <h3 class="title projects__title">
-                    Restaurant landing page
-                  </h3>
-                  <p class="projects__desc">A landing page for a restaurant. Made with BEM and CSS Flexbox layout, responsive.</p>
-                  <div class="btn btn--base btn--link">
-                    <span>See project</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="projects__item">
-              <a class="projects__link" href="https://rolling-scopes-school.github.io/mserykh-JSFE2021Q3/momentum/" target="_blank">
-                <img class="projects__img" src="./assets/content/images/momentum.jpg" alt="A copy of a plugin for Chrome: Momentum Dash">
-                <div class="projects__content">
-                  <p class="subtitle projects__subtitle">HTML, CSS, JS</p>
-                  <h3 class="title projects__title">
-                    A copy of a plugin for Chrome: Momentum Dash
-                  </h3>
-                  <p class="projects__desc">A copy of an extension featuring audio player, weather, inspirational quotes, random background images and to-do.</p>
-                  <div class="btn btn--base btn--link">
-                    <span>See project</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-            <article class="projects__item">
-              <a class="projects__link" href="https://mserykh-christmas-tree-task.netlify.app/" target="_blank">
-                <img class="projects__img" src="./assets/content/images/xmas-tree.jpg" alt="Help your grandma to decorate a Christmas Tree">
-                <div class="projects__content">
-                  <p class="subtitle projects__subtitle">HTML, CSS, JS</p>
-                  <h3 class="title projects__title">
-                    Help your grandma to decorate a Christmas Tree
-                  </h3>
-                  <p class="projects__desc">Filter, sort, search and select toys to decorate a Christmas tree by draaging toys to the tree. Pick you background and a tree. Merry Christmas!</p>
-                  <div class="btn btn--base btn--link">
-                    <span>See project</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </div>
-        </section>
-        <section class="experience container">
-          <p class="subtitle">Where I worked</p>
-          <h2 id="experience" class="title">Experience</h2>
-          <ul  class="experience__list">
-            <li class="experience__job">
-              <p class="experience__year">
-                2019 – 2020
+            </div>
+            <ul class="contact-links">
+              <li class="contact-links__item github">
+                <a
+                  href="https://github.com/mserykh"
+                  class="contact-links__link"
+                  target="_blank"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.0008 0.000768932C5.37109 0.000768932 0 5.51177 0 12.3038C0 17.7426 3.43822 22.3524 8.20326 23.9787C8.80555 24.0948 9.02306 23.7142 9.02306 23.385C9.02306 23.0929 9.01631 22.3201 9.01181 21.2943C5.67185 22.0356 4.96831 19.6403 4.96831 19.6403C4.42153 18.2224 3.63248 17.8417 3.63248 17.8417C2.54641 17.0813 3.71873 17.0974 3.71873 17.0974C4.92181 17.1812 5.55485 18.3623 5.55485 18.3623C6.62516 20.2447 8.36302 19.7003 9.05082 19.3835C9.15582 18.5907 9.46859 18.0455 9.80911 17.7418C7.14495 17.4334 4.34352 16.3761 4.34352 11.6618C4.34352 10.3154 4.80855 9.21884 5.57735 8.35762C5.44459 8.04928 5.03807 6.79591 5.68311 5.10116C5.68311 5.10116 6.68742 4.77282 8.98331 6.36299C9.9613 6.0903 10.97 5.95043 11.9835 5.94699C13.0036 5.95391 14.0229 6.09079 14.9837 6.36299C17.2661 4.77282 18.2696 5.10116 18.2696 5.10116C18.9139 6.79591 18.5074 8.04851 18.3904 8.35762C19.1517 9.21884 19.6167 10.3161 19.6167 11.6618C19.6167 16.3869 16.8116 17.4288 14.1444 17.7295C14.5614 18.0978 14.9522 18.8552 14.9522 20.0048C14.9522 21.6503 14.9372 22.976 14.9372 23.3766C14.9372 23.6965 15.1472 24.0809 15.7652 23.9571C20.5655 22.3477 24 17.7341 24 12.3031C24 5.511 18.6289 0 11.9993 0L12.0008 0.000768932Z"
+                      fill="#6E5494"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="contact-links__item linkedin">
+                <a
+                  href="https://www.linkedin.com/in/mariaserykh/"
+                  class="contact-links__link"
+                  target="_blank"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.33605 7.93377C4.99912 7.93384 4.66548 7.86747 4.35423 7.73845C4.04286 7.60938 3.76002 7.42016 3.52189 7.18161C3.28377 6.94306 3.09505 6.65988 2.96654 6.34828C2.83808 6.03679 2.77231 5.70302 2.773 5.36608M5.33605 7.93377C5.84321 7.9341 6.33909 7.78408 6.761 7.50264C7.18295 7.22118 7.51197 6.82093 7.70646 6.35249C7.90095 5.88404 7.95217 5.36845 7.85365 4.8709C7.75512 4.37335 7.51127 3.91619 7.15294 3.55722C6.79461 3.19824 6.33788 2.95358 5.8405 2.85415C5.34313 2.75473 4.82744 2.80501 4.35863 2.99864C3.88983 3.19227 3.48897 3.52055 3.20673 3.94199C2.92453 4.36336 2.77359 4.85894 2.773 5.36608M5.33605 7.93377C5.33599 7.93377 5.33594 7.93377 5.33589 7.93377L5.33625 7.43377L5.33643 7.93377C5.3363 7.93377 5.33618 7.93377 5.33605 7.93377ZM2.773 5.36608C2.773 5.36615 2.773 5.36622 2.773 5.36629L3.273 5.36683L2.773 5.36574C2.773 5.36586 2.773 5.36597 2.773 5.36608ZM20.445 20.9526H20.4945L20.543 20.9429L20.5468 20.9422L20.9487 20.8618V20.4519V14.1633C20.9487 12.6109 20.786 11.1211 20.0874 10.014C19.3555 8.85425 18.1034 8.21023 16.1798 8.21023C14.9488 8.21023 13.9629 8.64325 13.2657 9.23214V8.99897V8.49897H12.7657H9.35175H8.85175V8.99897V20.4519V20.9519H9.35175H12.906H13.406V20.4519V14.7843C13.406 14.045 13.4804 13.4236 13.7162 12.9963C13.8275 12.7945 13.9725 12.6408 14.1667 12.5335C14.3637 12.4246 14.641 12.3474 15.039 12.3474C15.4165 12.3474 15.6556 12.4344 15.8148 12.5452C15.975 12.6567 16.097 12.8221 16.1881 13.0515C16.3819 13.5392 16.3953 14.1967 16.3953 14.8825V20.4526V20.9526H16.8953H20.445ZM7.11675 20.9526H7.61675V20.4526V8.99972V8.49972H7.11675H3.555H3.055V8.99972V20.4526V20.9526H3.555H7.11675ZM1.77 0.5H22.2233C22.9367 0.5 23.5 1.06306 23.5 1.7302V22.2698C23.5 22.9369 22.9367 23.5 22.2233 23.5H1.77C1.05779 23.5 0.5 22.9397 0.5 22.2698V1.7302C0.5 1.06034 1.05779 0.5 1.77 0.5Z"
+                      fill="#2867B2"
+                      stroke="#2867B2"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="contact-links__item codepen">
+                <a
+                  href="https://codepen.io/mserykh"
+                  class="contact-links__link"
+                  target="_blank"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask id="path-1-inside-1" fill="white">
+                      <path
+                        d="M5.85571 10.9329V13.0671L7.45118 12.0002L5.85571 10.9329Z"
+                      />
+                      <path
+                        d="M11.3625 9.38408V6.40977L6.36609 9.74021L8.59772 11.2332L11.3625 9.38408Z"
+                      />
+                      <path
+                        d="M17.6344 9.74021L12.6379 6.40977V9.38408L15.4022 11.2332L17.6344 9.74021Z"
+                      />
+                      <path
+                        d="M6.36609 14.2603L11.3625 17.5907V14.6164L8.59772 12.7678L6.36609 14.2603Z"
+                      />
+                      <path
+                        d="M12.6379 14.6164V17.5907L17.6344 14.2603L15.4022 12.7678L12.6379 14.6164Z"
+                      />
+                      <path
+                        d="M12.0003 10.4916L9.74487 12.0003L12.0003 13.509L14.2558 12.0003L12.0003 10.4916Z"
+                      />
+                      <path
+                        d="M12.0003 0C5.37285 0 0 5.37234 0 12.0003C0 18.6282 5.37285 24 12.0003 24C18.6277 24 24 18.6277 24 12.0003C24 5.37285 18.6277 0 12.0003 0ZM19.4201 14.2608C19.4201 14.2888 19.418 14.3168 19.414 14.3445C19.414 14.3536 19.4104 14.3628 19.4089 14.3719C19.4062 14.3899 19.4025 14.4076 19.3977 14.4252C19.3952 14.4358 19.3912 14.446 19.3881 14.4561C19.3851 14.4663 19.378 14.4876 19.3719 14.5028C19.3658 14.518 19.3622 14.5236 19.3572 14.5337C19.3521 14.5439 19.3435 14.5621 19.3359 14.5763C19.3282 14.5905 19.3237 14.5956 19.3176 14.6058C19.3115 14.6159 19.3003 14.6316 19.2907 14.6443C19.2838 14.6539 19.2764 14.663 19.2684 14.6717C19.2587 14.6839 19.2482 14.6954 19.2369 14.7062C19.2288 14.7148 19.2202 14.7235 19.2116 14.7311C19.2029 14.7387 19.1877 14.7519 19.1755 14.7615C19.1634 14.7711 19.1568 14.7767 19.1466 14.7833L19.136 14.7914L12.3538 19.313C12.2488 19.3834 12.1252 19.421 11.9987 19.421C11.8723 19.421 11.7487 19.3834 11.6436 19.313L4.86402 14.7914L4.85388 14.7833C4.84382 14.7766 4.83416 14.7693 4.82496 14.7615C4.8124 14.752 4.80037 14.7419 4.78894 14.7311C4.78032 14.7235 4.77169 14.7148 4.76307 14.7062C4.75194 14.6953 4.74144 14.6838 4.73162 14.6717C4.72379 14.663 4.71651 14.6539 4.7098 14.6443C4.70016 14.6316 4.69103 14.619 4.68291 14.6058C4.6748 14.5926 4.67023 14.586 4.66465 14.5763C4.65907 14.5667 4.64994 14.5484 4.64284 14.5337C4.63574 14.519 4.6332 14.5134 4.62863 14.5028C4.62407 14.4921 4.61697 14.4718 4.6124 14.4561C4.60783 14.4404 4.6053 14.4358 4.60225 14.4252C4.59921 14.4145 4.59464 14.3897 4.59109 14.3719C4.59109 14.3628 4.58703 14.3536 4.58602 14.3445C4.58238 14.3167 4.58051 14.2888 4.58044 14.2608V9.74022C4.5805 9.71239 4.58236 9.6846 4.58602 9.65702C4.58602 9.64738 4.58957 9.63825 4.59109 9.62912C4.59464 9.61136 4.59769 9.5931 4.60225 9.57585C4.60682 9.5586 4.60885 9.55505 4.6124 9.54491C4.61595 9.53476 4.62255 9.51345 4.62863 9.49823C4.63472 9.48302 4.63776 9.47744 4.64284 9.46729C4.64791 9.45714 4.65653 9.43888 4.66465 9.42518C4.67277 9.41149 4.67632 9.40489 4.68291 9.39525C4.68951 9.38561 4.70016 9.36938 4.7098 9.3567C4.71944 9.34402 4.72401 9.33793 4.73162 9.3288C4.73922 9.31966 4.75191 9.30546 4.76307 9.29481L4.78894 9.26944C4.8001 9.2593 4.81228 9.24915 4.82496 9.239C4.83764 9.22886 4.84373 9.22429 4.85388 9.21719C4.86402 9.21009 4.86047 9.21212 4.86402 9.20958L11.6462 4.68748C11.7513 4.61725 11.8749 4.57976 12.0013 4.57976C12.1277 4.57976 12.2513 4.61725 12.3564 4.68748L19.1385 9.20907L19.1492 9.21668C19.1593 9.22378 19.1684 9.23139 19.1781 9.2385L19.2141 9.26893C19.2227 9.27705 19.2314 9.28568 19.2395 9.2943C19.2506 9.30501 19.2611 9.31636 19.2709 9.32829C19.279 9.33742 19.2861 9.34706 19.2932 9.35619C19.3003 9.36532 19.3115 9.38156 19.3201 9.39475C19.3288 9.40794 19.3328 9.41453 19.3384 9.42468C19.344 9.43482 19.3531 9.45207 19.3597 9.46678C19.3663 9.48149 19.3698 9.48758 19.3744 9.49773C19.379 9.50787 19.3856 9.52867 19.3906 9.5444C19.3957 9.56013 19.3977 9.56469 19.4003 9.57535C19.405 9.59287 19.4088 9.61066 19.4114 9.62861C19.4114 9.63774 19.4155 9.64688 19.4165 9.65651C19.4206 9.68406 19.4226 9.71187 19.4226 9.73971L19.4201 14.2608Z"
+                      />
+                      <path
+                        d="M18.1447 13.0671V10.9329L16.5492 12.0002L18.1447 13.0671Z"
+                      />
+                    </mask>
+                    <path
+                      d="M5.85571 10.9329V13.0671L7.45118 12.0002L5.85571 10.9329Z"
+                      fill="#FFFFFF"
+                    />
+                    <path
+                      d="M11.3625 9.38408V6.40977L6.36609 9.74021L8.59772 11.2332L11.3625 9.38408Z"
+                      fill="#FFFFFF"
+                    />
+                    <path
+                      d="M17.6344 9.74021L12.6379 6.40977V9.38408L15.4022 11.2332L17.6344 9.74021Z"
+                      fill="#FFFFFF"
+                    />
+                    <path
+                      d="M6.36609 14.2603L11.3625 17.5907V14.6164L8.59772 12.7678L6.36609 14.2603Z"
+                      fill="#FFFFFF"
+                    />
+                    <path
+                      d="M12.6379 14.6164V17.5907L17.6344 14.2603L15.4022 12.7678L12.6379 14.6164Z"
+                      fill="#FFFFFF"
+                    />
+                    <path
+                      d="M12.0003 10.4916L9.74487 12.0003L12.0003 13.509L14.2558 12.0003L12.0003 10.4916Z"
+                      fill="#FFFFFF"
+                    />
+                    <path
+                      d="M12.0003 0C5.37285 0 0 5.37234 0 12.0003C0 18.6282 5.37285 24 12.0003 24C18.6277 24 24 18.6277 24 12.0003C24 5.37285 18.6277 0 12.0003 0ZM19.4201 14.2608C19.4201 14.2888 19.418 14.3168 19.414 14.3445C19.414 14.3536 19.4104 14.3628 19.4089 14.3719C19.4062 14.3899 19.4025 14.4076 19.3977 14.4252C19.3952 14.4358 19.3912 14.446 19.3881 14.4561C19.3851 14.4663 19.378 14.4876 19.3719 14.5028C19.3658 14.518 19.3622 14.5236 19.3572 14.5337C19.3521 14.5439 19.3435 14.5621 19.3359 14.5763C19.3282 14.5905 19.3237 14.5956 19.3176 14.6058C19.3115 14.6159 19.3003 14.6316 19.2907 14.6443C19.2838 14.6539 19.2764 14.663 19.2684 14.6717C19.2587 14.6839 19.2482 14.6954 19.2369 14.7062C19.2288 14.7148 19.2202 14.7235 19.2116 14.7311C19.2029 14.7387 19.1877 14.7519 19.1755 14.7615C19.1634 14.7711 19.1568 14.7767 19.1466 14.7833L19.136 14.7914L12.3538 19.313C12.2488 19.3834 12.1252 19.421 11.9987 19.421C11.8723 19.421 11.7487 19.3834 11.6436 19.313L4.86402 14.7914L4.85388 14.7833C4.84382 14.7766 4.83416 14.7693 4.82496 14.7615C4.8124 14.752 4.80037 14.7419 4.78894 14.7311C4.78032 14.7235 4.77169 14.7148 4.76307 14.7062C4.75194 14.6953 4.74144 14.6838 4.73162 14.6717C4.72379 14.663 4.71651 14.6539 4.7098 14.6443C4.70016 14.6316 4.69103 14.619 4.68291 14.6058C4.6748 14.5926 4.67023 14.586 4.66465 14.5763C4.65907 14.5667 4.64994 14.5484 4.64284 14.5337C4.63574 14.519 4.6332 14.5134 4.62863 14.5028C4.62407 14.4921 4.61697 14.4718 4.6124 14.4561C4.60783 14.4404 4.6053 14.4358 4.60225 14.4252C4.59921 14.4145 4.59464 14.3897 4.59109 14.3719C4.59109 14.3628 4.58703 14.3536 4.58602 14.3445C4.58238 14.3167 4.58051 14.2888 4.58044 14.2608V9.74022C4.5805 9.71239 4.58236 9.6846 4.58602 9.65702C4.58602 9.64738 4.58957 9.63825 4.59109 9.62912C4.59464 9.61136 4.59769 9.5931 4.60225 9.57585C4.60682 9.5586 4.60885 9.55505 4.6124 9.54491C4.61595 9.53476 4.62255 9.51345 4.62863 9.49823C4.63472 9.48302 4.63776 9.47744 4.64284 9.46729C4.64791 9.45714 4.65653 9.43888 4.66465 9.42518C4.67277 9.41149 4.67632 9.40489 4.68291 9.39525C4.68951 9.38561 4.70016 9.36938 4.7098 9.3567C4.71944 9.34402 4.72401 9.33793 4.73162 9.3288C4.73922 9.31966 4.75191 9.30546 4.76307 9.29481L4.78894 9.26944C4.8001 9.2593 4.81228 9.24915 4.82496 9.239C4.83764 9.22886 4.84373 9.22429 4.85388 9.21719C4.86402 9.21009 4.86047 9.21212 4.86402 9.20958L11.6462 4.68748C11.7513 4.61725 11.8749 4.57976 12.0013 4.57976C12.1277 4.57976 12.2513 4.61725 12.3564 4.68748L19.1385 9.20907L19.1492 9.21668C19.1593 9.22378 19.1684 9.23139 19.1781 9.2385L19.2141 9.26893C19.2227 9.27705 19.2314 9.28568 19.2395 9.2943C19.2506 9.30501 19.2611 9.31636 19.2709 9.32829C19.279 9.33742 19.2861 9.34706 19.2932 9.35619C19.3003 9.36532 19.3115 9.38156 19.3201 9.39475C19.3288 9.40794 19.3328 9.41453 19.3384 9.42468C19.344 9.43482 19.3531 9.45207 19.3597 9.46678C19.3663 9.48149 19.3698 9.48758 19.3744 9.49773C19.379 9.50787 19.3856 9.52867 19.3906 9.5444C19.3957 9.56013 19.3977 9.56469 19.4003 9.57535C19.405 9.59287 19.4088 9.61066 19.4114 9.62861C19.4114 9.63774 19.4155 9.64688 19.4165 9.65651C19.4206 9.68406 19.4226 9.71187 19.4226 9.73971L19.4201 14.2608Z"
+                      fill="#FFFFFF"
+                    />
+                    <path
+                      d="M18.1447 13.0671V10.9329L16.5492 12.0002L18.1447 13.0671Z"
+                      fill="#FFFFFF"
+                    />
+                    <path
+                      d="M5.85571 10.9329V13.0671L7.45118 12.0002L5.85571 10.9329Z"
+                      stroke="#FFFFFF"
+                      stroke-width="2"
+                      mask="url(#path-1-inside-1)"
+                    />
+                    <path
+                      d="M11.3625 9.38408V6.40977L6.36609 9.74021L8.59772 11.2332L11.3625 9.38408Z"
+                      stroke="#FFFFFF"
+                      stroke-width="2"
+                      mask="url(#path-1-inside-1)"
+                    />
+                    <path
+                      d="M17.6344 9.74021L12.6379 6.40977V9.38408L15.4022 11.2332L17.6344 9.74021Z"
+                      stroke="#FFFFFF"
+                      stroke-width="2"
+                      mask="url(#path-1-inside-1)"
+                    />
+                    <path
+                      d="M6.36609 14.2603L11.3625 17.5907V14.6164L8.59772 12.7678L6.36609 14.2603Z"
+                      stroke="#FFFFFF"
+                      stroke-width="2"
+                      mask="url(#path-1-inside-1)"
+                    />
+                    <path
+                      d="M12.6379 14.6164V17.5907L17.6344 14.2603L15.4022 12.7678L12.6379 14.6164Z"
+                      stroke="#FFFFFF"
+                      stroke-width="2"
+                      mask="url(#path-1-inside-1)"
+                    />
+                    <path
+                      d="M12.0003 10.4916L9.74487 12.0003L12.0003 13.509L14.2558 12.0003L12.0003 10.4916Z"
+                      stroke="#FFFFFF"
+                      stroke-width="2"
+                      mask="url(#path-1-inside-1)"
+                    />
+                    <path
+                      d="M12.0003 0C5.37285 0 0 5.37234 0 12.0003C0 18.6282 5.37285 24 12.0003 24C18.6277 24 24 18.6277 24 12.0003C24 5.37285 18.6277 0 12.0003 0ZM19.4201 14.2608C19.4201 14.2888 19.418 14.3168 19.414 14.3445C19.414 14.3536 19.4104 14.3628 19.4089 14.3719C19.4062 14.3899 19.4025 14.4076 19.3977 14.4252C19.3952 14.4358 19.3912 14.446 19.3881 14.4561C19.3851 14.4663 19.378 14.4876 19.3719 14.5028C19.3658 14.518 19.3622 14.5236 19.3572 14.5337C19.3521 14.5439 19.3435 14.5621 19.3359 14.5763C19.3282 14.5905 19.3237 14.5956 19.3176 14.6058C19.3115 14.6159 19.3003 14.6316 19.2907 14.6443C19.2838 14.6539 19.2764 14.663 19.2684 14.6717C19.2587 14.6839 19.2482 14.6954 19.2369 14.7062C19.2288 14.7148 19.2202 14.7235 19.2116 14.7311C19.2029 14.7387 19.1877 14.7519 19.1755 14.7615C19.1634 14.7711 19.1568 14.7767 19.1466 14.7833L19.136 14.7914L12.3538 19.313C12.2488 19.3834 12.1252 19.421 11.9987 19.421C11.8723 19.421 11.7487 19.3834 11.6436 19.313L4.86402 14.7914L4.85388 14.7833C4.84382 14.7766 4.83416 14.7693 4.82496 14.7615C4.8124 14.752 4.80037 14.7419 4.78894 14.7311C4.78032 14.7235 4.77169 14.7148 4.76307 14.7062C4.75194 14.6953 4.74144 14.6838 4.73162 14.6717C4.72379 14.663 4.71651 14.6539 4.7098 14.6443C4.70016 14.6316 4.69103 14.619 4.68291 14.6058C4.6748 14.5926 4.67023 14.586 4.66465 14.5763C4.65907 14.5667 4.64994 14.5484 4.64284 14.5337C4.63574 14.519 4.6332 14.5134 4.62863 14.5028C4.62407 14.4921 4.61697 14.4718 4.6124 14.4561C4.60783 14.4404 4.6053 14.4358 4.60225 14.4252C4.59921 14.4145 4.59464 14.3897 4.59109 14.3719C4.59109 14.3628 4.58703 14.3536 4.58602 14.3445C4.58238 14.3167 4.58051 14.2888 4.58044 14.2608V9.74022C4.5805 9.71239 4.58236 9.6846 4.58602 9.65702C4.58602 9.64738 4.58957 9.63825 4.59109 9.62912C4.59464 9.61136 4.59769 9.5931 4.60225 9.57585C4.60682 9.5586 4.60885 9.55505 4.6124 9.54491C4.61595 9.53476 4.62255 9.51345 4.62863 9.49823C4.63472 9.48302 4.63776 9.47744 4.64284 9.46729C4.64791 9.45714 4.65653 9.43888 4.66465 9.42518C4.67277 9.41149 4.67632 9.40489 4.68291 9.39525C4.68951 9.38561 4.70016 9.36938 4.7098 9.3567C4.71944 9.34402 4.72401 9.33793 4.73162 9.3288C4.73922 9.31966 4.75191 9.30546 4.76307 9.29481L4.78894 9.26944C4.8001 9.2593 4.81228 9.24915 4.82496 9.239C4.83764 9.22886 4.84373 9.22429 4.85388 9.21719C4.86402 9.21009 4.86047 9.21212 4.86402 9.20958L11.6462 4.68748C11.7513 4.61725 11.8749 4.57976 12.0013 4.57976C12.1277 4.57976 12.2513 4.61725 12.3564 4.68748L19.1385 9.20907L19.1492 9.21668C19.1593 9.22378 19.1684 9.23139 19.1781 9.2385L19.2141 9.26893C19.2227 9.27705 19.2314 9.28568 19.2395 9.2943C19.2506 9.30501 19.2611 9.31636 19.2709 9.32829C19.279 9.33742 19.2861 9.34706 19.2932 9.35619C19.3003 9.36532 19.3115 9.38156 19.3201 9.39475C19.3288 9.40794 19.3328 9.41453 19.3384 9.42468C19.344 9.43482 19.3531 9.45207 19.3597 9.46678C19.3663 9.48149 19.3698 9.48758 19.3744 9.49773C19.379 9.50787 19.3856 9.52867 19.3906 9.5444C19.3957 9.56013 19.3977 9.56469 19.4003 9.57535C19.405 9.59287 19.4088 9.61066 19.4114 9.62861C19.4114 9.63774 19.4155 9.64688 19.4165 9.65651C19.4206 9.68406 19.4226 9.71187 19.4226 9.73971L19.4201 14.2608Z"
+                      stroke="#FFFFFF"
+                      stroke-width="2"
+                      mask="url(#path-1-inside-1)"
+                    />
+                    <path
+                      d="M18.1447 13.0671V10.9329L16.5492 12.0002L18.1447 13.0671Z"
+                      stroke="#FFFFFF"
+                      stroke-width="2"
+                      mask="url(#path-1-inside-1)"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="about-me__description">
+              <p class="description__item">
+                I am a Junior Front End Developer with IT project management
+                experience. I am passionate about good user experience and
+                accessibility.
               </p>
-              <p class="experience__company">
-                Boeing / AerData
+              <p class="description__item">
+                I’m looking for collaboration in non-profit / commercial
+                projects in Education and Science.
               </p>
-              <p class="experience__location"><em>Amsterdam, The Netherlands</em></p>
-              <h3 class="experience__title title">
-                Contract Data Analyst
-              </h3>
-              <ul class="experience__responsibilities">
-                <li class="experience__responsibility">Managed and uploaded aircraft technical data and lease contract information in management system</li>
-                <li class="experience__responsibility">Handled invoices, utilisation entry/check, back-offices tasks from external clients to maintain the assets up to date in the database</li>
-                <li class="experience__responsibility">Maintained project documentation</li>
-              </ul>
-            </li>
-            <li class="experience__job">
-                <p class="experience__year">
-                  2018 – 2019
+              <p class="description__item">
+                Currently based in Amsterdam, in the rural Netherlands. I love
+                cycling and listening to jazz and house music.
+              </p>
+            </div>
+          </section>
+          <section class="skills block-bg">
+            <p class="subtitle">Why hire me</p>
+            <h2 id="skills" class="title">Hard skills</h2>
+            <ul class="skills__list">
+              <li class="skills__item">JavaScript</li>
+              <li class="skills__item">TypeScript</li>
+              <li class="skills__item">React</li>
+              <li class="skills__item">Redux</li>
+              <li class="skills__item">HTML</li>
+              <li class="skills__item">CSS</li>
+              <li class="skills__item">Sass</li>
+              <li class="skills__item">BEM</li>
+              <li class="skills__item">SVG</li>
+              <li class="skills__item">Git</li>
+              <li class="skills__item">Jira / Confluence</li>
+              <li class="skills__item">Figma / Photoshop</li>
+            </ul>
+          </section>
+          <section class="projects container">
+            <p class="subtitle">What I do</p>
+            <h2 id="projects" class="title">Recent projects</h2>
+            <div class="projects__wrapper">
+              <article class="projects__item">
+                <a
+                  class="projects__link"
+                  href="https://rslang-20.netlify.app/"
+                  target="_blank"
+                >
+                  <img
+                    class="projects__img"
+                    src="./assets/content/images/rslang.png"
+                    alt="Website for a museum"
+                  />
+                  <div class="projects__content">
+                    <p class="subtitle projects__subtitle">TypeScript, SCSS</p>
+                    <h3 class="title projects__title">Application for learning English words</h3>
+                    <p class="projects__desc">
+                      An application for learning English words with 2 mini-games for repeating them, a statistics page
+                      for tracking individual progress.
+                    </p>
+                    <div class="btn btn--base btn--link">
+                      <span>See project</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="projects__item">
+                <a
+                  class="projects__link"
+                  href="https://team45-react-final-project-2022q1.netlify.app/"
+                  target="_blank"
+                >
+                  <img
+                    class="projects__img"
+                    src="./assets/content/images/alldone.jpg"
+                    alt="Project management application"
+                  />
+                  <div class="projects__content">
+                    <p class="subtitle projects__subtitle">React, Redux, TypeScript</p>
+                    <h3 class="title projects__title">
+                      Project management application
+                    </h3>
+                    <p class="projects__desc">
+                      Project management application. Made with Reacr, Redux,
+                      Tailwind and React Hook Forms, responsive.
+                    </p>
+                    <div class="btn btn--base btn--link">
+                      <span>See project</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="projects__item">
+                <a
+                  class="projects__link"
+                  href="https://rolling-scopes-school.github.io/mserykh-JSFE2021Q3/momentum/"
+                  target="_blank"
+                >
+                  <img
+                    class="projects__img"
+                    src="./assets/content/images/momentum.jpg"
+                    alt="A copy of a plugin for Chrome: Momentum Dash"
+                  />
+                  <div class="projects__content">
+                    <p class="subtitle projects__subtitle">HTML, CSS, JS</p>
+                    <h3 class="title projects__title">
+                      A copy of a plugin for Chrome: Momentum Dash
+                    </h3>
+                    <p class="projects__desc">
+                      A copy of an extension featuring audio player, weather,
+                      inspirational quotes, random background images and to-do.
+                    </p>
+                    <div class="btn btn--base btn--link">
+                      <span>See project</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="projects__item">
+                <a
+                  class="projects__link"
+                  href="https://mserykh-christmas-tree-task.netlify.app/"
+                  target="_blank"
+                >
+                  <img
+                    class="projects__img"
+                    src="./assets/content/images/xmas-tree.jpg"
+                    alt="Help your grandma to decorate a Christmas Tree"
+                  />
+                  <div class="projects__content">
+                    <p class="subtitle projects__subtitle">HTML, CSS, JS</p>
+                    <h3 class="title projects__title">
+                      Help your grandma to decorate a Christmas Tree
+                    </h3>
+                    <p class="projects__desc">
+                      Filter, sort, search and select toys to decorate a
+                      Christmas tree by draaging toys to the tree. Pick you
+                      background and a tree. Merry Christmas!
+                    </p>
+                    <div class="btn btn--base btn--link">
+                      <span>See project</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </section>
+          <section class="experience container">
+            <p class="subtitle">Where I worked</p>
+            <h2 id="experience" class="title">Experience</h2>
+            <ul class="experience__list">
+              <li class="experience__job">
+                <p class="experience__year">2019 – 2020</p>
+                <p class="experience__company">Boeing / AerData</p>
+                <p class="experience__location">
+                  <em>Amsterdam, The Netherlands</em>
                 </p>
-                <p class="experience__company">
-                  Amazon Development Center
-                </p>
+                <h3 class="experience__title title">Contract Data Analyst</h3>
+                <ul class="experience__responsibilities">
+                  <li class="experience__responsibility">
+                    Managed and uploaded aircraft technical data and lease
+                    contract information in management system
+                  </li>
+                  <li class="experience__responsibility">
+                    Handled invoices, utilisation entry/check, back-offices
+                    tasks from external clients to maintain the assets up to
+                    date in the database
+                  </li>
+                  <li class="experience__responsibility">
+                    Maintained project documentation
+                  </li>
+                </ul>
+              </li>
+              <li class="experience__job">
+                <p class="experience__year">2018 – 2019</p>
+                <p class="experience__company">Amazon Development Center</p>
                 <p class="experience__location"><em>Gdansk, Poland</em></p>
                 <h3 class="experience__title title">
                   Senior Compliance Associate
                 </h3>
                 <ul class="experience__responsibilities">
-                  <li class="experience__responsibility">Analyzed large datasets to identify compliance risk</li>
-                  <li class="experience__responsibility">Reviewed shipments that required clearance</li>
-                  <li class="experience__responsibility">Trained and mentored other Associates</li>
-                  <li class="experience__responsibility"> Audited work of other Associates</li>
-                  <li class="experience__responsibility">Tested and implemented new tools into workflow</li>
+                  <li class="experience__responsibility">
+                    Analyzed large datasets to identify compliance risk
+                  </li>
+                  <li class="experience__responsibility">
+                    Reviewed shipments that required clearance
+                  </li>
+                  <li class="experience__responsibility">
+                    Trained and mentored other Associates
+                  </li>
+                  <li class="experience__responsibility">
+                    Audited work of other Associates
+                  </li>
+                  <li class="experience__responsibility">
+                    Tested and implemented new tools into workflow
+                  </li>
                 </ul>
-            </li>
-            <li class="experience__job">
-                <p class="experience__year">
-                  2014 – 2016
+              </li>
+              <li class="experience__job">
+                <p class="experience__year">2014 – 2016</p>
+                <p class="experience__company">KAMIS Museum Systems</p>
+                <p class="experience__location">
+                  <em>St. Petersburg, Russia</em>
                 </p>
-                <p class="experience__company">
-                  KAMIS Museum Systems
-                </p>
-                <p class="experience__location"><em>St. Petersburg, Russia</em></p>
-                <h3 class="experience__title title">
-                  IT Product Manager
-                </h3>
+                <h3 class="experience__title title">IT Product Manager</h3>
                 <ul class="experience__responsibilities">
-                  <li class="experience__responsibility">Managed projects according to the deadlines</li>
-                  <li class="experience__responsibility">Created and maintained project documentation (contacts, instructions, manuals etc.)</li>
-                  <li class="experience__responsibility">Updated the company website</li>
-                  <li class="experience__responsibility">Populated content for 50+ sites</li>
-                  <li class="experience__responsibility">Facilited release planning, sprint planning</li>
+                  <li class="experience__responsibility">
+                    Managed projects according to the deadlines
+                  </li>
+                  <li class="experience__responsibility">
+                    Created and maintained project documentation (contacts,
+                    instructions, manuals etc.)
+                  </li>
+                  <li class="experience__responsibility">
+                    Updated the company website
+                  </li>
+                  <li class="experience__responsibility">
+                    Populated content for 50+ sites
+                  </li>
+                  <li class="experience__responsibility">
+                    Facilited release planning, sprint planning
+                  </li>
                 </ul>
-            </li>
-          </ul>
-        </section>
-        <section class="facts block-bg">
-          <p class="subtitle">Some facts about me</p>
-          <h2 class="title">Random numbers</h2>
-          <dl class="facts__list">
-            <dt class="facts__quantity">142</dt>
-            <dd class="facts__desc">completed katas on&nbsp;Codewars</dd>
-            <dt class="facts__quantity">1147</dt>
-            <dd class="facts__desc">commits</dd>
-            <dt class="facts__quantity">4</dt>
-            <dd class="facts__desc">languages I can speak</dd>
-            <dt class="facts__quantity">>1K</dt>
-            <dd class="facts__desc">codepen views</dd>
-          </dl>
-        </section>
-        <section class="languages container">
-          <p class="subtitle">I can speak</p>
-          <h2 id="lang" class="title">Languages</h2>
-          <dl class="languages__list">
-            <dt class="languages__title">English</dt>
-            <dd class="languages__level">Fluent</dd>
-            <dt class="languages__title">Russian</dt>
-            <dd class="languages__level">Native</dd>
-            <dt class="languages__title">Polish</dt>
-            <dd class="languages__level">Pre-Intermediate</dd>
-            <dt class="languages__title">French</dt>
-            <dd class="languages__level">Pre-Intermediate</dd>
-          </dl>
-        </section>
-        <section class="education container">
-          <p class="subtitle">Where I gained my knowledge</p>
-          <h2 id="education" class="title">Education and courses</h2>
-          <ul class="education__list">
-            <li class="education__item">
-              <p class="education__year">
-                2021 - now
-              </p>
-              <p class="education__status">
-                In progress
-              </p>
-              <h4 class="education__degree">
-                Javascript/Front-End Program
-              </h4>
-              <p class="education__company">
-                <a href="https://rs.school/js/"><span data-linktitle="Rolling Scopes School" aria-hidden="true"></span>
-                  Rolling Scopes School
-                </a>
-              </p>
-            </li>
-            <li class="education__item">
-              <p class="education__year">
-                2021
-              </p>
-              <p class="education__status">
-                <a download href="#pdf2">
-                  Certificate
-                </a>
-              </p>
-              <h4 class="education__degree">
-                The Complete JavaScript Course 2021 by Jonas Schmedtmann
-              </h4>
-              <p class="education__company">
-                <a href="https://www.udemy.com/course/the-complete-javascript-course">
-                  Udemy
-                </a>
-              </p>
-            </li>
-            <li class="education__item">
-              <p class="education__year">
-                2004 - 2010
-              </p>
-              <p class="education__status">
-                Master's degree
-              </p>
-              <h4 class="education__degree">
-                Mechanics and Mathematical Modeling
-              </h4>
-              <p class="education__company">
-                <a href="https://ssau.ru/">Samara State Aerospace University</a>, Russia
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section class="code-examples container">
-          <p class="subtitle">My code style</p>
-          <h2 id="code" class="title">Code examples</h2>
+              </li>
+            </ul>
+          </section>
+          <section class="facts block-bg">
+            <p class="subtitle">Some facts about me</p>
+            <h2 class="title">Random numbers</h2>
+            <dl class="facts__list">
+              <dt class="facts__quantity">142</dt>
+              <dd class="facts__desc">completed katas on&nbsp;Codewars</dd>
+              <dt class="facts__quantity">1147</dt>
+              <dd class="facts__desc">commits</dd>
+              <dt class="facts__quantity">4</dt>
+              <dd class="facts__desc">languages I can speak</dd>
+              <dt class="facts__quantity">>1K</dt>
+              <dd class="facts__desc">codepen views</dd>
+            </dl>
+          </section>
+          <section class="languages container">
+            <p class="subtitle">I can speak</p>
+            <h2 id="lang" class="title">Languages</h2>
+            <dl class="languages__list">
+              <dt class="languages__title">English</dt>
+              <dd class="languages__level">Fluent</dd>
+              <dt class="languages__title">Russian</dt>
+              <dd class="languages__level">Native</dd>
+              <dt class="languages__title">Dutch</dt>
+              <dd class="languages__level">Elementary</dd>
+              <dt class="languages__title">French</dt>
+              <dd class="languages__level">Pre-Intermediate</dd>
+            </dl>
+          </section>
+          <section class="education container">
+            <p class="subtitle">Where I gained my knowledge</p>
+            <h2 id="education" class="title">Education and courses</h2>
+            <ul class="education__list">
+              <li class="education__item">
+                <p class="education__year">March, 2022 - June, 2022</p>
+                <p class="education__status">Certificate</p>
+                <h4 class="education__degree">React JS</h4>
+                <p class="education__company">
+                  <a href="https://rs.school/js/"
+                    ><span
+                      data-linktitle="Rolling Scopes School"
+                      aria-hidden="true"
+                    ></span>
+                    Rolling Scopes School
+                  </a>
+                </p>
+              </li>
+              <li class="education__item">
+                <p class="education__year">July, 2021 - February, 2022</p>
+                <p class="education__status">Certificate</p>
+                <h4 class="education__degree">Javascript/Front-End Program</h4>
+                <p class="education__company">
+                  <a href="https://rs.school/js/"
+                    ><span
+                      data-linktitle="Rolling Scopes School"
+                      aria-hidden="true"
+                    ></span>
+                    Rolling Scopes School
+                  </a>
+                </p>
+              </li>
+              <li class="education__item">
+                <p class="education__year">2021</p>
+                <p class="education__status">
+                  <a download href="#pdf2"> Certificate </a>
+                </p>
+                <h4 class="education__degree">
+                  The Complete JavaScript Course 2021 by Jonas Schmedtmann
+                </h4>
+                <p class="education__company">
+                  <a
+                    href="https://www.udemy.com/course/the-complete-javascript-course"
+                  >
+                    Udemy
+                  </a>
+                </p>
+              </li>
+              <li class="education__item">
+                <p class="education__year">2004 - 2010</p>
+                <p class="education__status">Master's degree</p>
+                <h4 class="education__degree">
+                  Mechanics and Mathematical Modeling
+                </h4>
+                <p class="education__company">
+                  <a href="https://ssau.ru/"
+                    >Samara State Aerospace University</a
+                  >, Russia
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="code-examples container">
+            <p class="subtitle">My code style</p>
+            <h2 id="code" class="title">Code examples</h2>
             <pre>
               <code class="language-javascript">
 function explode(s) {
@@ -369,64 +635,88 @@ function explode(s) {
 }
               </code>
             </pre>
-        </section>
-        <section class="contact-me block-bg block-bg--thin">
-          <h2 id="contact" class="title">Let's talk</h2>
-          <p class="contact-me__text">
-            Do you have a project you want to collaborate on? Do you need help to tackle a technical task? Or you want to discuss anything about technologies, education or science? Will be happy to hear from you!
-          </p>
-          <div class="form">
-            <form action="#" method="post">
-              <div class="form-wrapper">
-                <div class="form__group">
-                  <label for="name">Name</label><span class="required"> *</span>
-                  <input type="text" name="name" id="name" required>
-                </div>
-                <div class="form__group">
-                  <label for="email">E-mail</label><span class="required"> *</span>
-                  <input type="email" name="email" id="email" required>
-                </div>
-                <div class="form__group">
-                  <label for="description">Please write your message below</label>
-                  <textarea rows = "5" cols = "30" name = "description" id="description">
-                  </textarea>
-                </div>
-                <button class="btn btn--base" type="submit">
-                  <span>Send</span>
-                </button>
-              </div>
-            </form>
-          </div>
-        </section>
-      </div>
-    </main>
-    <button id="scrollToTop" class="btn btn--to-top" title="Go to top" type="button">Top</button>
-    <footer class="page-footer">
-      <div class="page-footer__inner">
-        <div class="page-footer__copyright">
-          <p>© 2021 by Maria Serykh</p>
+          </section>
         </div>
-        <ul class="page-footer__contact-links">
-          <li class="contact-links__item"><a href="https://github.com/mserykh" class="contact-links__link" target="_blank">Github</a></li>
-          <li class="contact-links__item"><a href="https://www.linkedin.com/in/mariaserykh/" class="contact-links__link" target="_blank">Linkedin</a></li>
-          <li class="contact-links__item">
-            <a href="https://rs.school/js/" class="contact-links__link" target="_blank">
-              <svg class="rsschool" width="80" height="29" viewBox="0 0 80 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M41.2862 9.10523L45.0447 8.86509C45.1304 9.4725 45.2876 9.92452 45.5449 10.2494C45.9593 10.7579 46.5309 11.0122 47.2883 11.0122C47.8457 11.0122 48.2887 10.8851 48.5888 10.6167C48.8746 10.4048 49.0461 10.0658 49.0461 9.71263C49.0461 9.37362 48.8889 9.04872 48.6174 8.83684C48.3316 8.58258 47.6599 8.32832 46.6024 8.1023C44.8732 7.72091 43.6299 7.21239 42.9011 6.56261C42.1722 5.9552 41.7578 5.06528 41.7864 4.11886C41.7864 3.46908 41.9864 2.8193 42.358 2.28253C42.7867 1.67512 43.3726 1.19485 44.0729 0.926463C44.8303 0.601572 45.8878 0.432064 47.2169 0.432064C48.8461 0.432064 50.0894 0.728703 50.9468 1.33611C51.8043 1.92939 52.3187 2.88993 52.4759 4.20362L48.7603 4.4155C48.6603 3.85048 48.4602 3.44083 48.1315 3.17244C47.8028 2.90406 47.3741 2.77693 46.8168 2.77693C46.3594 2.77693 46.0165 2.87581 45.7878 3.05944C45.5734 3.22895 45.4305 3.48321 45.4448 3.76572C45.4448 3.97761 45.5592 4.17537 45.7306 4.3025C45.9164 4.47201 46.3594 4.62739 47.0597 4.76865C48.7889 5.13591 50.0179 5.50318 50.7753 5.88457C51.5327 6.26597 52.0758 6.73211 52.4045 7.28301C52.7475 7.84804 52.919 8.49782 52.9047 9.16173C52.9047 9.95277 52.676 10.7438 52.2187 11.4077C51.7471 12.0999 51.0897 12.6366 50.318 12.9615C49.5034 13.3147 48.4745 13.4983 47.2455 13.4983C45.0733 13.4983 43.5727 13.0887 42.7296 12.2553C41.8864 11.4218 41.3862 10.3765 41.2862 9.10523ZM1.40033 13.2864V0.658075H7.98842C9.20315 0.658075 10.1463 0.756955 10.7894 0.96884C11.4182 1.1666 11.9756 1.57624 12.3471 2.12714C12.7616 2.73455 12.9616 3.44083 12.9474 4.17537C12.9902 5.41843 12.3471 6.60498 11.2467 7.22651C10.818 7.46665 10.3464 7.63616 9.86053 7.72091C10.2178 7.81979 10.5751 7.9893 10.8895 8.18706C11.1324 8.38482 11.3325 8.61083 11.5183 8.85096C11.7326 9.0911 11.9184 9.35949 12.0756 9.642L13.9906 13.3006H9.50326L7.38821 9.41599C7.11668 8.92159 6.88802 8.5967 6.67366 8.44132C6.38784 8.24356 6.04486 8.14468 5.70188 8.14468H5.3589V13.2723H1.40033V13.2864ZM5.3589 5.77157H7.03093C7.38821 5.74332 7.73119 5.68681 8.07417 5.60206C8.3314 5.55968 8.56006 5.41843 8.71726 5.20654C9.10311 4.69802 9.04595 3.97761 8.57435 3.53971C8.31711 3.32783 7.81693 3.21482 7.10239 3.21482H5.3589V5.77157ZM0.5 24.1067L4.2585 23.8666C4.34425 24.474 4.50145 24.926 4.75868 25.2509C5.15883 25.7594 5.74475 26.0278 6.50217 26.0278C7.05951 26.0278 7.50253 25.9007 7.80264 25.6323C8.08846 25.4063 8.25995 25.0814 8.25995 24.7282C8.25995 24.3892 8.10275 24.0643 7.83122 23.8524C7.5454 23.5982 6.87373 23.3439 5.80192 23.1179C4.07272 22.7365 2.82941 22.228 2.10058 21.5782C1.37174 20.9708 0.957308 20.0809 0.98589 19.1345C0.98589 18.4847 1.18596 17.8349 1.55753 17.2981C1.98625 16.6907 2.57218 16.2104 3.27243 15.9421C4.02985 15.6172 5.08737 15.4477 6.41643 15.4477C8.04559 15.4477 9.28889 15.7443 10.1463 16.3517C11.0038 16.9591 11.504 17.9055 11.6612 19.2192L7.94555 19.4311C7.84551 18.8661 7.64544 18.4564 7.31675 18.188C7.00235 17.9196 6.55933 17.7925 6.00199 17.8066C5.54468 17.8066 5.2017 17.9055 4.97305 18.1033C4.74439 18.2728 4.61577 18.527 4.63006 18.8096C4.63006 19.0214 4.74439 19.2192 4.91588 19.3463C5.10166 19.5158 5.54468 19.6712 6.24494 19.8125C7.97413 20.1798 9.20315 20.547 9.96056 20.9284C10.718 21.3098 11.261 21.776 11.5897 22.3269C11.9327 22.8919 12.1042 23.5417 12.1042 24.1914C12.1042 24.9825 11.8613 25.7594 11.4182 26.4233C10.9466 27.1155 10.2893 27.6522 9.51755 27.9771C8.70297 28.3303 7.67402 28.5139 6.44501 28.5139C4.27279 28.5139 2.77225 28.1043 1.92909 27.2708C1.08593 26.4233 0.614327 25.378 0.5 24.1067Z" fill="#F8F0E4"/>
-                <path d="M19.5069 23.1178L22.9653 24.149C22.7795 25.0107 22.3937 25.83 21.8649 26.5504C21.379 27.186 20.7359 27.6804 20.0071 28.0053C19.264 28.3302 18.3208 28.4997 17.1775 28.4997C15.7913 28.4997 14.648 28.302 13.7763 27.9064C12.8902 27.5109 12.1328 26.8046 11.4897 25.8017C10.8466 24.7988 10.5322 23.5134 10.5322 21.9454C10.5322 19.8548 11.0896 18.2445 12.2185 17.1286C13.3475 16.0126 14.9338 15.4476 16.9917 15.4476C18.6066 15.4476 19.8642 15.7725 20.7931 16.4081C21.7077 17.0579 22.3937 18.0467 22.851 19.3745L19.364 20.1373C19.2782 19.8407 19.1496 19.544 18.9781 19.2898C18.7638 18.9931 18.4922 18.7671 18.1636 18.5976C17.8349 18.4281 17.4633 18.3575 17.0917 18.3575C16.1914 18.3575 15.5055 18.7106 15.0339 19.431C14.6766 19.9537 14.4908 20.7871 14.4908 21.9172C14.4908 23.3156 14.7052 24.2761 15.1339 24.7988C15.5626 25.3214 16.1628 25.5757 16.9488 25.5757C17.7062 25.5757 18.2779 25.3638 18.6637 24.9542C19.0496 24.5163 19.3354 23.9089 19.5069 23.1178ZM27.5813 15.6595H31.5255V20.0808H35.8414V15.6595H39.8143V28.2878H35.8414V23.1743H31.5255V28.2878H27.5813V15.6595Z" fill="#F8F0E4"/>
-                <path d="M39.2712 21.9738C39.2712 19.9114 39.8571 18.3011 41.0147 17.1569C42.1722 16.0127 43.8014 15.4336 45.8736 15.4336C48.0029 15.4336 49.6321 15.9986 50.7896 17.1287C51.9472 18.2587 52.5188 19.8408 52.5188 21.8749C52.5188 23.3581 52.2616 24.5588 51.7614 25.5052C51.2755 26.4375 50.5181 27.2003 49.5892 27.7088C48.6317 28.2314 47.4456 28.4998 46.0308 28.4998C44.5874 28.4998 43.4013 28.2738 42.4581 27.8218C41.4863 27.3415 40.686 26.5929 40.1572 25.6747C39.5713 24.6859 39.2712 23.457 39.2712 21.9738ZM43.2155 21.9879C43.2155 23.2592 43.4584 24.1774 43.93 24.7424C44.4016 25.2933 45.059 25.5758 45.8879 25.5758C46.731 25.5758 47.3884 25.3074 47.86 24.7565C48.3316 24.2056 48.5603 23.231 48.5603 21.8184C48.5603 20.6318 48.3173 19.756 47.8314 19.2193C47.3455 18.6684 46.6882 18.4 45.8593 18.4C45.1305 18.3717 44.4302 18.6825 43.9443 19.2334C43.4584 19.7843 43.2155 20.7025 43.2155 21.9879ZM56.5632 21.9738C56.5632 19.9114 57.1491 18.3011 58.3067 17.1569C59.4642 16.0127 61.0934 15.4336 63.1656 15.4336C65.2949 15.4336 66.9383 15.9986 68.0816 17.1287C69.2249 18.2587 69.8108 19.8408 69.8108 21.8749C69.8108 23.3581 69.5536 24.5588 69.0534 25.5052C68.5675 26.4375 67.8101 27.2003 66.8812 27.7088C65.9237 28.2314 64.7376 28.4998 63.3228 28.4998C61.8794 28.4998 60.6932 28.2738 59.75 27.8218C58.7782 27.3415 57.978 26.5929 57.4492 25.6747C56.8633 24.6859 56.5632 23.457 56.5632 21.9738ZM60.5074 21.9879C60.5074 23.2592 60.7504 24.1774 61.222 24.7424C61.6936 25.2933 62.351 25.5758 63.1798 25.5758C64.023 25.5758 64.6804 25.3074 65.152 24.7565C65.6236 24.2056 65.8522 23.231 65.8522 21.8184C65.8522 20.6318 65.6093 19.756 65.1234 19.2193C64.6375 18.6684 63.9801 18.4 63.1513 18.4C62.4224 18.3717 61.7079 18.6825 61.2363 19.2334C60.7504 19.7843 60.5074 20.7025 60.5074 21.9879Z" fill="#F8F0E4"/>
-                <path d="M73.3407 15.6594V25.1802H79.5V28.2878H69.3821V15.6594H73.3407Z" fill="#F8F0E4"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M56.7449 4.03879C53.0602 6.78342 52.187 11.1981 54.2055 13.8456C56.2239 16.4931 60.7579 16.8802 64.4426 14.1355C68.1273 11.3909 69.0004 6.97625 66.982 4.32874C64.9635 1.68124 60.4296 1.29416 56.7449 4.03879ZM52.6015 15.0403C49.699 11.2331 51.2749 5.6195 55.5323 2.4483C59.7897 -0.722899 65.6834 -0.673156 68.5859 3.13402C71.4885 6.94119 69.9125 12.5548 65.6552 15.726C61.3978 18.8972 55.5041 18.8475 52.6015 15.0403Z" fill="#F8F0E4"/>
-                <path d="M56.5774 8.15874L58.0065 7.16995L59.7643 9.64194C60.0644 10.0375 60.2931 10.4612 60.4646 10.9274C60.5646 11.2805 60.536 11.6619 60.3931 12.0009C60.2073 12.4247 59.9072 12.7778 59.5071 13.0321C59.0355 13.357 58.6353 13.5406 58.2924 13.5971C57.9637 13.6536 57.6207 13.5971 57.3063 13.4559C56.9633 13.2864 56.6632 13.0462 56.4345 12.7355L57.6636 11.6054C57.7636 11.7608 57.8922 11.902 58.0351 12.015C58.1352 12.0857 58.2495 12.1281 58.3781 12.1281C58.4781 12.1281 58.5782 12.0857 58.6496 12.0292C58.7925 11.9444 58.8926 11.7749 58.8783 11.6054C58.8354 11.3653 58.7354 11.1251 58.5782 10.9415L56.5774 8.15874ZM60.8647 9.72669L62.1652 8.70964C62.3081 8.87915 62.4939 9.00628 62.6939 9.07691C62.9798 9.16166 63.2799 9.10516 63.5228 8.92153C63.6943 8.80852 63.8372 8.65314 63.8944 8.45538C63.9801 8.20112 63.8372 7.91861 63.58 7.83385C63.5371 7.81973 63.4942 7.8056 63.4514 7.8056C63.2799 7.79148 62.9798 7.8621 62.5367 8.04574C61.8079 8.34238 61.2363 8.45538 60.8075 8.413C60.3931 8.37063 60.0073 8.15874 59.7786 7.8056C59.6071 7.56546 59.5214 7.28295 59.5071 7.00044C59.5071 6.67555 59.5928 6.35066 59.7786 6.08227C60.0501 5.70088 60.3788 5.37599 60.779 5.12172C61.3792 4.71208 61.9079 4.51432 62.3652 4.51432C62.8226 4.51432 63.2513 4.7262 63.6514 5.1641L62.3652 6.16702C62.108 5.84213 61.6221 5.7715 61.2934 6.02577L61.2506 6.06814C61.1077 6.1529 61.0076 6.28003 60.9505 6.43541C60.9076 6.54842 60.9362 6.67555 61.0076 6.77443C61.0648 6.84506 61.1505 6.90156 61.2506 6.90156C61.3649 6.91568 61.565 6.85918 61.8508 6.73205C62.5653 6.43541 63.1084 6.2659 63.4799 6.2094C63.7943 6.1529 64.123 6.18115 64.4231 6.30828C64.6947 6.42129 64.9233 6.61904 65.0805 6.85918C65.2806 7.14169 65.3949 7.48071 65.4092 7.83385C65.4235 8.20112 65.3235 8.55426 65.1234 8.86503C64.8662 9.24642 64.5375 9.57131 64.1516 9.82557C63.3656 10.3623 62.7225 10.5884 62.208 10.5036C61.6507 10.4188 61.1934 10.1363 60.8647 9.72669Z" fill="#F8F0E4"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-  <script src="script.js"></script>
-  <script src="toggle.js"></script>
-  <script src="selfeval.js"></script>
-</body>
+      </main>
+      <button
+        id="scrollToTop"
+        class="btn btn--to-top"
+        title="Go to top"
+        type="button"
+      >
+        Top
+      </button>
+      <footer class="page-footer">
+        <div class="page-footer__inner">
+          <div class="page-footer__copyright">
+            <p>© 2021 by Maria Serykh</p>
+          </div>
+          <ul class="page-footer__contact-links">
+            <li class="contact-links__item">
+              <a
+                href="https://github.com/mserykh"
+                class="contact-links__link"
+                target="_blank"
+                >Github</a
+              >
+            </li>
+            <li class="contact-links__item">
+              <a
+                href="https://www.linkedin.com/in/mariaserykh/"
+                class="contact-links__link"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li class="contact-links__item">
+              <a
+                href="https://rs.school/js/"
+                class="contact-links__link"
+                target="_blank"
+              >
+                <svg
+                  class="rsschool"
+                  width="80"
+                  height="29"
+                  viewBox="0 0 80 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M41.2862 9.10523L45.0447 8.86509C45.1304 9.4725 45.2876 9.92452 45.5449 10.2494C45.9593 10.7579 46.5309 11.0122 47.2883 11.0122C47.8457 11.0122 48.2887 10.8851 48.5888 10.6167C48.8746 10.4048 49.0461 10.0658 49.0461 9.71263C49.0461 9.37362 48.8889 9.04872 48.6174 8.83684C48.3316 8.58258 47.6599 8.32832 46.6024 8.1023C44.8732 7.72091 43.6299 7.21239 42.9011 6.56261C42.1722 5.9552 41.7578 5.06528 41.7864 4.11886C41.7864 3.46908 41.9864 2.8193 42.358 2.28253C42.7867 1.67512 43.3726 1.19485 44.0729 0.926463C44.8303 0.601572 45.8878 0.432064 47.2169 0.432064C48.8461 0.432064 50.0894 0.728703 50.9468 1.33611C51.8043 1.92939 52.3187 2.88993 52.4759 4.20362L48.7603 4.4155C48.6603 3.85048 48.4602 3.44083 48.1315 3.17244C47.8028 2.90406 47.3741 2.77693 46.8168 2.77693C46.3594 2.77693 46.0165 2.87581 45.7878 3.05944C45.5734 3.22895 45.4305 3.48321 45.4448 3.76572C45.4448 3.97761 45.5592 4.17537 45.7306 4.3025C45.9164 4.47201 46.3594 4.62739 47.0597 4.76865C48.7889 5.13591 50.0179 5.50318 50.7753 5.88457C51.5327 6.26597 52.0758 6.73211 52.4045 7.28301C52.7475 7.84804 52.919 8.49782 52.9047 9.16173C52.9047 9.95277 52.676 10.7438 52.2187 11.4077C51.7471 12.0999 51.0897 12.6366 50.318 12.9615C49.5034 13.3147 48.4745 13.4983 47.2455 13.4983C45.0733 13.4983 43.5727 13.0887 42.7296 12.2553C41.8864 11.4218 41.3862 10.3765 41.2862 9.10523ZM1.40033 13.2864V0.658075H7.98842C9.20315 0.658075 10.1463 0.756955 10.7894 0.96884C11.4182 1.1666 11.9756 1.57624 12.3471 2.12714C12.7616 2.73455 12.9616 3.44083 12.9474 4.17537C12.9902 5.41843 12.3471 6.60498 11.2467 7.22651C10.818 7.46665 10.3464 7.63616 9.86053 7.72091C10.2178 7.81979 10.5751 7.9893 10.8895 8.18706C11.1324 8.38482 11.3325 8.61083 11.5183 8.85096C11.7326 9.0911 11.9184 9.35949 12.0756 9.642L13.9906 13.3006H9.50326L7.38821 9.41599C7.11668 8.92159 6.88802 8.5967 6.67366 8.44132C6.38784 8.24356 6.04486 8.14468 5.70188 8.14468H5.3589V13.2723H1.40033V13.2864ZM5.3589 5.77157H7.03093C7.38821 5.74332 7.73119 5.68681 8.07417 5.60206C8.3314 5.55968 8.56006 5.41843 8.71726 5.20654C9.10311 4.69802 9.04595 3.97761 8.57435 3.53971C8.31711 3.32783 7.81693 3.21482 7.10239 3.21482H5.3589V5.77157ZM0.5 24.1067L4.2585 23.8666C4.34425 24.474 4.50145 24.926 4.75868 25.2509C5.15883 25.7594 5.74475 26.0278 6.50217 26.0278C7.05951 26.0278 7.50253 25.9007 7.80264 25.6323C8.08846 25.4063 8.25995 25.0814 8.25995 24.7282C8.25995 24.3892 8.10275 24.0643 7.83122 23.8524C7.5454 23.5982 6.87373 23.3439 5.80192 23.1179C4.07272 22.7365 2.82941 22.228 2.10058 21.5782C1.37174 20.9708 0.957308 20.0809 0.98589 19.1345C0.98589 18.4847 1.18596 17.8349 1.55753 17.2981C1.98625 16.6907 2.57218 16.2104 3.27243 15.9421C4.02985 15.6172 5.08737 15.4477 6.41643 15.4477C8.04559 15.4477 9.28889 15.7443 10.1463 16.3517C11.0038 16.9591 11.504 17.9055 11.6612 19.2192L7.94555 19.4311C7.84551 18.8661 7.64544 18.4564 7.31675 18.188C7.00235 17.9196 6.55933 17.7925 6.00199 17.8066C5.54468 17.8066 5.2017 17.9055 4.97305 18.1033C4.74439 18.2728 4.61577 18.527 4.63006 18.8096C4.63006 19.0214 4.74439 19.2192 4.91588 19.3463C5.10166 19.5158 5.54468 19.6712 6.24494 19.8125C7.97413 20.1798 9.20315 20.547 9.96056 20.9284C10.718 21.3098 11.261 21.776 11.5897 22.3269C11.9327 22.8919 12.1042 23.5417 12.1042 24.1914C12.1042 24.9825 11.8613 25.7594 11.4182 26.4233C10.9466 27.1155 10.2893 27.6522 9.51755 27.9771C8.70297 28.3303 7.67402 28.5139 6.44501 28.5139C4.27279 28.5139 2.77225 28.1043 1.92909 27.2708C1.08593 26.4233 0.614327 25.378 0.5 24.1067Z"
+                    fill="#F8F0E4"
+                  />
+                  <path
+                    d="M19.5069 23.1178L22.9653 24.149C22.7795 25.0107 22.3937 25.83 21.8649 26.5504C21.379 27.186 20.7359 27.6804 20.0071 28.0053C19.264 28.3302 18.3208 28.4997 17.1775 28.4997C15.7913 28.4997 14.648 28.302 13.7763 27.9064C12.8902 27.5109 12.1328 26.8046 11.4897 25.8017C10.8466 24.7988 10.5322 23.5134 10.5322 21.9454C10.5322 19.8548 11.0896 18.2445 12.2185 17.1286C13.3475 16.0126 14.9338 15.4476 16.9917 15.4476C18.6066 15.4476 19.8642 15.7725 20.7931 16.4081C21.7077 17.0579 22.3937 18.0467 22.851 19.3745L19.364 20.1373C19.2782 19.8407 19.1496 19.544 18.9781 19.2898C18.7638 18.9931 18.4922 18.7671 18.1636 18.5976C17.8349 18.4281 17.4633 18.3575 17.0917 18.3575C16.1914 18.3575 15.5055 18.7106 15.0339 19.431C14.6766 19.9537 14.4908 20.7871 14.4908 21.9172C14.4908 23.3156 14.7052 24.2761 15.1339 24.7988C15.5626 25.3214 16.1628 25.5757 16.9488 25.5757C17.7062 25.5757 18.2779 25.3638 18.6637 24.9542C19.0496 24.5163 19.3354 23.9089 19.5069 23.1178ZM27.5813 15.6595H31.5255V20.0808H35.8414V15.6595H39.8143V28.2878H35.8414V23.1743H31.5255V28.2878H27.5813V15.6595Z"
+                    fill="#F8F0E4"
+                  />
+                  <path
+                    d="M39.2712 21.9738C39.2712 19.9114 39.8571 18.3011 41.0147 17.1569C42.1722 16.0127 43.8014 15.4336 45.8736 15.4336C48.0029 15.4336 49.6321 15.9986 50.7896 17.1287C51.9472 18.2587 52.5188 19.8408 52.5188 21.8749C52.5188 23.3581 52.2616 24.5588 51.7614 25.5052C51.2755 26.4375 50.5181 27.2003 49.5892 27.7088C48.6317 28.2314 47.4456 28.4998 46.0308 28.4998C44.5874 28.4998 43.4013 28.2738 42.4581 27.8218C41.4863 27.3415 40.686 26.5929 40.1572 25.6747C39.5713 24.6859 39.2712 23.457 39.2712 21.9738ZM43.2155 21.9879C43.2155 23.2592 43.4584 24.1774 43.93 24.7424C44.4016 25.2933 45.059 25.5758 45.8879 25.5758C46.731 25.5758 47.3884 25.3074 47.86 24.7565C48.3316 24.2056 48.5603 23.231 48.5603 21.8184C48.5603 20.6318 48.3173 19.756 47.8314 19.2193C47.3455 18.6684 46.6882 18.4 45.8593 18.4C45.1305 18.3717 44.4302 18.6825 43.9443 19.2334C43.4584 19.7843 43.2155 20.7025 43.2155 21.9879ZM56.5632 21.9738C56.5632 19.9114 57.1491 18.3011 58.3067 17.1569C59.4642 16.0127 61.0934 15.4336 63.1656 15.4336C65.2949 15.4336 66.9383 15.9986 68.0816 17.1287C69.2249 18.2587 69.8108 19.8408 69.8108 21.8749C69.8108 23.3581 69.5536 24.5588 69.0534 25.5052C68.5675 26.4375 67.8101 27.2003 66.8812 27.7088C65.9237 28.2314 64.7376 28.4998 63.3228 28.4998C61.8794 28.4998 60.6932 28.2738 59.75 27.8218C58.7782 27.3415 57.978 26.5929 57.4492 25.6747C56.8633 24.6859 56.5632 23.457 56.5632 21.9738ZM60.5074 21.9879C60.5074 23.2592 60.7504 24.1774 61.222 24.7424C61.6936 25.2933 62.351 25.5758 63.1798 25.5758C64.023 25.5758 64.6804 25.3074 65.152 24.7565C65.6236 24.2056 65.8522 23.231 65.8522 21.8184C65.8522 20.6318 65.6093 19.756 65.1234 19.2193C64.6375 18.6684 63.9801 18.4 63.1513 18.4C62.4224 18.3717 61.7079 18.6825 61.2363 19.2334C60.7504 19.7843 60.5074 20.7025 60.5074 21.9879Z"
+                    fill="#F8F0E4"
+                  />
+                  <path
+                    d="M73.3407 15.6594V25.1802H79.5V28.2878H69.3821V15.6594H73.3407Z"
+                    fill="#F8F0E4"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M56.7449 4.03879C53.0602 6.78342 52.187 11.1981 54.2055 13.8456C56.2239 16.4931 60.7579 16.8802 64.4426 14.1355C68.1273 11.3909 69.0004 6.97625 66.982 4.32874C64.9635 1.68124 60.4296 1.29416 56.7449 4.03879ZM52.6015 15.0403C49.699 11.2331 51.2749 5.6195 55.5323 2.4483C59.7897 -0.722899 65.6834 -0.673156 68.5859 3.13402C71.4885 6.94119 69.9125 12.5548 65.6552 15.726C61.3978 18.8972 55.5041 18.8475 52.6015 15.0403Z"
+                    fill="#F8F0E4"
+                  />
+                  <path
+                    d="M56.5774 8.15874L58.0065 7.16995L59.7643 9.64194C60.0644 10.0375 60.2931 10.4612 60.4646 10.9274C60.5646 11.2805 60.536 11.6619 60.3931 12.0009C60.2073 12.4247 59.9072 12.7778 59.5071 13.0321C59.0355 13.357 58.6353 13.5406 58.2924 13.5971C57.9637 13.6536 57.6207 13.5971 57.3063 13.4559C56.9633 13.2864 56.6632 13.0462 56.4345 12.7355L57.6636 11.6054C57.7636 11.7608 57.8922 11.902 58.0351 12.015C58.1352 12.0857 58.2495 12.1281 58.3781 12.1281C58.4781 12.1281 58.5782 12.0857 58.6496 12.0292C58.7925 11.9444 58.8926 11.7749 58.8783 11.6054C58.8354 11.3653 58.7354 11.1251 58.5782 10.9415L56.5774 8.15874ZM60.8647 9.72669L62.1652 8.70964C62.3081 8.87915 62.4939 9.00628 62.6939 9.07691C62.9798 9.16166 63.2799 9.10516 63.5228 8.92153C63.6943 8.80852 63.8372 8.65314 63.8944 8.45538C63.9801 8.20112 63.8372 7.91861 63.58 7.83385C63.5371 7.81973 63.4942 7.8056 63.4514 7.8056C63.2799 7.79148 62.9798 7.8621 62.5367 8.04574C61.8079 8.34238 61.2363 8.45538 60.8075 8.413C60.3931 8.37063 60.0073 8.15874 59.7786 7.8056C59.6071 7.56546 59.5214 7.28295 59.5071 7.00044C59.5071 6.67555 59.5928 6.35066 59.7786 6.08227C60.0501 5.70088 60.3788 5.37599 60.779 5.12172C61.3792 4.71208 61.9079 4.51432 62.3652 4.51432C62.8226 4.51432 63.2513 4.7262 63.6514 5.1641L62.3652 6.16702C62.108 5.84213 61.6221 5.7715 61.2934 6.02577L61.2506 6.06814C61.1077 6.1529 61.0076 6.28003 60.9505 6.43541C60.9076 6.54842 60.9362 6.67555 61.0076 6.77443C61.0648 6.84506 61.1505 6.90156 61.2506 6.90156C61.3649 6.91568 61.565 6.85918 61.8508 6.73205C62.5653 6.43541 63.1084 6.2659 63.4799 6.2094C63.7943 6.1529 64.123 6.18115 64.4231 6.30828C64.6947 6.42129 64.9233 6.61904 65.0805 6.85918C65.2806 7.14169 65.3949 7.48071 65.4092 7.83385C65.4235 8.20112 65.3235 8.55426 65.1234 8.86503C64.8662 9.24642 64.5375 9.57131 64.1516 9.82557C63.3656 10.3623 62.7225 10.5884 62.208 10.5036C61.6507 10.4188 61.1934 10.1363 60.8647 9.72669Z"
+                    fill="#F8F0E4"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="toggle.js"></script>
+    <script src="selfeval.js"></script>
+  </body>
 </html>
