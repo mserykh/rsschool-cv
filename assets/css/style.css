@@ -488,6 +488,7 @@ button {
 .description__item {
   position: relative;
   margin-left: 12px;
+  letter-spacing: 0.5px;
 }
 
 .description__item::before,
