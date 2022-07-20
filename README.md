@@ -1,4 +1,4 @@
-# My CS
+# My CV
 
 Please check out the icon for changing the theme :) I am really proud of it.
 
